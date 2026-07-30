@@ -1,0 +1,105 @@
+{
+  "prohibited_expressions": [
+    {
+      "phrase": "질병 치료",
+      "reason": "질병 치료를 단정하는 표현은 사용할 수 없습니다.",
+      "type": "disease"
+    },
+    {
+      "phrase": "질병 예방",
+      "reason": "질병 예방을 단정하는 표현은 사용할 수 없습니다.",
+      "type": "disease"
+    },
+    {
+      "phrase": "완치",
+      "reason": "치료 결과를 보장하는 표현은 사용할 수 없습니다.",
+      "type": "disease"
+    },
+    {
+      "phrase": "무조건 낫",
+      "reason": "효과를 보장하는 과장 표현은 사용할 수 없습니다.",
+      "type": "exaggeration"
+    },
+    {
+      "phrase": "기적의",
+      "reason": "객관적 근거가 없는 과장 표현은 사용할 수 없습니다.",
+      "type": "exaggeration"
+    },
+    {
+      "phrase": "100% 효과",
+      "reason": "효과를 수치로 보장하는 표현은 사용할 수 없습니다.",
+      "type": "exaggeration"
+    },
+    {
+      "phrase": "부작용 없음",
+      "reason": "안전성을 절대적으로 보장할 수 없습니다.",
+      "type": "exaggeration"
+    },
+    {
+      "phrase": "의사가 인정한",
+      "reason": "일반 식품을 의약품처럼 오인하게 할 수 있습니다.",
+      "type": "medicine"
+    },
+    {
+      "phrase": "약 대신",
+      "reason": "식품을 의약품 대체재로 표현할 수 없습니다.",
+      "type": "medicine"
+    },
+    {
+      "phrase": "처방",
+      "reason": "일반 웰니스 상품을 의약품처럼 보이게 할 수 있습니다.",
+      "type": "medicine"
+    }
+  ],
+  "well_functional": {
+    "Eat Well": [
+      "digestive_health",
+      "energy_metabolism",
+      "blood_sugar_balance"
+    ],
+    "Nourish Well": [
+      "vitamin_mineral",
+      "immunity",
+      "antioxidant"
+    ],
+    "Fit Well": [
+      "muscle_function",
+      "exercise_performance",
+      "bone_health"
+    ],
+    "Relax Well": [
+      "sleep_health",
+      "stress_relief",
+      "relaxation"
+    ],
+    "Glow Well": [
+      "skin_health",
+      "antioxidant",
+      "collagen"
+    ],
+    "Care Well": [
+      "eye_health",
+      "oral_health",
+      "liver_health",
+      "joint_health"
+    ]
+  },
+  "signal_filters": {
+    "stale_days": 120,
+    "ad_markers": [
+      "광고",
+      "협찬",
+      "sponsored",
+      "affiliate",
+      "쿠폰 코드"
+    ],
+    "medical_markers": [
+      "치료",
+      "완치",
+      "처방",
+      "복용량",
+      "약물",
+      "진단"
+    ]
+  }
+}

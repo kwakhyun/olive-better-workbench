@@ -1,0 +1,7770 @@
+[
+  {
+    "id": "P0001",
+    "sku": "SKU-0001",
+    "canonicalSku": "CAN-0001",
+    "name": "베러랩 그린 파이버 10일",
+    "brand": "베러랩",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [],
+    "price": 8900,
+    "stock": 0,
+    "rating": 4,
+    "reviewCount": 36,
+    "tags": [
+      "가벼운 식사",
+      "장 건강"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": true
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0002",
+    "sku": "SKU-0002",
+    "canonicalSku": "CAN-0002",
+    "name": "베러랩 멀티 비타민 10일",
+    "brand": "베러랩",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "vitamin_mineral"
+    ],
+    "price": 10600,
+    "stock": 18,
+    "rating": 4.7,
+    "reviewCount": 83,
+    "tags": [
+      "기초 영양",
+      "비타민"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0003",
+    "sku": "SKU-0003",
+    "canonicalSku": "CAN-0003",
+    "name": "베러랩 액티브 프로틴 10일",
+    "brand": "베러랩",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "muscle_function"
+    ],
+    "price": 12300,
+    "stock": 31,
+    "rating": 4.4,
+    "reviewCount": 130,
+    "tags": [
+      "운동 루틴",
+      "단백질"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0004",
+    "sku": "SKU-0004",
+    "canonicalSku": "CAN-0004",
+    "name": "베러랩 나이트 티 10일",
+    "brand": "베러랩",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "sleep_health"
+    ],
+    "price": 14000,
+    "stock": 44,
+    "rating": 4.1,
+    "reviewCount": 177,
+    "tags": [
+      "저녁 루틴",
+      "휴식"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0005",
+    "sku": "SKU-0005",
+    "canonicalSku": "CAN-0005",
+    "name": "베러랩 글로우 콜라겐 10일",
+    "brand": "베러랩",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "skin_health"
+    ],
+    "price": 15700,
+    "stock": 57,
+    "rating": 4.8,
+    "reviewCount": 224,
+    "tags": [
+      "이너뷰티",
+      "수분"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0006",
+    "sku": "SKU-0006",
+    "canonicalSku": "CAN-0006",
+    "name": "베러랩 아이 루테인 10일",
+    "brand": "베러랩",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "eye_health"
+    ],
+    "price": 17400,
+    "stock": 70,
+    "rating": 4.5,
+    "reviewCount": 271,
+    "tags": [
+      "눈 건강",
+      "구강 케어"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0007",
+    "sku": "SKU-0007",
+    "canonicalSku": "CAN-0007",
+    "name": "그로브 밸런스 효소 11일",
+    "brand": "그로브",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "energy_metabolism"
+    ],
+    "price": 19100,
+    "stock": 83,
+    "rating": 4.2,
+    "reviewCount": 318,
+    "tags": [
+      "장 건강",
+      "데일리 루틴"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0008",
+    "sku": "SKU-0008",
+    "canonicalSku": "CAN-0008",
+    "name": "그로브 비타 C 구미 11일",
+    "brand": "그로브",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "immunity"
+    ],
+    "price": 20800,
+    "stock": 96,
+    "rating": 4.9,
+    "reviewCount": 365,
+    "tags": [
+      "비타민",
+      "활력"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": true
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0009",
+    "sku": "SKU-0009",
+    "canonicalSku": "CAN-0009",
+    "name": "그로브 마그네슘 샷 11일",
+    "brand": "그로브",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "exercise_performance"
+    ],
+    "price": 22500,
+    "stock": 14,
+    "rating": 4.6,
+    "reviewCount": 412,
+    "tags": [
+      "단백질",
+      "회복"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0010",
+    "sku": "SKU-0010",
+    "canonicalSku": "CAN-0010",
+    "name": "그로브 릴랙스 구미 11일",
+    "brand": "그로브",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "stress_relief"
+    ],
+    "price": 24200,
+    "stock": 27,
+    "rating": 4.3,
+    "reviewCount": 459,
+    "tags": [
+      "휴식",
+      "숙면 환경"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0011",
+    "sku": "SKU-0011",
+    "canonicalSku": "CAN-0011",
+    "name": "그로브 히알 워터 11일",
+    "brand": "그로브",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "antioxidant"
+    ],
+    "price": 25900,
+    "stock": 40,
+    "rating": 4,
+    "reviewCount": 506,
+    "tags": [
+      "수분",
+      "탄력"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0012",
+    "sku": "SKU-0012",
+    "canonicalSku": "CAN-0012",
+    "name": "그로브 오랄 프로바이오틱스 11일",
+    "brand": "그로브",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "oral_health"
+    ],
+    "price": 27600,
+    "stock": 53,
+    "rating": 4.7,
+    "reviewCount": 553,
+    "tags": [
+      "구강 케어",
+      "일상 관리"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0013",
+    "sku": "SKU-0013",
+    "canonicalSku": "CAN-0013",
+    "name": "누아 데일리 유산균 12일",
+    "brand": "누아",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "blood_sugar_balance"
+    ],
+    "price": 29300,
+    "stock": 66,
+    "rating": 4.4,
+    "reviewCount": 600,
+    "tags": [
+      "데일리 루틴",
+      "저당"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0014",
+    "sku": "SKU-0014",
+    "canonicalSku": "CAN-0014",
+    "name": "누아 미네랄 밸런스 12일",
+    "brand": "누아",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "antioxidant"
+    ],
+    "price": 31000,
+    "stock": 79,
+    "rating": 4.1,
+    "reviewCount": 647,
+    "tags": [
+      "활력",
+      "간편 섭취"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0015",
+    "sku": "SKU-0015",
+    "canonicalSku": "CAN-0015",
+    "name": "누아 조인트 서포트 12일",
+    "brand": "누아",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "bone_health"
+    ],
+    "price": 32700,
+    "stock": 92,
+    "rating": 4.8,
+    "reviewCount": 694,
+    "tags": [
+      "회복",
+      "액티브"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": true
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0016",
+    "sku": "SKU-0016",
+    "canonicalSku": "CAN-0016",
+    "name": "누아 테아닌 밸런스 12일",
+    "brand": "누아",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "relaxation"
+    ],
+    "price": 34400,
+    "stock": 10,
+    "rating": 4.5,
+    "reviewCount": 741,
+    "tags": [
+      "숙면 환경",
+      "마음챙김"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0017",
+    "sku": "SKU-0017",
+    "canonicalSku": "CAN-0017",
+    "name": "누아 뷰티 바이오틱스 12일",
+    "brand": "누아",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "collagen"
+    ],
+    "price": 36100,
+    "stock": 23,
+    "rating": 4.2,
+    "reviewCount": 788,
+    "tags": [
+      "탄력",
+      "글로우"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0018",
+    "sku": "SKU-0018",
+    "canonicalSku": "CAN-0018",
+    "name": "누아 밀크시슬 밸런스 12일",
+    "brand": "누아",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "liver_health"
+    ],
+    "price": 37800,
+    "stock": 0,
+    "rating": 4.9,
+    "reviewCount": 835,
+    "tags": [
+      "일상 관리",
+      "가족 건강"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0019",
+    "sku": "SKU-0019",
+    "canonicalSku": "CAN-0019",
+    "name": "밸런스온 오트 에너지 13일",
+    "brand": "밸런스온",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "digestive_health"
+    ],
+    "price": 39500,
+    "stock": 49,
+    "rating": 4.6,
+    "reviewCount": 882,
+    "tags": [
+      "저당",
+      "가벼운 식사"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0020",
+    "sku": "SKU-0020",
+    "canonicalSku": "CAN-0020",
+    "name": "밸런스온 데일리 아연 13일",
+    "brand": "밸런스온",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [],
+    "price": 9200,
+    "stock": 62,
+    "rating": 4.3,
+    "reviewCount": 929,
+    "tags": [
+      "간편 섭취",
+      "기초 영양"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0021",
+    "sku": "SKU-0021",
+    "canonicalSku": "CAN-0021",
+    "name": "밸런스온 BCAA 워터 13일",
+    "brand": "밸런스온",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "muscle_function"
+    ],
+    "price": 10900,
+    "stock": 75,
+    "rating": 4,
+    "reviewCount": 976,
+    "tags": [
+      "액티브",
+      "운동 루틴"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0022",
+    "sku": "SKU-0022",
+    "canonicalSku": "CAN-0022",
+    "name": "밸런스온 슬립 아로마 13일",
+    "brand": "밸런스온",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "sleep_health"
+    ],
+    "price": 12600,
+    "stock": 88,
+    "rating": 4.7,
+    "reviewCount": 1023,
+    "tags": [
+      "마음챙김",
+      "저녁 루틴"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": true
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0023",
+    "sku": "SKU-0023",
+    "canonicalSku": "CAN-0023",
+    "name": "밸런스온 비오틴 구미 13일",
+    "brand": "밸런스온",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "skin_health"
+    ],
+    "price": 14300,
+    "stock": 6,
+    "rating": 4.4,
+    "reviewCount": 1070,
+    "tags": [
+      "글로우",
+      "이너뷰티"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0024",
+    "sku": "SKU-0023",
+    "canonicalSku": "CAN-0023",
+    "name": "밸런스온 비오틴 구미 13일 ",
+    "brand": "밸런스온",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "joint_health"
+    ],
+    "price": 16000,
+    "stock": 19,
+    "rating": 4.1,
+    "reviewCount": 1117,
+    "tags": [
+      "가족 건강",
+      "눈 건강"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0025",
+    "sku": "SKU-0025",
+    "canonicalSku": "CAN-0025",
+    "name": "플로우데이 콤부차 14일",
+    "brand": "플로우데이",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "energy_metabolism"
+    ],
+    "price": 17700,
+    "stock": 32,
+    "rating": 4.8,
+    "reviewCount": 1164,
+    "tags": [
+      "가벼운 식사",
+      "장 건강"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0026",
+    "sku": "SKU-0026",
+    "canonicalSku": "CAN-0026",
+    "name": "플로우데이 항산화 베리 14일",
+    "brand": "플로우데이",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "immunity"
+    ],
+    "price": 19400,
+    "stock": 45,
+    "rating": 4.5,
+    "reviewCount": 1211,
+    "tags": [
+      "기초 영양",
+      "비타민"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0027",
+    "sku": "SKU-0027",
+    "canonicalSku": "CAN-0027",
+    "name": "플로우데이 본 밸런스 14일",
+    "brand": "플로우데이",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "exercise_performance"
+    ],
+    "price": 21100,
+    "stock": 58,
+    "rating": 4.2,
+    "reviewCount": 1258,
+    "tags": [
+      "운동 루틴",
+      "단백질"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0028",
+    "sku": "SKU-0028",
+    "canonicalSku": "CAN-0028",
+    "name": "플로우데이 카밍 마그네슘 14일",
+    "brand": "플로우데이",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "stress_relief"
+    ],
+    "price": 22800,
+    "stock": 71,
+    "rating": 4.9,
+    "reviewCount": 1305,
+    "tags": [
+      "저녁 루틴",
+      "휴식"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0029",
+    "sku": "SKU-0029",
+    "canonicalSku": "CAN-0029",
+    "name": "플로우데이 세라마이드 샷 14일",
+    "brand": "플로우데이",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "antioxidant"
+    ],
+    "price": 24500,
+    "stock": 84,
+    "rating": 4.6,
+    "reviewCount": 1352,
+    "tags": [
+      "이너뷰티",
+      "수분"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": true
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0030",
+    "sku": "SKU-0030",
+    "canonicalSku": "CAN-0030",
+    "name": "플로우데이 오메가 밸런스 14일",
+    "brand": "플로우데이",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "digestive_health"
+    ],
+    "price": 26200,
+    "stock": 97,
+    "rating": 4.3,
+    "reviewCount": 1399,
+    "tags": [
+      "눈 건강",
+      "구강 케어"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0031",
+    "sku": "SKU-0031",
+    "canonicalSku": "CAN-0031",
+    "name": "모먼트 그린 파이버 15일",
+    "brand": "모먼트",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "blood_sugar_balance"
+    ],
+    "price": 27900,
+    "stock": 15,
+    "rating": 4,
+    "reviewCount": 1446,
+    "tags": [
+      "장 건강",
+      "데일리 루틴"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0032",
+    "sku": "SKU-0032",
+    "canonicalSku": "CAN-0032",
+    "name": "모먼트 멀티 비타민 15일",
+    "brand": "모먼트",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "antioxidant"
+    ],
+    "price": 29600,
+    "stock": 28,
+    "rating": 4.7,
+    "reviewCount": 1493,
+    "tags": [
+      "비타민",
+      "활력"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0033",
+    "sku": "SKU-0033",
+    "canonicalSku": "CAN-0033",
+    "name": "모먼트 액티브 프로틴 15일",
+    "brand": "모먼트",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "bone_health"
+    ],
+    "price": 31300,
+    "stock": 41,
+    "rating": 4.4,
+    "reviewCount": 1540,
+    "tags": [
+      "단백질",
+      "회복"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0034",
+    "sku": "SKU-0034",
+    "canonicalSku": "CAN-0034",
+    "name": "모먼트 나이트 티 15일",
+    "brand": "모먼트",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "relaxation"
+    ],
+    "price": 33000,
+    "stock": 54,
+    "rating": 4.1,
+    "reviewCount": 1587,
+    "tags": [
+      "휴식",
+      "숙면 환경"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0035",
+    "sku": "SKU-0035",
+    "canonicalSku": "CAN-0035",
+    "name": "모먼트 글로우 콜라겐 15일",
+    "brand": "모먼트",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "collagen"
+    ],
+    "price": 34700,
+    "stock": 0,
+    "rating": 4.8,
+    "reviewCount": 1634,
+    "tags": [
+      "수분",
+      "탄력"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0036",
+    "sku": "SKU-0036",
+    "canonicalSku": "CAN-0036",
+    "name": "모먼트 아이 루테인 15일",
+    "brand": "모먼트",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "oral_health"
+    ],
+    "price": 36400,
+    "stock": 80,
+    "rating": 4.5,
+    "reviewCount": 1681,
+    "tags": [
+      "구강 케어",
+      "일상 관리"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": true
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0037",
+    "sku": "SKU-0037",
+    "canonicalSku": "CAN-0037",
+    "name": "베러랩 밸런스 효소 16일",
+    "brand": "베러랩",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "digestive_health"
+    ],
+    "price": 38100,
+    "stock": 93,
+    "rating": 4.2,
+    "reviewCount": 1728,
+    "tags": [
+      "데일리 루틴",
+      "저당"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0038",
+    "sku": "SKU-0038",
+    "canonicalSku": "CAN-0038",
+    "name": "베러랩 비타 C 구미 16일",
+    "brand": "베러랩",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "vitamin_mineral"
+    ],
+    "price": 39800,
+    "stock": 11,
+    "rating": 4.9,
+    "reviewCount": 1775,
+    "tags": [
+      "활력",
+      "간편 섭취"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0039",
+    "sku": "SKU-0039",
+    "canonicalSku": "CAN-0039",
+    "name": "베러랩 마그네슘 샷 16일",
+    "brand": "베러랩",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [],
+    "price": 9500,
+    "stock": 24,
+    "rating": 4.6,
+    "reviewCount": 1822,
+    "tags": [
+      "회복",
+      "액티브"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0040",
+    "sku": "SKU-0040",
+    "canonicalSku": "CAN-0040",
+    "name": "베러랩 릴랙스 구미 16일",
+    "brand": "베러랩",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "sleep_health"
+    ],
+    "price": 11200,
+    "stock": 37,
+    "rating": 4.3,
+    "reviewCount": 1869,
+    "tags": [
+      "숙면 환경",
+      "마음챙김"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0041",
+    "sku": "SKU-0041",
+    "canonicalSku": "CAN-0041",
+    "name": "베러랩 히알 워터 16일",
+    "brand": "베러랩",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "skin_health"
+    ],
+    "price": 12900,
+    "stock": 50,
+    "rating": 4,
+    "reviewCount": 1916,
+    "tags": [
+      "탄력",
+      "글로우"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0042",
+    "sku": "SKU-0042",
+    "canonicalSku": "CAN-0042",
+    "name": "베러랩 오랄 프로바이오틱스 16일",
+    "brand": "베러랩",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "liver_health"
+    ],
+    "price": 14600,
+    "stock": 63,
+    "rating": 4.7,
+    "reviewCount": 1963,
+    "tags": [
+      "일상 관리",
+      "가족 건강"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0043",
+    "sku": "SKU-0043",
+    "canonicalSku": "CAN-0043",
+    "name": "그로브 데일리 유산균 17일",
+    "brand": "그로브",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "energy_metabolism"
+    ],
+    "price": 16300,
+    "stock": 76,
+    "rating": 4.4,
+    "reviewCount": 2010,
+    "tags": [
+      "저당",
+      "가벼운 식사"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": true
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0044",
+    "sku": "SKU-0044",
+    "canonicalSku": "CAN-0044",
+    "name": "그로브 미네랄 밸런스 17일",
+    "brand": "그로브",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "immunity"
+    ],
+    "price": 18000,
+    "stock": 89,
+    "rating": 4.1,
+    "reviewCount": 2057,
+    "tags": [
+      "간편 섭취",
+      "기초 영양"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0045",
+    "sku": "SKU-0045",
+    "canonicalSku": "CAN-0045",
+    "name": "그로브 조인트 서포트 17일",
+    "brand": "그로브",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "exercise_performance"
+    ],
+    "price": 19700,
+    "stock": 7,
+    "rating": 4.8,
+    "reviewCount": 2104,
+    "tags": [
+      "액티브",
+      "운동 루틴"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0046",
+    "sku": "SKU-0046",
+    "canonicalSku": "CAN-0046",
+    "name": "그로브 테아닌 밸런스 17일",
+    "brand": "그로브",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "stress_relief"
+    ],
+    "price": 21400,
+    "stock": 20,
+    "rating": 4.5,
+    "reviewCount": 51,
+    "tags": [
+      "마음챙김",
+      "저녁 루틴"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0047",
+    "sku": "SKU-0046",
+    "canonicalSku": "CAN-0046",
+    "name": "그로브 테아닌 밸런스 17일 ",
+    "brand": "그로브",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "antioxidant"
+    ],
+    "price": 23100,
+    "stock": 33,
+    "rating": 4.2,
+    "reviewCount": 98,
+    "tags": [
+      "글로우",
+      "이너뷰티"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0048",
+    "sku": "SKU-0048",
+    "canonicalSku": "CAN-0048",
+    "name": "그로브 밀크시슬 밸런스 17일",
+    "brand": "그로브",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "joint_health"
+    ],
+    "price": 24800,
+    "stock": 46,
+    "rating": 4.9,
+    "reviewCount": 145,
+    "tags": [
+      "가족 건강",
+      "눈 건강"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0049",
+    "sku": "SKU-0049",
+    "canonicalSku": "CAN-0049",
+    "name": "누아 오트 에너지 18일",
+    "brand": "누아",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "blood_sugar_balance"
+    ],
+    "price": 26500,
+    "stock": 59,
+    "rating": 4.6,
+    "reviewCount": 192,
+    "tags": [
+      "가벼운 식사",
+      "장 건강"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0050",
+    "sku": "SKU-0050",
+    "canonicalSku": "CAN-0050",
+    "name": "누아 데일리 아연 18일",
+    "brand": "누아",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "antioxidant"
+    ],
+    "price": 28200,
+    "stock": 72,
+    "rating": 4.3,
+    "reviewCount": 239,
+    "tags": [
+      "기초 영양",
+      "비타민"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": true
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0051",
+    "sku": "SKU-0051",
+    "canonicalSku": "CAN-0051",
+    "name": "누아 BCAA 워터 18일",
+    "brand": "누아",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "bone_health"
+    ],
+    "price": 29900,
+    "stock": 85,
+    "rating": 4,
+    "reviewCount": 286,
+    "tags": [
+      "운동 루틴",
+      "단백질"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0052",
+    "sku": "SKU-0052",
+    "canonicalSku": "CAN-0052",
+    "name": "누아 슬립 아로마 18일",
+    "brand": "누아",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "relaxation"
+    ],
+    "price": 31600,
+    "stock": 0,
+    "rating": 4.7,
+    "reviewCount": 333,
+    "tags": [
+      "저녁 루틴",
+      "휴식"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0053",
+    "sku": "SKU-0053",
+    "canonicalSku": "CAN-0053",
+    "name": "누아 비오틴 구미 18일",
+    "brand": "누아",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "collagen"
+    ],
+    "price": 33300,
+    "stock": 16,
+    "rating": 4.4,
+    "reviewCount": 380,
+    "tags": [
+      "이너뷰티",
+      "수분"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0054",
+    "sku": "SKU-0054",
+    "canonicalSku": "CAN-0054",
+    "name": "누아 관절 케어 18일",
+    "brand": "누아",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "eye_health"
+    ],
+    "price": 35000,
+    "stock": 29,
+    "rating": 4.1,
+    "reviewCount": 427,
+    "tags": [
+      "눈 건강",
+      "구강 케어"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0055",
+    "sku": "SKU-0055",
+    "canonicalSku": "CAN-0055",
+    "name": "밸런스온 콤부차 19일",
+    "brand": "밸런스온",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "digestive_health"
+    ],
+    "price": 36700,
+    "stock": 42,
+    "rating": 4.8,
+    "reviewCount": 474,
+    "tags": [
+      "장 건강",
+      "데일리 루틴"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0056",
+    "sku": "SKU-0056",
+    "canonicalSku": "CAN-0056",
+    "name": "밸런스온 항산화 베리 19일",
+    "brand": "밸런스온",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "vitamin_mineral"
+    ],
+    "price": 38400,
+    "stock": 55,
+    "rating": 4.5,
+    "reviewCount": 521,
+    "tags": [
+      "비타민",
+      "활력"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0057",
+    "sku": "SKU-0057",
+    "canonicalSku": "CAN-0057",
+    "name": "밸런스온 본 밸런스 19일",
+    "brand": "밸런스온",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "muscle_function"
+    ],
+    "price": 40100,
+    "stock": 68,
+    "rating": 4.2,
+    "reviewCount": 568,
+    "tags": [
+      "단백질",
+      "회복"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": true
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0058",
+    "sku": "SKU-0058",
+    "canonicalSku": "CAN-0058",
+    "name": "밸런스온 카밍 마그네슘 19일",
+    "brand": "밸런스온",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [],
+    "price": 9800,
+    "stock": 81,
+    "rating": 4.9,
+    "reviewCount": 615,
+    "tags": [
+      "휴식",
+      "숙면 환경"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0059",
+    "sku": "SKU-0059",
+    "canonicalSku": "CAN-0059",
+    "name": "밸런스온 세라마이드 샷 19일",
+    "brand": "밸런스온",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "eye_health"
+    ],
+    "price": 11500,
+    "stock": 94,
+    "rating": 4.6,
+    "reviewCount": 662,
+    "tags": [
+      "수분",
+      "탄력"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0060",
+    "sku": "SKU-0060",
+    "canonicalSku": "CAN-0060",
+    "name": "밸런스온 오메가 밸런스 19일",
+    "brand": "밸런스온",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "oral_health"
+    ],
+    "price": 13200,
+    "stock": 12,
+    "rating": 4.3,
+    "reviewCount": 709,
+    "tags": [
+      "구강 케어",
+      "일상 관리"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0061",
+    "sku": "SKU-0061",
+    "canonicalSku": "CAN-0061",
+    "name": "플로우데이 그린 파이버 20일",
+    "brand": "플로우데이",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "energy_metabolism"
+    ],
+    "price": 14900,
+    "stock": 25,
+    "rating": 4,
+    "reviewCount": 756,
+    "tags": [
+      "데일리 루틴",
+      "저당"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0062",
+    "sku": "SKU-0062",
+    "canonicalSku": "CAN-0062",
+    "name": "플로우데이 멀티 비타민 20일",
+    "brand": "플로우데이",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "immunity"
+    ],
+    "price": 16600,
+    "stock": 38,
+    "rating": 4.7,
+    "reviewCount": 803,
+    "tags": [
+      "활력",
+      "간편 섭취"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0063",
+    "sku": "SKU-0063",
+    "canonicalSku": "CAN-0063",
+    "name": "플로우데이 액티브 프로틴 20일",
+    "brand": "플로우데이",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "exercise_performance"
+    ],
+    "price": 18300,
+    "stock": 51,
+    "rating": 4.4,
+    "reviewCount": 850,
+    "tags": [
+      "회복",
+      "액티브"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0064",
+    "sku": "SKU-0064",
+    "canonicalSku": "CAN-0064",
+    "name": "플로우데이 나이트 티 20일",
+    "brand": "플로우데이",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "stress_relief"
+    ],
+    "price": 20000,
+    "stock": 64,
+    "rating": 4.1,
+    "reviewCount": 897,
+    "tags": [
+      "숙면 환경",
+      "마음챙김"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": true
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0065",
+    "sku": "SKU-0065",
+    "canonicalSku": "CAN-0065",
+    "name": "플로우데이 글로우 콜라겐 20일",
+    "brand": "플로우데이",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "antioxidant"
+    ],
+    "price": 21700,
+    "stock": 77,
+    "rating": 4.8,
+    "reviewCount": 944,
+    "tags": [
+      "탄력",
+      "글로우"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0066",
+    "sku": "SKU-0066",
+    "canonicalSku": "CAN-0066",
+    "name": "플로우데이 아이 루테인 20일",
+    "brand": "플로우데이",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "liver_health"
+    ],
+    "price": 23400,
+    "stock": 90,
+    "rating": 4.5,
+    "reviewCount": 991,
+    "tags": [
+      "일상 관리",
+      "가족 건강"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0067",
+    "sku": "SKU-0067",
+    "canonicalSku": "CAN-0067",
+    "name": "모먼트 밸런스 효소 21일",
+    "brand": "모먼트",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "blood_sugar_balance"
+    ],
+    "price": 25100,
+    "stock": 8,
+    "rating": 4.2,
+    "reviewCount": 1038,
+    "tags": [
+      "저당",
+      "가벼운 식사"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0068",
+    "sku": "SKU-0068",
+    "canonicalSku": "CAN-0068",
+    "name": "모먼트 비타 C 구미 21일",
+    "brand": "모먼트",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "antioxidant"
+    ],
+    "price": 26800,
+    "stock": 21,
+    "rating": 4.9,
+    "reviewCount": 1085,
+    "tags": [
+      "간편 섭취",
+      "기초 영양"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0069",
+    "sku": "SKU-0069",
+    "canonicalSku": "CAN-0069",
+    "name": "모먼트 마그네슘 샷 21일",
+    "brand": "모먼트",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "bone_health"
+    ],
+    "price": 28500,
+    "stock": 0,
+    "rating": 4.6,
+    "reviewCount": 1132,
+    "tags": [
+      "액티브",
+      "운동 루틴"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0070",
+    "sku": "SKU-0069",
+    "canonicalSku": "CAN-0069",
+    "name": "모먼트 마그네슘 샷 21일 ",
+    "brand": "모먼트",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "relaxation"
+    ],
+    "price": 30200,
+    "stock": 47,
+    "rating": 4.3,
+    "reviewCount": 1179,
+    "tags": [
+      "마음챙김",
+      "저녁 루틴"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0071",
+    "sku": "SKU-0071",
+    "canonicalSku": "CAN-0071",
+    "name": "모먼트 히알 워터 21일",
+    "brand": "모먼트",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "collagen"
+    ],
+    "price": 31900,
+    "stock": 60,
+    "rating": 4,
+    "reviewCount": 1226,
+    "tags": [
+      "글로우",
+      "이너뷰티"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": true
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0072",
+    "sku": "SKU-0072",
+    "canonicalSku": "CAN-0072",
+    "name": "모먼트 오랄 프로바이오틱스 21일",
+    "brand": "모먼트",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "joint_health"
+    ],
+    "price": 33600,
+    "stock": 73,
+    "rating": 4.7,
+    "reviewCount": 1273,
+    "tags": [
+      "가족 건강",
+      "눈 건강"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0073",
+    "sku": "SKU-0073",
+    "canonicalSku": "CAN-0073",
+    "name": "베러랩 데일리 유산균 22일",
+    "brand": "베러랩",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "digestive_health"
+    ],
+    "price": 35300,
+    "stock": 86,
+    "rating": 4.4,
+    "reviewCount": 1320,
+    "tags": [
+      "가벼운 식사",
+      "장 건강"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0074",
+    "sku": "SKU-0074",
+    "canonicalSku": "CAN-0074",
+    "name": "베러랩 미네랄 밸런스 22일",
+    "brand": "베러랩",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "vitamin_mineral"
+    ],
+    "price": 37000,
+    "stock": 99,
+    "rating": 4.1,
+    "reviewCount": 1367,
+    "tags": [
+      "기초 영양",
+      "비타민"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0075",
+    "sku": "SKU-0075",
+    "canonicalSku": "CAN-0075",
+    "name": "베러랩 조인트 서포트 22일",
+    "brand": "베러랩",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "muscle_function"
+    ],
+    "price": 38700,
+    "stock": 17,
+    "rating": 4.8,
+    "reviewCount": 1414,
+    "tags": [
+      "운동 루틴",
+      "단백질"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0076",
+    "sku": "SKU-0076",
+    "canonicalSku": "CAN-0076",
+    "name": "베러랩 테아닌 밸런스 22일",
+    "brand": "베러랩",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "sleep_health"
+    ],
+    "price": 40400,
+    "stock": 30,
+    "rating": 4.5,
+    "reviewCount": 1461,
+    "tags": [
+      "저녁 루틴",
+      "휴식"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0077",
+    "sku": "SKU-0077",
+    "canonicalSku": "CAN-0077",
+    "name": "베러랩 뷰티 바이오틱스 22일",
+    "brand": "베러랩",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [],
+    "price": 10100,
+    "stock": 43,
+    "rating": 4.2,
+    "reviewCount": 1508,
+    "tags": [
+      "이너뷰티",
+      "수분"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0078",
+    "sku": "SKU-0078",
+    "canonicalSku": "CAN-0078",
+    "name": "베러랩 밀크시슬 밸런스 22일",
+    "brand": "베러랩",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "eye_health"
+    ],
+    "price": 11800,
+    "stock": 56,
+    "rating": 4.9,
+    "reviewCount": 1555,
+    "tags": [
+      "눈 건강",
+      "구강 케어"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": true
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0079",
+    "sku": "SKU-0079",
+    "canonicalSku": "CAN-0079",
+    "name": "그로브 오트 에너지 23일",
+    "brand": "그로브",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "energy_metabolism"
+    ],
+    "price": 13500,
+    "stock": 69,
+    "rating": 4.6,
+    "reviewCount": 1602,
+    "tags": [
+      "장 건강",
+      "데일리 루틴"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0080",
+    "sku": "SKU-0080",
+    "canonicalSku": "CAN-0080",
+    "name": "그로브 데일리 아연 23일",
+    "brand": "그로브",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "immunity"
+    ],
+    "price": 15200,
+    "stock": 82,
+    "rating": 4.3,
+    "reviewCount": 1649,
+    "tags": [
+      "비타민",
+      "활력"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0081",
+    "sku": "SKU-0081",
+    "canonicalSku": "CAN-0081",
+    "name": "그로브 BCAA 워터 23일",
+    "brand": "그로브",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "exercise_performance"
+    ],
+    "price": 16900,
+    "stock": 95,
+    "rating": 4,
+    "reviewCount": 1696,
+    "tags": [
+      "단백질",
+      "회복"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0082",
+    "sku": "SKU-0082",
+    "canonicalSku": "CAN-0082",
+    "name": "그로브 슬립 아로마 23일",
+    "brand": "그로브",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "stress_relief"
+    ],
+    "price": 18600,
+    "stock": 13,
+    "rating": 4.7,
+    "reviewCount": 1743,
+    "tags": [
+      "휴식",
+      "숙면 환경"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0083",
+    "sku": "SKU-0083",
+    "canonicalSku": "CAN-0083",
+    "name": "그로브 비오틴 구미 23일",
+    "brand": "그로브",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "antioxidant"
+    ],
+    "price": 20300,
+    "stock": 26,
+    "rating": 4.4,
+    "reviewCount": 1790,
+    "tags": [
+      "수분",
+      "탄력"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0084",
+    "sku": "SKU-0084",
+    "canonicalSku": "CAN-0084",
+    "name": "그로브 관절 케어 23일",
+    "brand": "그로브",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "oral_health"
+    ],
+    "price": 22000,
+    "stock": 39,
+    "rating": 4.1,
+    "reviewCount": 1837,
+    "tags": [
+      "구강 케어",
+      "일상 관리"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0085",
+    "sku": "SKU-0085",
+    "canonicalSku": "CAN-0085",
+    "name": "누아 콤부차 24일",
+    "brand": "누아",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "blood_sugar_balance"
+    ],
+    "price": 23700,
+    "stock": 52,
+    "rating": 4.8,
+    "reviewCount": 1884,
+    "tags": [
+      "데일리 루틴",
+      "저당"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": true
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0086",
+    "sku": "SKU-0086",
+    "canonicalSku": "CAN-0086",
+    "name": "누아 항산화 베리 24일",
+    "brand": "누아",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "antioxidant"
+    ],
+    "price": 25400,
+    "stock": 0,
+    "rating": 4.5,
+    "reviewCount": 1931,
+    "tags": [
+      "활력",
+      "간편 섭취"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0087",
+    "sku": "SKU-0087",
+    "canonicalSku": "CAN-0087",
+    "name": "누아 본 밸런스 24일",
+    "brand": "누아",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "bone_health"
+    ],
+    "price": 27100,
+    "stock": 78,
+    "rating": 4.2,
+    "reviewCount": 1978,
+    "tags": [
+      "회복",
+      "액티브"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0088",
+    "sku": "SKU-0088",
+    "canonicalSku": "CAN-0088",
+    "name": "누아 카밍 마그네슘 24일",
+    "brand": "누아",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "skin_health"
+    ],
+    "price": 28800,
+    "stock": 91,
+    "rating": 4.9,
+    "reviewCount": 2025,
+    "tags": [
+      "숙면 환경",
+      "마음챙김"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0089",
+    "sku": "SKU-0089",
+    "canonicalSku": "CAN-0089",
+    "name": "누아 세라마이드 샷 24일",
+    "brand": "누아",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "collagen"
+    ],
+    "price": 30500,
+    "stock": 9,
+    "rating": 4.6,
+    "reviewCount": 2072,
+    "tags": [
+      "탄력",
+      "글로우"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0090",
+    "sku": "SKU-0090",
+    "canonicalSku": "CAN-0090",
+    "name": "누아 오메가 밸런스 24일",
+    "brand": "누아",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "liver_health"
+    ],
+    "price": 32200,
+    "stock": 22,
+    "rating": 4.3,
+    "reviewCount": 2119,
+    "tags": [
+      "일상 관리",
+      "가족 건강"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0091",
+    "sku": "SKU-0091",
+    "canonicalSku": "CAN-0091",
+    "name": "밸런스온 그린 파이버 25일",
+    "brand": "밸런스온",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "digestive_health"
+    ],
+    "price": 33900,
+    "stock": 35,
+    "rating": 4,
+    "reviewCount": 66,
+    "tags": [
+      "저당",
+      "가벼운 식사"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0092",
+    "sku": "SKU-0092",
+    "canonicalSku": "CAN-0092",
+    "name": "밸런스온 멀티 비타민 25일",
+    "brand": "밸런스온",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "vitamin_mineral"
+    ],
+    "price": 35600,
+    "stock": 48,
+    "rating": 4.7,
+    "reviewCount": 113,
+    "tags": [
+      "간편 섭취",
+      "기초 영양"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": true
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0093",
+    "sku": "SKU-0092",
+    "canonicalSku": "CAN-0092",
+    "name": "밸런스온 멀티 비타민 25일 ",
+    "brand": "밸런스온",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "muscle_function"
+    ],
+    "price": 37300,
+    "stock": 61,
+    "rating": 4.4,
+    "reviewCount": 160,
+    "tags": [
+      "액티브",
+      "운동 루틴"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0094",
+    "sku": "SKU-0094",
+    "canonicalSku": "CAN-0094",
+    "name": "밸런스온 나이트 티 25일",
+    "brand": "밸런스온",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "sleep_health"
+    ],
+    "price": 39000,
+    "stock": 74,
+    "rating": 4.1,
+    "reviewCount": 207,
+    "tags": [
+      "마음챙김",
+      "저녁 루틴"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0095",
+    "sku": "SKU-0095",
+    "canonicalSku": "CAN-0095",
+    "name": "밸런스온 글로우 콜라겐 25일",
+    "brand": "밸런스온",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "skin_health"
+    ],
+    "price": 40700,
+    "stock": 87,
+    "rating": 4.8,
+    "reviewCount": 254,
+    "tags": [
+      "글로우",
+      "이너뷰티"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0096",
+    "sku": "SKU-0096",
+    "canonicalSku": "CAN-0096",
+    "name": "밸런스온 아이 루테인 25일",
+    "brand": "밸런스온",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [],
+    "price": 10400,
+    "stock": 5,
+    "rating": 4.5,
+    "reviewCount": 301,
+    "tags": [
+      "가족 건강",
+      "눈 건강"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0097",
+    "sku": "SKU-0097",
+    "canonicalSku": "CAN-0097",
+    "name": "플로우데이 밸런스 효소 26일",
+    "brand": "플로우데이",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "energy_metabolism"
+    ],
+    "price": 12100,
+    "stock": 18,
+    "rating": 4.2,
+    "reviewCount": 348,
+    "tags": [
+      "가벼운 식사",
+      "장 건강"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0098",
+    "sku": "SKU-0098",
+    "canonicalSku": "CAN-0098",
+    "name": "플로우데이 비타 C 구미 26일",
+    "brand": "플로우데이",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "immunity"
+    ],
+    "price": 13800,
+    "stock": 31,
+    "rating": 4.9,
+    "reviewCount": 395,
+    "tags": [
+      "기초 영양",
+      "비타민"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0099",
+    "sku": "SKU-0099",
+    "canonicalSku": "CAN-0099",
+    "name": "플로우데이 마그네슘 샷 26일",
+    "brand": "플로우데이",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "exercise_performance"
+    ],
+    "price": 15500,
+    "stock": 44,
+    "rating": 4.6,
+    "reviewCount": 442,
+    "tags": [
+      "운동 루틴",
+      "단백질"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": true
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0100",
+    "sku": "SKU-0100",
+    "canonicalSku": "CAN-0100",
+    "name": "플로우데이 릴랙스 구미 26일",
+    "brand": "플로우데이",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "stress_relief"
+    ],
+    "price": 17200,
+    "stock": 57,
+    "rating": 4.3,
+    "reviewCount": 489,
+    "tags": [
+      "저녁 루틴",
+      "휴식"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0101",
+    "sku": "SKU-0101",
+    "canonicalSku": "CAN-0101",
+    "name": "플로우데이 히알 워터 26일",
+    "brand": "플로우데이",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "antioxidant"
+    ],
+    "price": 18900,
+    "stock": 70,
+    "rating": 4,
+    "reviewCount": 536,
+    "tags": [
+      "이너뷰티",
+      "수분"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0102",
+    "sku": "SKU-0102",
+    "canonicalSku": "CAN-0102",
+    "name": "플로우데이 오랄 프로바이오틱스 26일",
+    "brand": "플로우데이",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "eye_health"
+    ],
+    "price": 20600,
+    "stock": 83,
+    "rating": 4.7,
+    "reviewCount": 583,
+    "tags": [
+      "눈 건강",
+      "구강 케어"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0103",
+    "sku": "SKU-0103",
+    "canonicalSku": "CAN-0103",
+    "name": "모먼트 데일리 유산균 27일",
+    "brand": "모먼트",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "blood_sugar_balance"
+    ],
+    "price": 22300,
+    "stock": 0,
+    "rating": 4.4,
+    "reviewCount": 630,
+    "tags": [
+      "장 건강",
+      "데일리 루틴"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0104",
+    "sku": "SKU-0104",
+    "canonicalSku": "CAN-0104",
+    "name": "모먼트 미네랄 밸런스 27일",
+    "brand": "모먼트",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "antioxidant"
+    ],
+    "price": 24000,
+    "stock": 14,
+    "rating": 4.1,
+    "reviewCount": 677,
+    "tags": [
+      "비타민",
+      "활력"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0105",
+    "sku": "SKU-0105",
+    "canonicalSku": "CAN-0105",
+    "name": "모먼트 조인트 서포트 27일",
+    "brand": "모먼트",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "bone_health"
+    ],
+    "price": 25700,
+    "stock": 27,
+    "rating": 4.8,
+    "reviewCount": 724,
+    "tags": [
+      "단백질",
+      "회복"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0106",
+    "sku": "SKU-0106",
+    "canonicalSku": "CAN-0106",
+    "name": "모먼트 테아닌 밸런스 27일",
+    "brand": "모먼트",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "relaxation"
+    ],
+    "price": 27400,
+    "stock": 40,
+    "rating": 4.5,
+    "reviewCount": 771,
+    "tags": [
+      "휴식",
+      "숙면 환경"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": true
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0107",
+    "sku": "SKU-0107",
+    "canonicalSku": "CAN-0107",
+    "name": "모먼트 뷰티 바이오틱스 27일",
+    "brand": "모먼트",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "collagen"
+    ],
+    "price": 29100,
+    "stock": 53,
+    "rating": 4.2,
+    "reviewCount": 818,
+    "tags": [
+      "수분",
+      "탄력"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0108",
+    "sku": "SKU-0108",
+    "canonicalSku": "CAN-0108",
+    "name": "모먼트 밀크시슬 밸런스 27일",
+    "brand": "모먼트",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "oral_health"
+    ],
+    "price": 30800,
+    "stock": 66,
+    "rating": 4.9,
+    "reviewCount": 865,
+    "tags": [
+      "구강 케어",
+      "일상 관리"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0109",
+    "sku": "SKU-0109",
+    "canonicalSku": "CAN-0109",
+    "name": "베러랩 오트 에너지 28일",
+    "brand": "베러랩",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "digestive_health"
+    ],
+    "price": 32500,
+    "stock": 79,
+    "rating": 4.6,
+    "reviewCount": 912,
+    "tags": [
+      "데일리 루틴",
+      "저당"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0110",
+    "sku": "SKU-0110",
+    "canonicalSku": "CAN-0110",
+    "name": "베러랩 데일리 아연 28일",
+    "brand": "베러랩",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "vitamin_mineral"
+    ],
+    "price": 34200,
+    "stock": 92,
+    "rating": 4.3,
+    "reviewCount": 959,
+    "tags": [
+      "활력",
+      "간편 섭취"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0111",
+    "sku": "SKU-0111",
+    "canonicalSku": "CAN-0111",
+    "name": "베러랩 BCAA 워터 28일",
+    "brand": "베러랩",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "muscle_function"
+    ],
+    "price": 35900,
+    "stock": 10,
+    "rating": 4,
+    "reviewCount": 1006,
+    "tags": [
+      "회복",
+      "액티브"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0112",
+    "sku": "SKU-0112",
+    "canonicalSku": "CAN-0112",
+    "name": "베러랩 슬립 아로마 28일",
+    "brand": "베러랩",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "sleep_health"
+    ],
+    "price": 37600,
+    "stock": 23,
+    "rating": 4.7,
+    "reviewCount": 1053,
+    "tags": [
+      "숙면 환경",
+      "마음챙김"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0113",
+    "sku": "SKU-0113",
+    "canonicalSku": "CAN-0113",
+    "name": "베러랩 비오틴 구미 28일",
+    "brand": "베러랩",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "skin_health"
+    ],
+    "price": 39300,
+    "stock": 36,
+    "rating": 4.4,
+    "reviewCount": 1100,
+    "tags": [
+      "탄력",
+      "글로우"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": true
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0114",
+    "sku": "SKU-0114",
+    "canonicalSku": "CAN-0114",
+    "name": "베러랩 관절 케어 28일",
+    "brand": "베러랩",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "liver_health"
+    ],
+    "price": 9000,
+    "stock": 49,
+    "rating": 4.1,
+    "reviewCount": 1147,
+    "tags": [
+      "일상 관리",
+      "가족 건강"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0115",
+    "sku": "SKU-0115",
+    "canonicalSku": "CAN-0115",
+    "name": "그로브 콤부차 29일",
+    "brand": "그로브",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [],
+    "price": 10700,
+    "stock": 62,
+    "rating": 4.8,
+    "reviewCount": 1194,
+    "tags": [
+      "저당",
+      "가벼운 식사"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0116",
+    "sku": "SKU-0115",
+    "canonicalSku": "CAN-0115",
+    "name": "그로브 콤부차 29일 ",
+    "brand": "그로브",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "immunity"
+    ],
+    "price": 12400,
+    "stock": 75,
+    "rating": 4.5,
+    "reviewCount": 1241,
+    "tags": [
+      "간편 섭취",
+      "기초 영양"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0117",
+    "sku": "SKU-0117",
+    "canonicalSku": "CAN-0117",
+    "name": "그로브 본 밸런스 29일",
+    "brand": "그로브",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "sleep_health"
+    ],
+    "price": 14100,
+    "stock": 88,
+    "rating": 4.2,
+    "reviewCount": 1288,
+    "tags": [
+      "액티브",
+      "운동 루틴"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0118",
+    "sku": "SKU-0118",
+    "canonicalSku": "CAN-0118",
+    "name": "그로브 카밍 마그네슘 29일",
+    "brand": "그로브",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "stress_relief"
+    ],
+    "price": 15800,
+    "stock": 6,
+    "rating": 4.9,
+    "reviewCount": 1335,
+    "tags": [
+      "마음챙김",
+      "저녁 루틴"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0119",
+    "sku": "SKU-0119",
+    "canonicalSku": "CAN-0119",
+    "name": "그로브 세라마이드 샷 29일",
+    "brand": "그로브",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "antioxidant"
+    ],
+    "price": 17500,
+    "stock": 19,
+    "rating": 4.6,
+    "reviewCount": 1382,
+    "tags": [
+      "글로우",
+      "이너뷰티"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0120",
+    "sku": "SKU-0120",
+    "canonicalSku": "CAN-0120",
+    "name": "그로브 오메가 밸런스 29일",
+    "brand": "그로브",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "joint_health"
+    ],
+    "price": 19200,
+    "stock": 0,
+    "rating": 4.3,
+    "reviewCount": 1429,
+    "tags": [
+      "가족 건강",
+      "눈 건강"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": true
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0121",
+    "sku": "SKU-0121",
+    "canonicalSku": "CAN-0121",
+    "name": "누아 그린 파이버 10일",
+    "brand": "누아",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "blood_sugar_balance"
+    ],
+    "price": 20900,
+    "stock": 45,
+    "rating": 4,
+    "reviewCount": 1476,
+    "tags": [
+      "가벼운 식사",
+      "장 건강"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0122",
+    "sku": "SKU-0122",
+    "canonicalSku": "CAN-0122",
+    "name": "누아 멀티 비타민 10일",
+    "brand": "누아",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "antioxidant"
+    ],
+    "price": 22600,
+    "stock": 58,
+    "rating": 4.7,
+    "reviewCount": 1523,
+    "tags": [
+      "기초 영양",
+      "비타민"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0123",
+    "sku": "SKU-0123",
+    "canonicalSku": "CAN-0123",
+    "name": "누아 액티브 프로틴 10일",
+    "brand": "누아",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "bone_health"
+    ],
+    "price": 24300,
+    "stock": 71,
+    "rating": 4.4,
+    "reviewCount": 1570,
+    "tags": [
+      "운동 루틴",
+      "단백질"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0124",
+    "sku": "SKU-0124",
+    "canonicalSku": "CAN-0124",
+    "name": "누아 나이트 티 10일",
+    "brand": "누아",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "relaxation"
+    ],
+    "price": 26000,
+    "stock": 84,
+    "rating": 4.1,
+    "reviewCount": 1617,
+    "tags": [
+      "저녁 루틴",
+      "휴식"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0125",
+    "sku": "SKU-0125",
+    "canonicalSku": "CAN-0125",
+    "name": "누아 글로우 콜라겐 10일",
+    "brand": "누아",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "collagen"
+    ],
+    "price": 27700,
+    "stock": 97,
+    "rating": 4.8,
+    "reviewCount": 1664,
+    "tags": [
+      "이너뷰티",
+      "수분"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0126",
+    "sku": "SKU-0126",
+    "canonicalSku": "CAN-0126",
+    "name": "누아 아이 루테인 10일",
+    "brand": "누아",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "eye_health"
+    ],
+    "price": 29400,
+    "stock": 15,
+    "rating": 4.5,
+    "reviewCount": 1711,
+    "tags": [
+      "눈 건강",
+      "구강 케어"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0127",
+    "sku": "SKU-0127",
+    "canonicalSku": "CAN-0127",
+    "name": "밸런스온 밸런스 효소 11일",
+    "brand": "밸런스온",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "digestive_health"
+    ],
+    "price": 31100,
+    "stock": 28,
+    "rating": 4.2,
+    "reviewCount": 1758,
+    "tags": [
+      "장 건강",
+      "데일리 루틴"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": true
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0128",
+    "sku": "SKU-0128",
+    "canonicalSku": "CAN-0128",
+    "name": "밸런스온 비타 C 구미 11일",
+    "brand": "밸런스온",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "vitamin_mineral"
+    ],
+    "price": 32800,
+    "stock": 41,
+    "rating": 4.9,
+    "reviewCount": 1805,
+    "tags": [
+      "비타민",
+      "활력"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0129",
+    "sku": "SKU-0129",
+    "canonicalSku": "CAN-0129",
+    "name": "밸런스온 마그네슘 샷 11일",
+    "brand": "밸런스온",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "muscle_function"
+    ],
+    "price": 34500,
+    "stock": 54,
+    "rating": 4.6,
+    "reviewCount": 1852,
+    "tags": [
+      "단백질",
+      "회복"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0130",
+    "sku": "SKU-0130",
+    "canonicalSku": "CAN-0130",
+    "name": "밸런스온 릴랙스 구미 11일",
+    "brand": "밸런스온",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "sleep_health"
+    ],
+    "price": 36200,
+    "stock": 67,
+    "rating": 4.3,
+    "reviewCount": 1899,
+    "tags": [
+      "휴식",
+      "숙면 환경"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0131",
+    "sku": "SKU-0131",
+    "canonicalSku": "CAN-0131",
+    "name": "밸런스온 히알 워터 11일",
+    "brand": "밸런스온",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "skin_health"
+    ],
+    "price": 37900,
+    "stock": 80,
+    "rating": 4,
+    "reviewCount": 1946,
+    "tags": [
+      "수분",
+      "탄력"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0132",
+    "sku": "SKU-0132",
+    "canonicalSku": "CAN-0132",
+    "name": "밸런스온 오랄 프로바이오틱스 11일",
+    "brand": "밸런스온",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "oral_health"
+    ],
+    "price": 39600,
+    "stock": 93,
+    "rating": 4.7,
+    "reviewCount": 1993,
+    "tags": [
+      "구강 케어",
+      "일상 관리"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0133",
+    "sku": "SKU-0133",
+    "canonicalSku": "CAN-0133",
+    "name": "플로우데이 데일리 유산균 12일",
+    "brand": "플로우데이",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "energy_metabolism"
+    ],
+    "price": 9300,
+    "stock": 11,
+    "rating": 4.4,
+    "reviewCount": 2040,
+    "tags": [
+      "데일리 루틴",
+      "저당"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0134",
+    "sku": "SKU-0134",
+    "canonicalSku": "CAN-0134",
+    "name": "플로우데이 미네랄 밸런스 12일",
+    "brand": "플로우데이",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [],
+    "price": 11000,
+    "stock": 24,
+    "rating": 4.1,
+    "reviewCount": 2087,
+    "tags": [
+      "활력",
+      "간편 섭취"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": true
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0135",
+    "sku": "SKU-0135",
+    "canonicalSku": "CAN-0135",
+    "name": "플로우데이 조인트 서포트 12일",
+    "brand": "플로우데이",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "exercise_performance"
+    ],
+    "price": 12700,
+    "stock": 37,
+    "rating": 4.8,
+    "reviewCount": 2134,
+    "tags": [
+      "회복",
+      "액티브"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0136",
+    "sku": "SKU-0136",
+    "canonicalSku": "CAN-0136",
+    "name": "플로우데이 테아닌 밸런스 12일",
+    "brand": "플로우데이",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "stress_relief"
+    ],
+    "price": 14400,
+    "stock": 50,
+    "rating": 4.5,
+    "reviewCount": 81,
+    "tags": [
+      "숙면 환경",
+      "마음챙김"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0137",
+    "sku": "SKU-0137",
+    "canonicalSku": "CAN-0137",
+    "name": "플로우데이 뷰티 바이오틱스 12일",
+    "brand": "플로우데이",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "antioxidant"
+    ],
+    "price": 16100,
+    "stock": 0,
+    "rating": 4.2,
+    "reviewCount": 128,
+    "tags": [
+      "탄력",
+      "글로우"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0138",
+    "sku": "SKU-0138",
+    "canonicalSku": "CAN-0138",
+    "name": "플로우데이 밀크시슬 밸런스 12일",
+    "brand": "플로우데이",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "liver_health"
+    ],
+    "price": 17800,
+    "stock": 76,
+    "rating": 4.9,
+    "reviewCount": 175,
+    "tags": [
+      "일상 관리",
+      "가족 건강"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0139",
+    "sku": "SKU-0138",
+    "canonicalSku": "CAN-0138",
+    "name": "플로우데이 밀크시슬 밸런스 12일 ",
+    "brand": "모먼트",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "blood_sugar_balance"
+    ],
+    "price": 19500,
+    "stock": 89,
+    "rating": 4.6,
+    "reviewCount": 222,
+    "tags": [
+      "저당",
+      "가벼운 식사"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0140",
+    "sku": "SKU-0140",
+    "canonicalSku": "CAN-0140",
+    "name": "모먼트 데일리 아연 13일",
+    "brand": "모먼트",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "antioxidant"
+    ],
+    "price": 21200,
+    "stock": 7,
+    "rating": 4.3,
+    "reviewCount": 269,
+    "tags": [
+      "간편 섭취",
+      "기초 영양"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0141",
+    "sku": "SKU-0141",
+    "canonicalSku": "CAN-0141",
+    "name": "모먼트 BCAA 워터 13일",
+    "brand": "모먼트",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "bone_health"
+    ],
+    "price": 22900,
+    "stock": 20,
+    "rating": 4,
+    "reviewCount": 316,
+    "tags": [
+      "액티브",
+      "운동 루틴"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": true
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0142",
+    "sku": "SKU-0142",
+    "canonicalSku": "CAN-0142",
+    "name": "모먼트 슬립 아로마 13일",
+    "brand": "모먼트",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "relaxation"
+    ],
+    "price": 24600,
+    "stock": 33,
+    "rating": 4.7,
+    "reviewCount": 363,
+    "tags": [
+      "마음챙김",
+      "저녁 루틴"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0143",
+    "sku": "SKU-0143",
+    "canonicalSku": "CAN-0143",
+    "name": "모먼트 비오틴 구미 13일",
+    "brand": "모먼트",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "collagen"
+    ],
+    "price": 26300,
+    "stock": 46,
+    "rating": 4.4,
+    "reviewCount": 410,
+    "tags": [
+      "글로우",
+      "이너뷰티"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0144",
+    "sku": "SKU-0144",
+    "canonicalSku": "CAN-0144",
+    "name": "모먼트 관절 케어 13일",
+    "brand": "모먼트",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "joint_health"
+    ],
+    "price": 28000,
+    "stock": 59,
+    "rating": 4.1,
+    "reviewCount": 457,
+    "tags": [
+      "가족 건강",
+      "눈 건강"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0145",
+    "sku": "SKU-0145",
+    "canonicalSku": "CAN-0145",
+    "name": "베러랩 콤부차 14일",
+    "brand": "베러랩",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "digestive_health"
+    ],
+    "price": 29700,
+    "stock": 72,
+    "rating": 4.8,
+    "reviewCount": 504,
+    "tags": [
+      "가벼운 식사",
+      "장 건강"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0146",
+    "sku": "SKU-0146",
+    "canonicalSku": "CAN-0146",
+    "name": "베러랩 항산화 베리 14일",
+    "brand": "베러랩",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "muscle_function"
+    ],
+    "price": 31400,
+    "stock": 85,
+    "rating": 4.5,
+    "reviewCount": 551,
+    "tags": [
+      "기초 영양",
+      "비타민"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0147",
+    "sku": "SKU-0147",
+    "canonicalSku": "CAN-0147",
+    "name": "베러랩 본 밸런스 14일",
+    "brand": "베러랩",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "muscle_function"
+    ],
+    "price": 33100,
+    "stock": 98,
+    "rating": 4.2,
+    "reviewCount": 598,
+    "tags": [
+      "운동 루틴",
+      "단백질"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0148",
+    "sku": "SKU-0148",
+    "canonicalSku": "CAN-0148",
+    "name": "베러랩 카밍 마그네슘 14일",
+    "brand": "베러랩",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "sleep_health"
+    ],
+    "price": 34800,
+    "stock": 16,
+    "rating": 4.9,
+    "reviewCount": 645,
+    "tags": [
+      "저녁 루틴",
+      "휴식"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": true
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0149",
+    "sku": "SKU-0149",
+    "canonicalSku": "CAN-0149",
+    "name": "베러랩 세라마이드 샷 14일",
+    "brand": "베러랩",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "skin_health"
+    ],
+    "price": 36500,
+    "stock": 29,
+    "rating": 4.6,
+    "reviewCount": 692,
+    "tags": [
+      "이너뷰티",
+      "수분"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0150",
+    "sku": "SKU-0150",
+    "canonicalSku": "CAN-0150",
+    "name": "베러랩 오메가 밸런스 14일",
+    "brand": "베러랩",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "eye_health"
+    ],
+    "price": 38200,
+    "stock": 42,
+    "rating": 4.3,
+    "reviewCount": 739,
+    "tags": [
+      "눈 건강",
+      "구강 케어"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0151",
+    "sku": "SKU-0151",
+    "canonicalSku": "CAN-0151",
+    "name": "그로브 그린 파이버 15일",
+    "brand": "그로브",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "energy_metabolism"
+    ],
+    "price": 39900,
+    "stock": 55,
+    "rating": 4,
+    "reviewCount": 786,
+    "tags": [
+      "장 건강",
+      "데일리 루틴"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0152",
+    "sku": "SKU-0152",
+    "canonicalSku": "CAN-0152",
+    "name": "그로브 멀티 비타민 15일",
+    "brand": "그로브",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "immunity"
+    ],
+    "price": 9600,
+    "stock": 68,
+    "rating": 4.7,
+    "reviewCount": 833,
+    "tags": [
+      "비타민",
+      "활력"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0153",
+    "sku": "SKU-0153",
+    "canonicalSku": "CAN-0153",
+    "name": "그로브 액티브 프로틴 15일",
+    "brand": "그로브",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [],
+    "price": 11300,
+    "stock": 81,
+    "rating": 4.4,
+    "reviewCount": 880,
+    "tags": [
+      "단백질",
+      "회복"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0154",
+    "sku": "SKU-0154",
+    "canonicalSku": "CAN-0154",
+    "name": "그로브 나이트 티 15일",
+    "brand": "그로브",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "stress_relief"
+    ],
+    "price": 13000,
+    "stock": 0,
+    "rating": 4.1,
+    "reviewCount": 927,
+    "tags": [
+      "휴식",
+      "숙면 환경"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0155",
+    "sku": "SKU-0155",
+    "canonicalSku": "CAN-0155",
+    "name": "그로브 글로우 콜라겐 15일",
+    "brand": "그로브",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "antioxidant"
+    ],
+    "price": 14700,
+    "stock": 12,
+    "rating": 4.8,
+    "reviewCount": 974,
+    "tags": [
+      "수분",
+      "탄력"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": true
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0156",
+    "sku": "SKU-0156",
+    "canonicalSku": "CAN-0156",
+    "name": "그로브 아이 루테인 15일",
+    "brand": "그로브",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "oral_health"
+    ],
+    "price": 16400,
+    "stock": 25,
+    "rating": 4.5,
+    "reviewCount": 1021,
+    "tags": [
+      "구강 케어",
+      "일상 관리"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0157",
+    "sku": "SKU-0157",
+    "canonicalSku": "CAN-0157",
+    "name": "누아 밸런스 효소 16일",
+    "brand": "누아",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "blood_sugar_balance"
+    ],
+    "price": 18100,
+    "stock": 38,
+    "rating": 4.2,
+    "reviewCount": 1068,
+    "tags": [
+      "데일리 루틴",
+      "저당"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0158",
+    "sku": "SKU-0158",
+    "canonicalSku": "CAN-0158",
+    "name": "누아 비타 C 구미 16일",
+    "brand": "누아",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "antioxidant"
+    ],
+    "price": 19800,
+    "stock": 51,
+    "rating": 4.9,
+    "reviewCount": 1115,
+    "tags": [
+      "활력",
+      "간편 섭취"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0159",
+    "sku": "SKU-0159",
+    "canonicalSku": "CAN-0159",
+    "name": "누아 마그네슘 샷 16일",
+    "brand": "누아",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "bone_health"
+    ],
+    "price": 21500,
+    "stock": 64,
+    "rating": 4.6,
+    "reviewCount": 1162,
+    "tags": [
+      "회복",
+      "액티브"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0160",
+    "sku": "SKU-0160",
+    "canonicalSku": "CAN-0160",
+    "name": "누아 릴랙스 구미 16일",
+    "brand": "누아",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "relaxation"
+    ],
+    "price": 23200,
+    "stock": 77,
+    "rating": 4.3,
+    "reviewCount": 1209,
+    "tags": [
+      "숙면 환경",
+      "마음챙김"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0161",
+    "sku": "SKU-0161",
+    "canonicalSku": "CAN-0161",
+    "name": "누아 히알 워터 16일",
+    "brand": "누아",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "collagen"
+    ],
+    "price": 24900,
+    "stock": 90,
+    "rating": 4,
+    "reviewCount": 1256,
+    "tags": [
+      "탄력",
+      "글로우"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0162",
+    "sku": "SKU-0161",
+    "canonicalSku": "CAN-0161",
+    "name": "누아 히알 워터 16일 ",
+    "brand": "누아",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "liver_health"
+    ],
+    "price": 26600,
+    "stock": 8,
+    "rating": 4.7,
+    "reviewCount": 1303,
+    "tags": [
+      "일상 관리",
+      "가족 건강"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": true
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0163",
+    "sku": "SKU-0163",
+    "canonicalSku": "CAN-0163",
+    "name": "밸런스온 데일리 유산균 17일",
+    "brand": "밸런스온",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "digestive_health"
+    ],
+    "price": 28300,
+    "stock": 21,
+    "rating": 4.4,
+    "reviewCount": 1350,
+    "tags": [
+      "저당",
+      "가벼운 식사"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0164",
+    "sku": "SKU-0164",
+    "canonicalSku": "CAN-0164",
+    "name": "밸런스온 미네랄 밸런스 17일",
+    "brand": "밸런스온",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "vitamin_mineral"
+    ],
+    "price": 30000,
+    "stock": 34,
+    "rating": 4.1,
+    "reviewCount": 1397,
+    "tags": [
+      "간편 섭취",
+      "기초 영양"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0165",
+    "sku": "SKU-0165",
+    "canonicalSku": "CAN-0165",
+    "name": "밸런스온 조인트 서포트 17일",
+    "brand": "밸런스온",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "muscle_function"
+    ],
+    "price": 31700,
+    "stock": 47,
+    "rating": 4.8,
+    "reviewCount": 1444,
+    "tags": [
+      "액티브",
+      "운동 루틴"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0166",
+    "sku": "SKU-0166",
+    "canonicalSku": "CAN-0166",
+    "name": "밸런스온 테아닌 밸런스 17일",
+    "brand": "밸런스온",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "sleep_health"
+    ],
+    "price": 33400,
+    "stock": 60,
+    "rating": 4.5,
+    "reviewCount": 1491,
+    "tags": [
+      "마음챙김",
+      "저녁 루틴"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0167",
+    "sku": "SKU-0167",
+    "canonicalSku": "CAN-0167",
+    "name": "밸런스온 뷰티 바이오틱스 17일",
+    "brand": "밸런스온",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "skin_health"
+    ],
+    "price": 35100,
+    "stock": 73,
+    "rating": 4.2,
+    "reviewCount": 1538,
+    "tags": [
+      "글로우",
+      "이너뷰티"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0168",
+    "sku": "SKU-0168",
+    "canonicalSku": "CAN-0168",
+    "name": "밸런스온 밀크시슬 밸런스 17일",
+    "brand": "밸런스온",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "joint_health"
+    ],
+    "price": 36800,
+    "stock": 86,
+    "rating": 4.9,
+    "reviewCount": 1585,
+    "tags": [
+      "가족 건강",
+      "눈 건강"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0169",
+    "sku": "SKU-0169",
+    "canonicalSku": "CAN-0169",
+    "name": "플로우데이 오트 에너지 18일",
+    "brand": "플로우데이",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "energy_metabolism"
+    ],
+    "price": 38500,
+    "stock": 99,
+    "rating": 4.6,
+    "reviewCount": 1632,
+    "tags": [
+      "가벼운 식사",
+      "장 건강"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": true
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0170",
+    "sku": "SKU-0170",
+    "canonicalSku": "CAN-0170",
+    "name": "플로우데이 데일리 아연 18일",
+    "brand": "플로우데이",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "immunity"
+    ],
+    "price": 40200,
+    "stock": 17,
+    "rating": 4.3,
+    "reviewCount": 1679,
+    "tags": [
+      "기초 영양",
+      "비타민"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0171",
+    "sku": "SKU-0171",
+    "canonicalSku": "CAN-0171",
+    "name": "플로우데이 BCAA 워터 18일",
+    "brand": "플로우데이",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "exercise_performance"
+    ],
+    "price": 9900,
+    "stock": 0,
+    "rating": 4,
+    "reviewCount": 1726,
+    "tags": [
+      "운동 루틴",
+      "단백질"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0172",
+    "sku": "SKU-0172",
+    "canonicalSku": "CAN-0172",
+    "name": "플로우데이 슬립 아로마 18일",
+    "brand": "플로우데이",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [],
+    "price": 11600,
+    "stock": 43,
+    "rating": 4.7,
+    "reviewCount": 1773,
+    "tags": [
+      "저녁 루틴",
+      "휴식"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0173",
+    "sku": "SKU-0173",
+    "canonicalSku": "CAN-0173",
+    "name": "플로우데이 비오틴 구미 18일",
+    "brand": "플로우데이",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "antioxidant"
+    ],
+    "price": 13300,
+    "stock": 56,
+    "rating": 4.4,
+    "reviewCount": 1820,
+    "tags": [
+      "이너뷰티",
+      "수분"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0174",
+    "sku": "SKU-0174",
+    "canonicalSku": "CAN-0174",
+    "name": "플로우데이 관절 케어 18일",
+    "brand": "플로우데이",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "eye_health"
+    ],
+    "price": 15000,
+    "stock": 69,
+    "rating": 4.1,
+    "reviewCount": 1867,
+    "tags": [
+      "눈 건강",
+      "구강 케어"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0175",
+    "sku": "SKU-0175",
+    "canonicalSku": "CAN-0175",
+    "name": "모먼트 콤부차 19일",
+    "brand": "모먼트",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "vitamin_mineral"
+    ],
+    "price": 16700,
+    "stock": 82,
+    "rating": 4.8,
+    "reviewCount": 1914,
+    "tags": [
+      "장 건강",
+      "데일리 루틴"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0176",
+    "sku": "SKU-0176",
+    "canonicalSku": "CAN-0176",
+    "name": "모먼트 항산화 베리 19일",
+    "brand": "모먼트",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "antioxidant"
+    ],
+    "price": 18400,
+    "stock": 95,
+    "rating": 4.5,
+    "reviewCount": 1961,
+    "tags": [
+      "비타민",
+      "활력"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": true
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0177",
+    "sku": "SKU-0177",
+    "canonicalSku": "CAN-0177",
+    "name": "모먼트 본 밸런스 19일",
+    "brand": "모먼트",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "bone_health"
+    ],
+    "price": 20100,
+    "stock": 13,
+    "rating": 4.2,
+    "reviewCount": 2008,
+    "tags": [
+      "단백질",
+      "회복"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0178",
+    "sku": "SKU-0178",
+    "canonicalSku": "CAN-0178",
+    "name": "모먼트 카밍 마그네슘 19일",
+    "brand": "모먼트",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "relaxation"
+    ],
+    "price": 21800,
+    "stock": 26,
+    "rating": 4.9,
+    "reviewCount": 2055,
+    "tags": [
+      "휴식",
+      "숙면 환경"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0179",
+    "sku": "SKU-0179",
+    "canonicalSku": "CAN-0179",
+    "name": "모먼트 세라마이드 샷 19일",
+    "brand": "모먼트",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "collagen"
+    ],
+    "price": 23500,
+    "stock": 39,
+    "rating": 4.6,
+    "reviewCount": 2102,
+    "tags": [
+      "수분",
+      "탄력"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0180",
+    "sku": "SKU-0180",
+    "canonicalSku": "CAN-0180",
+    "name": "모먼트 오메가 밸런스 19일",
+    "brand": "모먼트",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "oral_health"
+    ],
+    "price": 25200,
+    "stock": 52,
+    "rating": 4.3,
+    "reviewCount": 49,
+    "tags": [
+      "구강 케어",
+      "일상 관리"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0181",
+    "sku": "SKU-0181",
+    "canonicalSku": "CAN-0181",
+    "name": "베러랩 그린 파이버 20일",
+    "brand": "베러랩",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "digestive_health"
+    ],
+    "price": 26900,
+    "stock": 65,
+    "rating": 4,
+    "reviewCount": 96,
+    "tags": [
+      "데일리 루틴",
+      "저당"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0182",
+    "sku": "SKU-0182",
+    "canonicalSku": "CAN-0182",
+    "name": "베러랩 멀티 비타민 20일",
+    "brand": "베러랩",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "vitamin_mineral"
+    ],
+    "price": 28600,
+    "stock": 78,
+    "rating": 4.7,
+    "reviewCount": 143,
+    "tags": [
+      "활력",
+      "간편 섭취"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0183",
+    "sku": "SKU-0183",
+    "canonicalSku": "CAN-0183",
+    "name": "베러랩 액티브 프로틴 20일",
+    "brand": "베러랩",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "muscle_function"
+    ],
+    "price": 30300,
+    "stock": 91,
+    "rating": 4.4,
+    "reviewCount": 190,
+    "tags": [
+      "회복",
+      "액티브"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": true
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0184",
+    "sku": "SKU-0184",
+    "canonicalSku": "CAN-0184",
+    "name": "베러랩 나이트 티 20일",
+    "brand": "베러랩",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "sleep_health"
+    ],
+    "price": 32000,
+    "stock": 9,
+    "rating": 4.1,
+    "reviewCount": 237,
+    "tags": [
+      "숙면 환경",
+      "마음챙김"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0185",
+    "sku": "SKU-0184",
+    "canonicalSku": "CAN-0184",
+    "name": "베러랩 나이트 티 20일 ",
+    "brand": "베러랩",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "skin_health"
+    ],
+    "price": 33700,
+    "stock": 22,
+    "rating": 4.8,
+    "reviewCount": 284,
+    "tags": [
+      "탄력",
+      "글로우"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0186",
+    "sku": "SKU-0186",
+    "canonicalSku": "CAN-0186",
+    "name": "베러랩 아이 루테인 20일",
+    "brand": "베러랩",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "liver_health"
+    ],
+    "price": 35400,
+    "stock": 35,
+    "rating": 4.5,
+    "reviewCount": 331,
+    "tags": [
+      "일상 관리",
+      "가족 건강"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0187",
+    "sku": "SKU-0187",
+    "canonicalSku": "CAN-0187",
+    "name": "그로브 밸런스 효소 21일",
+    "brand": "그로브",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "energy_metabolism"
+    ],
+    "price": 37100,
+    "stock": 48,
+    "rating": 4.2,
+    "reviewCount": 378,
+    "tags": [
+      "저당",
+      "가벼운 식사"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0188",
+    "sku": "SKU-0188",
+    "canonicalSku": "CAN-0188",
+    "name": "그로브 비타 C 구미 21일",
+    "brand": "그로브",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "immunity"
+    ],
+    "price": 38800,
+    "stock": 0,
+    "rating": 4.9,
+    "reviewCount": 425,
+    "tags": [
+      "간편 섭취",
+      "기초 영양"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0189",
+    "sku": "SKU-0189",
+    "canonicalSku": "CAN-0189",
+    "name": "그로브 마그네슘 샷 21일",
+    "brand": "그로브",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "exercise_performance"
+    ],
+    "price": 40500,
+    "stock": 74,
+    "rating": 4.6,
+    "reviewCount": 472,
+    "tags": [
+      "액티브",
+      "운동 루틴"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0190",
+    "sku": "SKU-0190",
+    "canonicalSku": "CAN-0190",
+    "name": "그로브 릴랙스 구미 21일",
+    "brand": "그로브",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "stress_relief"
+    ],
+    "price": 10200,
+    "stock": 87,
+    "rating": 4.3,
+    "reviewCount": 519,
+    "tags": [
+      "마음챙김",
+      "저녁 루틴"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": true
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0191",
+    "sku": "SKU-0191",
+    "canonicalSku": "CAN-0191",
+    "name": "그로브 히알 워터 21일",
+    "brand": "그로브",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [],
+    "price": 11900,
+    "stock": 5,
+    "rating": 4,
+    "reviewCount": 566,
+    "tags": [
+      "글로우",
+      "이너뷰티"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0192",
+    "sku": "SKU-0192",
+    "canonicalSku": "CAN-0192",
+    "name": "그로브 오랄 프로바이오틱스 21일",
+    "brand": "그로브",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "joint_health"
+    ],
+    "price": 13600,
+    "stock": 18,
+    "rating": 4.7,
+    "reviewCount": 613,
+    "tags": [
+      "가족 건강",
+      "눈 건강"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0193",
+    "sku": "SKU-0193",
+    "canonicalSku": "CAN-0193",
+    "name": "누아 데일리 유산균 22일",
+    "brand": "누아",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "blood_sugar_balance"
+    ],
+    "price": 15300,
+    "stock": 31,
+    "rating": 4.4,
+    "reviewCount": 660,
+    "tags": [
+      "가벼운 식사",
+      "장 건강"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0194",
+    "sku": "SKU-0194",
+    "canonicalSku": "CAN-0194",
+    "name": "누아 미네랄 밸런스 22일",
+    "brand": "누아",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "antioxidant"
+    ],
+    "price": 17000,
+    "stock": 44,
+    "rating": 4.1,
+    "reviewCount": 707,
+    "tags": [
+      "기초 영양",
+      "비타민"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0195",
+    "sku": "SKU-0195",
+    "canonicalSku": "CAN-0195",
+    "name": "누아 조인트 서포트 22일",
+    "brand": "누아",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "bone_health"
+    ],
+    "price": 18700,
+    "stock": 57,
+    "rating": 4.8,
+    "reviewCount": 754,
+    "tags": [
+      "운동 루틴",
+      "단백질"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0196",
+    "sku": "SKU-0196",
+    "canonicalSku": "CAN-0196",
+    "name": "누아 테아닌 밸런스 22일",
+    "brand": "누아",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "relaxation"
+    ],
+    "price": 20400,
+    "stock": 70,
+    "rating": 4.5,
+    "reviewCount": 801,
+    "tags": [
+      "저녁 루틴",
+      "휴식"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0197",
+    "sku": "SKU-0197",
+    "canonicalSku": "CAN-0197",
+    "name": "누아 뷰티 바이오틱스 22일",
+    "brand": "누아",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "collagen"
+    ],
+    "price": 22100,
+    "stock": 83,
+    "rating": 4.2,
+    "reviewCount": 848,
+    "tags": [
+      "이너뷰티",
+      "수분"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": true
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0198",
+    "sku": "SKU-0198",
+    "canonicalSku": "CAN-0198",
+    "name": "누아 밀크시슬 밸런스 22일",
+    "brand": "누아",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "eye_health"
+    ],
+    "price": 23800,
+    "stock": 96,
+    "rating": 4.9,
+    "reviewCount": 895,
+    "tags": [
+      "눈 건강",
+      "구강 케어"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0199",
+    "sku": "SKU-0199",
+    "canonicalSku": "CAN-0199",
+    "name": "밸런스온 오트 에너지 23일",
+    "brand": "밸런스온",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "digestive_health"
+    ],
+    "price": 25500,
+    "stock": 14,
+    "rating": 4.6,
+    "reviewCount": 942,
+    "tags": [
+      "장 건강",
+      "데일리 루틴"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0200",
+    "sku": "SKU-0200",
+    "canonicalSku": "CAN-0200",
+    "name": "밸런스온 데일리 아연 23일",
+    "brand": "밸런스온",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "vitamin_mineral"
+    ],
+    "price": 27200,
+    "stock": 27,
+    "rating": 4.3,
+    "reviewCount": 989,
+    "tags": [
+      "비타민",
+      "활력"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0201",
+    "sku": "SKU-0201",
+    "canonicalSku": "CAN-0201",
+    "name": "밸런스온 BCAA 워터 23일",
+    "brand": "밸런스온",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "muscle_function"
+    ],
+    "price": 28900,
+    "stock": 40,
+    "rating": 4,
+    "reviewCount": 1036,
+    "tags": [
+      "단백질",
+      "회복"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0202",
+    "sku": "SKU-0202",
+    "canonicalSku": "CAN-0202",
+    "name": "밸런스온 슬립 아로마 23일",
+    "brand": "밸런스온",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "sleep_health"
+    ],
+    "price": 30600,
+    "stock": 53,
+    "rating": 4.7,
+    "reviewCount": 1083,
+    "tags": [
+      "휴식",
+      "숙면 환경"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0203",
+    "sku": "SKU-0203",
+    "canonicalSku": "CAN-0203",
+    "name": "밸런스온 비오틴 구미 23일",
+    "brand": "밸런스온",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "skin_health"
+    ],
+    "price": 32300,
+    "stock": 66,
+    "rating": 4.4,
+    "reviewCount": 1130,
+    "tags": [
+      "수분",
+      "탄력"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0204",
+    "sku": "SKU-0204",
+    "canonicalSku": "CAN-0204",
+    "name": "밸런스온 관절 케어 23일",
+    "brand": "밸런스온",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "digestive_health"
+    ],
+    "price": 34000,
+    "stock": 79,
+    "rating": 4.1,
+    "reviewCount": 1177,
+    "tags": [
+      "구강 케어",
+      "일상 관리"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": true
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0205",
+    "sku": "SKU-0205",
+    "canonicalSku": "CAN-0205",
+    "name": "플로우데이 콤부차 24일",
+    "brand": "플로우데이",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "energy_metabolism"
+    ],
+    "price": 35700,
+    "stock": 0,
+    "rating": 4.8,
+    "reviewCount": 1224,
+    "tags": [
+      "데일리 루틴",
+      "저당"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0206",
+    "sku": "SKU-0206",
+    "canonicalSku": "CAN-0206",
+    "name": "플로우데이 항산화 베리 24일",
+    "brand": "플로우데이",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "immunity"
+    ],
+    "price": 37400,
+    "stock": 10,
+    "rating": 4.5,
+    "reviewCount": 1271,
+    "tags": [
+      "활력",
+      "간편 섭취"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0207",
+    "sku": "SKU-0207",
+    "canonicalSku": "CAN-0207",
+    "name": "플로우데이 본 밸런스 24일",
+    "brand": "플로우데이",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "exercise_performance"
+    ],
+    "price": 39100,
+    "stock": 23,
+    "rating": 4.2,
+    "reviewCount": 1318,
+    "tags": [
+      "회복",
+      "액티브"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0208",
+    "sku": "SKU-0207",
+    "canonicalSku": "CAN-0207",
+    "name": "플로우데이 본 밸런스 24일 ",
+    "brand": "플로우데이",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "stress_relief"
+    ],
+    "price": 40800,
+    "stock": 36,
+    "rating": 4.9,
+    "reviewCount": 1365,
+    "tags": [
+      "숙면 환경",
+      "마음챙김"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0209",
+    "sku": "SKU-0209",
+    "canonicalSku": "CAN-0209",
+    "name": "플로우데이 세라마이드 샷 24일",
+    "brand": "플로우데이",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "antioxidant"
+    ],
+    "price": 10500,
+    "stock": 49,
+    "rating": 4.6,
+    "reviewCount": 1412,
+    "tags": [
+      "탄력",
+      "글로우"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0210",
+    "sku": "SKU-0210",
+    "canonicalSku": "CAN-0210",
+    "name": "플로우데이 오메가 밸런스 24일",
+    "brand": "플로우데이",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [],
+    "price": 12200,
+    "stock": 62,
+    "rating": 4.3,
+    "reviewCount": 1459,
+    "tags": [
+      "일상 관리",
+      "가족 건강"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0211",
+    "sku": "SKU-0211",
+    "canonicalSku": "CAN-0211",
+    "name": "모먼트 그린 파이버 25일",
+    "brand": "모먼트",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "blood_sugar_balance"
+    ],
+    "price": 13900,
+    "stock": 75,
+    "rating": 4,
+    "reviewCount": 1506,
+    "tags": [
+      "저당",
+      "가벼운 식사"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": true
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0212",
+    "sku": "SKU-0212",
+    "canonicalSku": "CAN-0212",
+    "name": "모먼트 멀티 비타민 25일",
+    "brand": "모먼트",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "antioxidant"
+    ],
+    "price": 15600,
+    "stock": 88,
+    "rating": 4.7,
+    "reviewCount": 1553,
+    "tags": [
+      "간편 섭취",
+      "기초 영양"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0213",
+    "sku": "SKU-0213",
+    "canonicalSku": "CAN-0213",
+    "name": "모먼트 액티브 프로틴 25일",
+    "brand": "모먼트",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "bone_health"
+    ],
+    "price": 17300,
+    "stock": 6,
+    "rating": 4.4,
+    "reviewCount": 1600,
+    "tags": [
+      "액티브",
+      "운동 루틴"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0214",
+    "sku": "SKU-0214",
+    "canonicalSku": "CAN-0214",
+    "name": "모먼트 나이트 티 25일",
+    "brand": "모먼트",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "relaxation"
+    ],
+    "price": 19000,
+    "stock": 19,
+    "rating": 4.1,
+    "reviewCount": 1647,
+    "tags": [
+      "마음챙김",
+      "저녁 루틴"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0215",
+    "sku": "SKU-0215",
+    "canonicalSku": "CAN-0215",
+    "name": "모먼트 글로우 콜라겐 25일",
+    "brand": "모먼트",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "collagen"
+    ],
+    "price": 20700,
+    "stock": 32,
+    "rating": 4.8,
+    "reviewCount": 1694,
+    "tags": [
+      "글로우",
+      "이너뷰티"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0216",
+    "sku": "SKU-0216",
+    "canonicalSku": "CAN-0216",
+    "name": "모먼트 아이 루테인 25일",
+    "brand": "모먼트",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "joint_health"
+    ],
+    "price": 22400,
+    "stock": 45,
+    "rating": 4.5,
+    "reviewCount": 1741,
+    "tags": [
+      "가족 건강",
+      "눈 건강"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0217",
+    "sku": "SKU-0217",
+    "canonicalSku": "CAN-0217",
+    "name": "베러랩 밸런스 효소 26일",
+    "brand": "베러랩",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "digestive_health"
+    ],
+    "price": 24100,
+    "stock": 58,
+    "rating": 4.2,
+    "reviewCount": 1788,
+    "tags": [
+      "가벼운 식사",
+      "장 건강"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0218",
+    "sku": "SKU-0218",
+    "canonicalSku": "CAN-0218",
+    "name": "베러랩 비타 C 구미 26일",
+    "brand": "베러랩",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "vitamin_mineral"
+    ],
+    "price": 25800,
+    "stock": 71,
+    "rating": 4.9,
+    "reviewCount": 1835,
+    "tags": [
+      "기초 영양",
+      "비타민"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": true
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0219",
+    "sku": "SKU-0219",
+    "canonicalSku": "CAN-0219",
+    "name": "베러랩 마그네슘 샷 26일",
+    "brand": "베러랩",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "muscle_function"
+    ],
+    "price": 27500,
+    "stock": 84,
+    "rating": 4.6,
+    "reviewCount": 1882,
+    "tags": [
+      "운동 루틴",
+      "단백질"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0220",
+    "sku": "SKU-0220",
+    "canonicalSku": "CAN-0220",
+    "name": "베러랩 릴랙스 구미 26일",
+    "brand": "베러랩",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "sleep_health"
+    ],
+    "price": 29200,
+    "stock": 97,
+    "rating": 4.3,
+    "reviewCount": 1929,
+    "tags": [
+      "저녁 루틴",
+      "휴식"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0221",
+    "sku": "SKU-0221",
+    "canonicalSku": "CAN-0221",
+    "name": "베러랩 히알 워터 26일",
+    "brand": "베러랩",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "skin_health"
+    ],
+    "price": 30900,
+    "stock": 15,
+    "rating": 4,
+    "reviewCount": 1976,
+    "tags": [
+      "이너뷰티",
+      "수분"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0222",
+    "sku": "SKU-0222",
+    "canonicalSku": "CAN-0222",
+    "name": "베러랩 오랄 프로바이오틱스 26일",
+    "brand": "베러랩",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "eye_health"
+    ],
+    "price": 32600,
+    "stock": 0,
+    "rating": 4.7,
+    "reviewCount": 2023,
+    "tags": [
+      "눈 건강",
+      "구강 케어"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0223",
+    "sku": "SKU-0223",
+    "canonicalSku": "CAN-0223",
+    "name": "그로브 데일리 유산균 27일",
+    "brand": "그로브",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "energy_metabolism"
+    ],
+    "price": 34300,
+    "stock": 41,
+    "rating": 4.4,
+    "reviewCount": 2070,
+    "tags": [
+      "장 건강",
+      "데일리 루틴"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0224",
+    "sku": "SKU-0224",
+    "canonicalSku": "CAN-0224",
+    "name": "그로브 미네랄 밸런스 27일",
+    "brand": "그로브",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "immunity"
+    ],
+    "price": 36000,
+    "stock": 54,
+    "rating": 4.1,
+    "reviewCount": 2117,
+    "tags": [
+      "비타민",
+      "활력"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0225",
+    "sku": "SKU-0225",
+    "canonicalSku": "CAN-0225",
+    "name": "그로브 조인트 서포트 27일",
+    "brand": "그로브",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "exercise_performance"
+    ],
+    "price": 37700,
+    "stock": 67,
+    "rating": 4.8,
+    "reviewCount": 64,
+    "tags": [
+      "단백질",
+      "회복"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": true
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0226",
+    "sku": "SKU-0226",
+    "canonicalSku": "CAN-0226",
+    "name": "그로브 테아닌 밸런스 27일",
+    "brand": "그로브",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "stress_relief"
+    ],
+    "price": 39400,
+    "stock": 80,
+    "rating": 4.5,
+    "reviewCount": 111,
+    "tags": [
+      "휴식",
+      "숙면 환경"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0227",
+    "sku": "SKU-0227",
+    "canonicalSku": "CAN-0227",
+    "name": "그로브 뷰티 바이오틱스 27일",
+    "brand": "그로브",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "antioxidant"
+    ],
+    "price": 9100,
+    "stock": 93,
+    "rating": 4.2,
+    "reviewCount": 158,
+    "tags": [
+      "수분",
+      "탄력"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0228",
+    "sku": "SKU-0228",
+    "canonicalSku": "CAN-0228",
+    "name": "그로브 밀크시슬 밸런스 27일",
+    "brand": "그로브",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "oral_health"
+    ],
+    "price": 10800,
+    "stock": 11,
+    "rating": 4.9,
+    "reviewCount": 205,
+    "tags": [
+      "구강 케어",
+      "일상 관리"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0229",
+    "sku": "SKU-0229",
+    "canonicalSku": "CAN-0229",
+    "name": "누아 오트 에너지 28일",
+    "brand": "누아",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [],
+    "price": 12500,
+    "stock": 24,
+    "rating": 4.6,
+    "reviewCount": 252,
+    "tags": [
+      "데일리 루틴",
+      "저당"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0230",
+    "sku": "SKU-0230",
+    "canonicalSku": "CAN-0230",
+    "name": "누아 데일리 아연 28일",
+    "brand": "누아",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "antioxidant"
+    ],
+    "price": 14200,
+    "stock": 37,
+    "rating": 4.3,
+    "reviewCount": 299,
+    "tags": [
+      "활력",
+      "간편 섭취"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0231",
+    "sku": "SKU-0230",
+    "canonicalSku": "CAN-0230",
+    "name": "누아 데일리 아연 28일 ",
+    "brand": "누아",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "bone_health"
+    ],
+    "price": 15900,
+    "stock": 50,
+    "rating": 4,
+    "reviewCount": 346,
+    "tags": [
+      "회복",
+      "액티브"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0232",
+    "sku": "SKU-0232",
+    "canonicalSku": "CAN-0232",
+    "name": "누아 슬립 아로마 28일",
+    "brand": "누아",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "relaxation"
+    ],
+    "price": 17600,
+    "stock": 63,
+    "rating": 4.7,
+    "reviewCount": 393,
+    "tags": [
+      "숙면 환경",
+      "마음챙김"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": true
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0233",
+    "sku": "SKU-0233",
+    "canonicalSku": "CAN-0233",
+    "name": "누아 비오틴 구미 28일",
+    "brand": "누아",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "eye_health"
+    ],
+    "price": 19300,
+    "stock": 76,
+    "rating": 4.4,
+    "reviewCount": 440,
+    "tags": [
+      "탄력",
+      "글로우"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0234",
+    "sku": "SKU-0234",
+    "canonicalSku": "CAN-0234",
+    "name": "누아 관절 케어 28일",
+    "brand": "누아",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "liver_health"
+    ],
+    "price": 21000,
+    "stock": 89,
+    "rating": 4.1,
+    "reviewCount": 487,
+    "tags": [
+      "일상 관리",
+      "가족 건강"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0235",
+    "sku": "SKU-0235",
+    "canonicalSku": "CAN-0235",
+    "name": "밸런스온 콤부차 29일",
+    "brand": "밸런스온",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "digestive_health"
+    ],
+    "price": 22700,
+    "stock": 7,
+    "rating": 4.8,
+    "reviewCount": 534,
+    "tags": [
+      "저당",
+      "가벼운 식사"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0236",
+    "sku": "SKU-0236",
+    "canonicalSku": "CAN-0236",
+    "name": "밸런스온 항산화 베리 29일",
+    "brand": "밸런스온",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "vitamin_mineral"
+    ],
+    "price": 24400,
+    "stock": 20,
+    "rating": 4.5,
+    "reviewCount": 581,
+    "tags": [
+      "간편 섭취",
+      "기초 영양"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0237",
+    "sku": "SKU-0237",
+    "canonicalSku": "CAN-0237",
+    "name": "밸런스온 본 밸런스 29일",
+    "brand": "밸런스온",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "muscle_function"
+    ],
+    "price": 26100,
+    "stock": 33,
+    "rating": 4.2,
+    "reviewCount": 628,
+    "tags": [
+      "액티브",
+      "운동 루틴"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0238",
+    "sku": "SKU-0238",
+    "canonicalSku": "CAN-0238",
+    "name": "밸런스온 카밍 마그네슘 29일",
+    "brand": "밸런스온",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "sleep_health"
+    ],
+    "price": 27800,
+    "stock": 46,
+    "rating": 4.9,
+    "reviewCount": 675,
+    "tags": [
+      "마음챙김",
+      "저녁 루틴"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0239",
+    "sku": "SKU-0239",
+    "canonicalSku": "CAN-0239",
+    "name": "밸런스온 세라마이드 샷 29일",
+    "brand": "밸런스온",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "skin_health"
+    ],
+    "price": 29500,
+    "stock": 0,
+    "rating": 4.6,
+    "reviewCount": 722,
+    "tags": [
+      "글로우",
+      "이너뷰티"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": true
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0240",
+    "sku": "SKU-0240",
+    "canonicalSku": "CAN-0240",
+    "name": "밸런스온 오메가 밸런스 29일",
+    "brand": "밸런스온",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "joint_health"
+    ],
+    "price": 31200,
+    "stock": 72,
+    "rating": 4.3,
+    "reviewCount": 769,
+    "tags": [
+      "가족 건강",
+      "눈 건강"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0241",
+    "sku": "SKU-0241",
+    "canonicalSku": "CAN-0241",
+    "name": "플로우데이 그린 파이버 10일",
+    "brand": "플로우데이",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "energy_metabolism"
+    ],
+    "price": 32900,
+    "stock": 85,
+    "rating": 4,
+    "reviewCount": 816,
+    "tags": [
+      "가벼운 식사",
+      "장 건강"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0242",
+    "sku": "SKU-0242",
+    "canonicalSku": "CAN-0242",
+    "name": "플로우데이 멀티 비타민 10일",
+    "brand": "플로우데이",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "immunity"
+    ],
+    "price": 34600,
+    "stock": 98,
+    "rating": 4.7,
+    "reviewCount": 863,
+    "tags": [
+      "기초 영양",
+      "비타민"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0243",
+    "sku": "SKU-0243",
+    "canonicalSku": "CAN-0243",
+    "name": "플로우데이 액티브 프로틴 10일",
+    "brand": "플로우데이",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "exercise_performance"
+    ],
+    "price": 36300,
+    "stock": 16,
+    "rating": 4.4,
+    "reviewCount": 910,
+    "tags": [
+      "운동 루틴",
+      "단백질"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0244",
+    "sku": "SKU-0244",
+    "canonicalSku": "CAN-0244",
+    "name": "플로우데이 나이트 티 10일",
+    "brand": "플로우데이",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "stress_relief"
+    ],
+    "price": 38000,
+    "stock": 29,
+    "rating": 4.1,
+    "reviewCount": 957,
+    "tags": [
+      "저녁 루틴",
+      "휴식"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0245",
+    "sku": "SKU-0245",
+    "canonicalSku": "CAN-0245",
+    "name": "플로우데이 글로우 콜라겐 10일",
+    "brand": "플로우데이",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "antioxidant"
+    ],
+    "price": 39700,
+    "stock": 42,
+    "rating": 4.8,
+    "reviewCount": 1004,
+    "tags": [
+      "이너뷰티",
+      "수분"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0246",
+    "sku": "SKU-0246",
+    "canonicalSku": "CAN-0246",
+    "name": "플로우데이 아이 루테인 10일",
+    "brand": "플로우데이",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "eye_health"
+    ],
+    "price": 9400,
+    "stock": 55,
+    "rating": 4.5,
+    "reviewCount": 1051,
+    "tags": [
+      "눈 건강",
+      "구강 케어"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": true
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0247",
+    "sku": "SKU-0247",
+    "canonicalSku": "CAN-0247",
+    "name": "모먼트 밸런스 효소 11일",
+    "brand": "모먼트",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "blood_sugar_balance"
+    ],
+    "price": 11100,
+    "stock": 68,
+    "rating": 4.2,
+    "reviewCount": 1098,
+    "tags": [
+      "장 건강",
+      "데일리 루틴"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0248",
+    "sku": "SKU-0248",
+    "canonicalSku": "CAN-0248",
+    "name": "모먼트 비타 C 구미 11일",
+    "brand": "모먼트",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [],
+    "price": 12800,
+    "stock": 81,
+    "rating": 4.9,
+    "reviewCount": 1145,
+    "tags": [
+      "비타민",
+      "활력"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0249",
+    "sku": "SKU-0249",
+    "canonicalSku": "CAN-0249",
+    "name": "모먼트 마그네슘 샷 11일",
+    "brand": "모먼트",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "bone_health"
+    ],
+    "price": 14500,
+    "stock": 94,
+    "rating": 4.6,
+    "reviewCount": 1192,
+    "tags": [
+      "단백질",
+      "회복"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0250",
+    "sku": "SKU-0250",
+    "canonicalSku": "CAN-0250",
+    "name": "모먼트 릴랙스 구미 11일",
+    "brand": "모먼트",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "relaxation"
+    ],
+    "price": 16200,
+    "stock": 12,
+    "rating": 4.3,
+    "reviewCount": 1239,
+    "tags": [
+      "휴식",
+      "숙면 환경"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0251",
+    "sku": "SKU-0251",
+    "canonicalSku": "CAN-0251",
+    "name": "모먼트 히알 워터 11일",
+    "brand": "모먼트",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "collagen"
+    ],
+    "price": 17900,
+    "stock": 25,
+    "rating": 4,
+    "reviewCount": 1286,
+    "tags": [
+      "수분",
+      "탄력"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0252",
+    "sku": "SKU-0252",
+    "canonicalSku": "CAN-0252",
+    "name": "모먼트 오랄 프로바이오틱스 11일",
+    "brand": "모먼트",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "oral_health"
+    ],
+    "price": 19600,
+    "stock": 38,
+    "rating": 4.7,
+    "reviewCount": 1333,
+    "tags": [
+      "구강 케어",
+      "일상 관리"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0253",
+    "sku": "SKU-0253",
+    "canonicalSku": "CAN-0253",
+    "name": "베러랩 데일리 유산균 12일",
+    "brand": "베러랩",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "digestive_health"
+    ],
+    "price": 21300,
+    "stock": 51,
+    "rating": 4.4,
+    "reviewCount": 1380,
+    "tags": [
+      "데일리 루틴",
+      "저당"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": true
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0254",
+    "sku": "SKU-0253",
+    "canonicalSku": "CAN-0253",
+    "name": "베러랩 데일리 유산균 12일 ",
+    "brand": "베러랩",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "vitamin_mineral"
+    ],
+    "price": 23000,
+    "stock": 64,
+    "rating": 4.1,
+    "reviewCount": 1427,
+    "tags": [
+      "활력",
+      "간편 섭취"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0255",
+    "sku": "SKU-0255",
+    "canonicalSku": "CAN-0255",
+    "name": "베러랩 조인트 서포트 12일",
+    "brand": "베러랩",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "muscle_function"
+    ],
+    "price": 24700,
+    "stock": 77,
+    "rating": 4.8,
+    "reviewCount": 1474,
+    "tags": [
+      "회복",
+      "액티브"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0256",
+    "sku": "SKU-0256",
+    "canonicalSku": "CAN-0256",
+    "name": "베러랩 테아닌 밸런스 12일",
+    "brand": "베러랩",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "sleep_health"
+    ],
+    "price": 26400,
+    "stock": 0,
+    "rating": 4.5,
+    "reviewCount": 1521,
+    "tags": [
+      "숙면 환경",
+      "마음챙김"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0257",
+    "sku": "SKU-0257",
+    "canonicalSku": "CAN-0257",
+    "name": "베러랩 뷰티 바이오틱스 12일",
+    "brand": "베러랩",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "skin_health"
+    ],
+    "price": 28100,
+    "stock": 8,
+    "rating": 4.2,
+    "reviewCount": 1568,
+    "tags": [
+      "탄력",
+      "글로우"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0258",
+    "sku": "SKU-0258",
+    "canonicalSku": "CAN-0258",
+    "name": "베러랩 밀크시슬 밸런스 12일",
+    "brand": "베러랩",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "liver_health"
+    ],
+    "price": 29800,
+    "stock": 21,
+    "rating": 4.9,
+    "reviewCount": 1615,
+    "tags": [
+      "일상 관리",
+      "가족 건강"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0259",
+    "sku": "SKU-0259",
+    "canonicalSku": "CAN-0259",
+    "name": "그로브 오트 에너지 13일",
+    "brand": "그로브",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "energy_metabolism"
+    ],
+    "price": 31500,
+    "stock": 34,
+    "rating": 4.6,
+    "reviewCount": 1662,
+    "tags": [
+      "저당",
+      "가벼운 식사"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0260",
+    "sku": "SKU-0260",
+    "canonicalSku": "CAN-0260",
+    "name": "그로브 데일리 아연 13일",
+    "brand": "그로브",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "immunity"
+    ],
+    "price": 33200,
+    "stock": 47,
+    "rating": 4.3,
+    "reviewCount": 1709,
+    "tags": [
+      "간편 섭취",
+      "기초 영양"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": true
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0261",
+    "sku": "SKU-0261",
+    "canonicalSku": "CAN-0261",
+    "name": "그로브 BCAA 워터 13일",
+    "brand": "그로브",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "exercise_performance"
+    ],
+    "price": 34900,
+    "stock": 60,
+    "rating": 4,
+    "reviewCount": 1756,
+    "tags": [
+      "액티브",
+      "운동 루틴"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0262",
+    "sku": "SKU-0262",
+    "canonicalSku": "CAN-0262",
+    "name": "그로브 슬립 아로마 13일",
+    "brand": "그로브",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "skin_health"
+    ],
+    "price": 36600,
+    "stock": 73,
+    "rating": 4.7,
+    "reviewCount": 1803,
+    "tags": [
+      "마음챙김",
+      "저녁 루틴"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0263",
+    "sku": "SKU-0263",
+    "canonicalSku": "CAN-0263",
+    "name": "그로브 비오틴 구미 13일",
+    "brand": "그로브",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "antioxidant"
+    ],
+    "price": 38300,
+    "stock": 86,
+    "rating": 4.4,
+    "reviewCount": 1850,
+    "tags": [
+      "글로우",
+      "이너뷰티"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0264",
+    "sku": "SKU-0264",
+    "canonicalSku": "CAN-0264",
+    "name": "그로브 관절 케어 13일",
+    "brand": "그로브",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "joint_health"
+    ],
+    "price": 40000,
+    "stock": 99,
+    "rating": 4.1,
+    "reviewCount": 1897,
+    "tags": [
+      "가족 건강",
+      "눈 건강"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0265",
+    "sku": "SKU-0265",
+    "canonicalSku": "CAN-0265",
+    "name": "누아 콤부차 14일",
+    "brand": "누아",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "blood_sugar_balance"
+    ],
+    "price": 9700,
+    "stock": 17,
+    "rating": 4.8,
+    "reviewCount": 1944,
+    "tags": [
+      "가벼운 식사",
+      "장 건강"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0266",
+    "sku": "SKU-0266",
+    "canonicalSku": "CAN-0266",
+    "name": "누아 항산화 베리 14일",
+    "brand": "누아",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "antioxidant"
+    ],
+    "price": 11400,
+    "stock": 30,
+    "rating": 4.5,
+    "reviewCount": 1991,
+    "tags": [
+      "기초 영양",
+      "비타민"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0267",
+    "sku": "SKU-0267",
+    "canonicalSku": "CAN-0267",
+    "name": "누아 본 밸런스 14일",
+    "brand": "누아",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [],
+    "price": 13100,
+    "stock": 43,
+    "rating": 4.2,
+    "reviewCount": 2038,
+    "tags": [
+      "운동 루틴",
+      "단백질"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": true
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0268",
+    "sku": "SKU-0268",
+    "canonicalSku": "CAN-0268",
+    "name": "누아 카밍 마그네슘 14일",
+    "brand": "누아",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "relaxation"
+    ],
+    "price": 14800,
+    "stock": 56,
+    "rating": 4.9,
+    "reviewCount": 2085,
+    "tags": [
+      "저녁 루틴",
+      "휴식"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0269",
+    "sku": "SKU-0269",
+    "canonicalSku": "CAN-0269",
+    "name": "누아 세라마이드 샷 14일",
+    "brand": "누아",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "collagen"
+    ],
+    "price": 16500,
+    "stock": 69,
+    "rating": 4.6,
+    "reviewCount": 2132,
+    "tags": [
+      "이너뷰티",
+      "수분"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0270",
+    "sku": "SKU-0270",
+    "canonicalSku": "CAN-0270",
+    "name": "누아 오메가 밸런스 14일",
+    "brand": "누아",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "eye_health"
+    ],
+    "price": 18200,
+    "stock": 82,
+    "rating": 4.3,
+    "reviewCount": 79,
+    "tags": [
+      "눈 건강",
+      "구강 케어"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0271",
+    "sku": "SKU-0271",
+    "canonicalSku": "CAN-0271",
+    "name": "밸런스온 그린 파이버 15일",
+    "brand": "밸런스온",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "digestive_health"
+    ],
+    "price": 19900,
+    "stock": 95,
+    "rating": 4,
+    "reviewCount": 126,
+    "tags": [
+      "장 건강",
+      "데일리 루틴"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0272",
+    "sku": "SKU-0272",
+    "canonicalSku": "CAN-0272",
+    "name": "밸런스온 멀티 비타민 15일",
+    "brand": "밸런스온",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "vitamin_mineral"
+    ],
+    "price": 21600,
+    "stock": 13,
+    "rating": 4.7,
+    "reviewCount": 173,
+    "tags": [
+      "비타민",
+      "활력"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0273",
+    "sku": "SKU-0273",
+    "canonicalSku": "CAN-0273",
+    "name": "밸런스온 액티브 프로틴 15일",
+    "brand": "밸런스온",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "muscle_function"
+    ],
+    "price": 23300,
+    "stock": 0,
+    "rating": 4.4,
+    "reviewCount": 220,
+    "tags": [
+      "단백질",
+      "회복"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0274",
+    "sku": "SKU-0274",
+    "canonicalSku": "CAN-0274",
+    "name": "밸런스온 나이트 티 15일",
+    "brand": "밸런스온",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "sleep_health"
+    ],
+    "price": 25000,
+    "stock": 39,
+    "rating": 4.1,
+    "reviewCount": 267,
+    "tags": [
+      "휴식",
+      "숙면 환경"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": true
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0275",
+    "sku": "SKU-0275",
+    "canonicalSku": "CAN-0275",
+    "name": "밸런스온 글로우 콜라겐 15일",
+    "brand": "밸런스온",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "skin_health"
+    ],
+    "price": 26700,
+    "stock": 52,
+    "rating": 4.8,
+    "reviewCount": 314,
+    "tags": [
+      "수분",
+      "탄력"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0276",
+    "sku": "SKU-0276",
+    "canonicalSku": "CAN-0276",
+    "name": "밸런스온 아이 루테인 15일",
+    "brand": "밸런스온",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "oral_health"
+    ],
+    "price": 28400,
+    "stock": 65,
+    "rating": 4.5,
+    "reviewCount": 361,
+    "tags": [
+      "구강 케어",
+      "일상 관리"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0277",
+    "sku": "SKU-0276",
+    "canonicalSku": "CAN-0276",
+    "name": "밸런스온 아이 루테인 15일 ",
+    "brand": "플로우데이",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "energy_metabolism"
+    ],
+    "price": 30100,
+    "stock": 78,
+    "rating": 4.2,
+    "reviewCount": 408,
+    "tags": [
+      "데일리 루틴",
+      "저당"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0278",
+    "sku": "SKU-0278",
+    "canonicalSku": "CAN-0278",
+    "name": "플로우데이 비타 C 구미 16일",
+    "brand": "플로우데이",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "immunity"
+    ],
+    "price": 31800,
+    "stock": 91,
+    "rating": 4.9,
+    "reviewCount": 455,
+    "tags": [
+      "활력",
+      "간편 섭취"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0279",
+    "sku": "SKU-0279",
+    "canonicalSku": "CAN-0279",
+    "name": "플로우데이 마그네슘 샷 16일",
+    "brand": "플로우데이",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "exercise_performance"
+    ],
+    "price": 33500,
+    "stock": 9,
+    "rating": 4.6,
+    "reviewCount": 502,
+    "tags": [
+      "회복",
+      "액티브"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0280",
+    "sku": "SKU-0280",
+    "canonicalSku": "CAN-0280",
+    "name": "플로우데이 릴랙스 구미 16일",
+    "brand": "플로우데이",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "stress_relief"
+    ],
+    "price": 35200,
+    "stock": 22,
+    "rating": 4.3,
+    "reviewCount": 549,
+    "tags": [
+      "숙면 환경",
+      "마음챙김"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0281",
+    "sku": "SKU-0281",
+    "canonicalSku": "CAN-0281",
+    "name": "플로우데이 히알 워터 16일",
+    "brand": "플로우데이",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "antioxidant"
+    ],
+    "price": 36900,
+    "stock": 35,
+    "rating": 4,
+    "reviewCount": 596,
+    "tags": [
+      "탄력",
+      "글로우"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": true
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0282",
+    "sku": "SKU-0282",
+    "canonicalSku": "CAN-0282",
+    "name": "플로우데이 오랄 프로바이오틱스 16일",
+    "brand": "플로우데이",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "liver_health"
+    ],
+    "price": 38600,
+    "stock": 48,
+    "rating": 4.7,
+    "reviewCount": 643,
+    "tags": [
+      "일상 관리",
+      "가족 건강"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0283",
+    "sku": "SKU-0283",
+    "canonicalSku": "CAN-0283",
+    "name": "모먼트 데일리 유산균 17일",
+    "brand": "모먼트",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "blood_sugar_balance"
+    ],
+    "price": 40300,
+    "stock": 61,
+    "rating": 4.4,
+    "reviewCount": 690,
+    "tags": [
+      "저당",
+      "가벼운 식사"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0284",
+    "sku": "SKU-0284",
+    "canonicalSku": "CAN-0284",
+    "name": "모먼트 미네랄 밸런스 17일",
+    "brand": "모먼트",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "antioxidant"
+    ],
+    "price": 10000,
+    "stock": 74,
+    "rating": 4.1,
+    "reviewCount": 737,
+    "tags": [
+      "간편 섭취",
+      "기초 영양"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0285",
+    "sku": "SKU-0285",
+    "canonicalSku": "CAN-0285",
+    "name": "모먼트 조인트 서포트 17일",
+    "brand": "모먼트",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "bone_health"
+    ],
+    "price": 11700,
+    "stock": 87,
+    "rating": 4.8,
+    "reviewCount": 784,
+    "tags": [
+      "액티브",
+      "운동 루틴"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0286",
+    "sku": "SKU-0286",
+    "canonicalSku": "CAN-0286",
+    "name": "모먼트 테아닌 밸런스 17일",
+    "brand": "모먼트",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [],
+    "price": 13400,
+    "stock": 5,
+    "rating": 4.5,
+    "reviewCount": 831,
+    "tags": [
+      "마음챙김",
+      "저녁 루틴"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0287",
+    "sku": "SKU-0287",
+    "canonicalSku": "CAN-0287",
+    "name": "모먼트 뷰티 바이오틱스 17일",
+    "brand": "모먼트",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "collagen"
+    ],
+    "price": 15100,
+    "stock": 18,
+    "rating": 4.2,
+    "reviewCount": 878,
+    "tags": [
+      "글로우",
+      "이너뷰티"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0288",
+    "sku": "SKU-0288",
+    "canonicalSku": "CAN-0288",
+    "name": "모먼트 밀크시슬 밸런스 17일",
+    "brand": "모먼트",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "joint_health"
+    ],
+    "price": 16800,
+    "stock": 31,
+    "rating": 4.9,
+    "reviewCount": 925,
+    "tags": [
+      "가족 건강",
+      "눈 건강"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": true
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0289",
+    "sku": "SKU-0289",
+    "canonicalSku": "CAN-0289",
+    "name": "베러랩 오트 에너지 18일",
+    "brand": "베러랩",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "digestive_health"
+    ],
+    "price": 18500,
+    "stock": 44,
+    "rating": 4.6,
+    "reviewCount": 972,
+    "tags": [
+      "가벼운 식사",
+      "장 건강"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0290",
+    "sku": "SKU-0290",
+    "canonicalSku": "CAN-0290",
+    "name": "베러랩 데일리 아연 18일",
+    "brand": "베러랩",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "vitamin_mineral"
+    ],
+    "price": 20200,
+    "stock": 0,
+    "rating": 4.3,
+    "reviewCount": 1019,
+    "tags": [
+      "기초 영양",
+      "비타민"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0291",
+    "sku": "SKU-0291",
+    "canonicalSku": "CAN-0291",
+    "name": "베러랩 BCAA 워터 18일",
+    "brand": "베러랩",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "sleep_health"
+    ],
+    "price": 21900,
+    "stock": 70,
+    "rating": 4,
+    "reviewCount": 1066,
+    "tags": [
+      "운동 루틴",
+      "단백질"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0292",
+    "sku": "SKU-0292",
+    "canonicalSku": "CAN-0292",
+    "name": "베러랩 슬립 아로마 18일",
+    "brand": "베러랩",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "sleep_health"
+    ],
+    "price": 23600,
+    "stock": 83,
+    "rating": 4.7,
+    "reviewCount": 1113,
+    "tags": [
+      "저녁 루틴",
+      "휴식"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0293",
+    "sku": "SKU-0293",
+    "canonicalSku": "CAN-0293",
+    "name": "베러랩 비오틴 구미 18일",
+    "brand": "베러랩",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "skin_health"
+    ],
+    "price": 25300,
+    "stock": 96,
+    "rating": 4.4,
+    "reviewCount": 1160,
+    "tags": [
+      "이너뷰티",
+      "수분"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0294",
+    "sku": "SKU-0294",
+    "canonicalSku": "CAN-0294",
+    "name": "베러랩 관절 케어 18일",
+    "brand": "베러랩",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "eye_health"
+    ],
+    "price": 27000,
+    "stock": 14,
+    "rating": 4.1,
+    "reviewCount": 1207,
+    "tags": [
+      "눈 건강",
+      "구강 케어"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  },
+  {
+    "id": "P0295",
+    "sku": "SKU-0295",
+    "canonicalSku": "CAN-0295",
+    "name": "그로브 콤부차 19일",
+    "brand": "그로브",
+    "well": "Eat Well",
+    "category": "푸드 & 이너밸런스",
+    "functional": [
+      "energy_metabolism"
+    ],
+    "price": 28700,
+    "stock": 27,
+    "rating": 4.8,
+    "reviewCount": 1254,
+    "tags": [
+      "장 건강",
+      "데일리 루틴"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": true
+    },
+    "color": "#E8F0C7",
+    "form": "파우치"
+  },
+  {
+    "id": "P0296",
+    "sku": "SKU-0296",
+    "canonicalSku": "CAN-0296",
+    "name": "그로브 항산화 베리 19일",
+    "brand": "그로브",
+    "well": "Nourish Well",
+    "category": "비타민 & 뉴트리션",
+    "functional": [
+      "immunity"
+    ],
+    "price": 30400,
+    "stock": 40,
+    "rating": 4.5,
+    "reviewCount": 1301,
+    "tags": [
+      "비타민",
+      "활력"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#E8DDF2",
+    "form": "스틱"
+  },
+  {
+    "id": "P0297",
+    "sku": "SKU-0297",
+    "canonicalSku": "CAN-0297",
+    "name": "그로브 본 밸런스 19일",
+    "brand": "그로브",
+    "well": "Fit Well",
+    "category": "액티브 뉴트리션",
+    "functional": [
+      "exercise_performance"
+    ],
+    "price": 32100,
+    "stock": 53,
+    "rating": 4.2,
+    "reviewCount": 1348,
+    "tags": [
+      "단백질",
+      "회복"
+    ],
+    "flags": {
+      "coupon": true,
+      "hasOptions": false
+    },
+    "color": "#F4C97A",
+    "form": "보틀"
+  },
+  {
+    "id": "P0298",
+    "sku": "SKU-0298",
+    "canonicalSku": "CAN-0298",
+    "name": "그로브 카밍 마그네슘 19일",
+    "brand": "그로브",
+    "well": "Relax Well",
+    "category": "릴랙스 & 슬립",
+    "functional": [
+      "stress_relief"
+    ],
+    "price": 33800,
+    "stock": 66,
+    "rating": 4.9,
+    "reviewCount": 1395,
+    "tags": [
+      "휴식",
+      "숙면 환경"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#CFE9DF",
+    "form": "구미"
+  },
+  {
+    "id": "P0299",
+    "sku": "SKU-0299",
+    "canonicalSku": "CAN-0299",
+    "name": "그로브 세라마이드 샷 19일",
+    "brand": "그로브",
+    "well": "Glow Well",
+    "category": "이너뷰티",
+    "functional": [
+      "antioxidant"
+    ],
+    "price": 35500,
+    "stock": 79,
+    "rating": 4.6,
+    "reviewCount": 1442,
+    "tags": [
+      "수분",
+      "탄력"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#F6DDD4",
+    "form": "정"
+  },
+  {
+    "id": "P0300",
+    "sku": "SKU-0299",
+    "canonicalSku": "CAN-0299",
+    "name": "그로브 세라마이드 샷 19일 ",
+    "brand": "그로브",
+    "well": "Care Well",
+    "category": "데일리 케어",
+    "functional": [
+      "oral_health"
+    ],
+    "price": 37200,
+    "stock": 92,
+    "rating": 4.3,
+    "reviewCount": 1489,
+    "tags": [
+      "구강 케어",
+      "일상 관리"
+    ],
+    "flags": {
+      "coupon": false,
+      "hasOptions": false
+    },
+    "color": "#DCE6F4",
+    "form": "드링크"
+  }
+]
