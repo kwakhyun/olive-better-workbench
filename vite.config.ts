@@ -15,11 +15,6 @@ const localBindingConfig = {
   main: "./worker/index.ts",
   compatibility_flags: ["nodejs_compat"],
   vars: {
-    LLM_API_URL: process.env.LLM_API_URL ?? "",
-    LLM_API_KEY: process.env.LLM_API_KEY ?? "",
-    LLM_MODEL: process.env.LLM_MODEL ?? "",
-    LLM_AUTH_HEADER: process.env.LLM_AUTH_HEADER ?? "Authorization",
-    LLM_AUTH_SCHEME: process.env.LLM_AUTH_SCHEME ?? "Bearer",
     TREND_RSS_URL: process.env.TREND_RSS_URL ?? "",
     TREND_OPENALEX_URL: process.env.TREND_OPENALEX_URL ?? "",
     TREND_EUROPEPMC_URL: process.env.TREND_EUROPEPMC_URL ?? "",

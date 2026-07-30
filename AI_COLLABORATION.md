@@ -13,7 +13,7 @@
 | 과제 요구사항 해석 | 사용자 제공 과제 본문 | `README.md` 구현 범위 |
 | 데이터·안전 엔진 | `lib/engine.mjs`, `data/rules.json` | `tests/engine.test.mjs` |
 | 300개 데모 데이터 | `scripts/generate-demo-data.mjs` | `data/products.json` |
-| 공개 소스·LLM 연결 | `app/api/research/route.ts`, `app/api/generate-banner/route.ts` | 운영자 화면 근거 패널 |
+| 공개 소스·안전 카피 엔진 | `app/api/research/route.ts`, `app/api/generate-banner/route.ts`, `lib/safe-copy.mjs` | 운영자 화면 근거 패널 |
 | 운영자 검토·발행 | `app/components/Workbench.tsx` | `screenshots/01-operator-review.jpg` |
 | 고객 화면·반응 수집 | `app/components/Shop.tsx`, `app/components/PageRenderer.tsx` | `screenshots/02-customer-published.jpg`, `screenshots/03-customer-reaction.jpg` |
 | 반응 재적용 | `lib/engine.mjs` | `screenshots/04-feedback-reapplied.jpg` |

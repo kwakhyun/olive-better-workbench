@@ -52,8 +52,8 @@ function research(overrides = {}) {
     sources: [{ name: "Test RSS", url: "https://example.com/rss", itemCount: 3 }],
     signals: cleaned.accepted,
     excludedSignals: [],
-    bannerStatus: "live",
-    bannerModel: "test-model",
+    bannerStatus: "generated",
+    bannerEngine: "test-safe-copy-engine",
     ...overrides
   };
 }
@@ -236,10 +236,10 @@ test("클릭·좋아요·구매가 다음 상품 수·점수·영역 순서에 �
   assert.match(learned.audit.feedback, /구매 신호 상품 1개 우선/);
 });
 
-test("실제 LLM 문구가 없거나 운영자 수정 문구가 위험하면 발행을 막는다", () => {
-  const noLlm = makeDraft({ research: research({ bannerStatus: "unavailable" }) });
-  assert.equal(canPublish(noLlm, rules).allowed, false);
-  assert.match(canPublish(noLlm, rules).reasons.join(" "), /실제 LLM/);
+test("안전 카피 엔진 문구가 없거나 운영자 수정 문구가 위험하면 발행을 막는다", () => {
+  const noCopy = makeDraft({ research: research({ bannerStatus: "failed" }) });
+  assert.equal(canPublish(noCopy, rules).allowed, false);
+  assert.match(canPublish(noCopy, rules).reasons.join(" "), /안전 카피 엔진/);
 
   const unsafe = makeDraft({
     banner: {

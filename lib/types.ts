@@ -71,8 +71,8 @@ export type Draft = {
     sources: Array<{ name: string; url: string; itemCount: number }>;
     signals: TrendSignal[];
     excludedSignals: Array<TrendSignal & { reason: string }>;
-    bannerStatus: "live" | "failed" | "unavailable";
-    bannerModel?: string;
+    bannerStatus: "generated" | "failed";
+    bannerEngine?: string;
     bannerGeneratedAt?: string;
     fallbackReason?: string;
   };
@@ -91,4 +91,3 @@ export type Draft = {
     assumptions: string[];
   };
 };
-

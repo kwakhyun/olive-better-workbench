@@ -42,7 +42,7 @@ function statusLabel(stage: Stage) {
     idle: "요청 대기",
     researching: "공개 소스 조사 중",
     curating: "신호·상품 정제 중",
-    generating: "LLM 배너 생성 중",
+    generating: "안전 카피 생성 중",
     review: "검토 가능",
     published: "발행 완료"
   }[stage];
@@ -171,7 +171,7 @@ export default function Workbench() {
       sources: researchPayload.sources,
       signals: cleaned.accepted,
       excludedSignals: cleaned.excluded,
-      bannerStatus: "unavailable" as const,
+      bannerStatus: "failed" as const,
       fallbackReason: researchPayload.fallbackReason
     };
     const provisional = createDraft({
@@ -189,7 +189,7 @@ export default function Workbench() {
       | { eyebrow: string; title: string; subtitle: string; cta: string }
       | undefined;
     let bannerState: Draft["research"]["bannerStatus"] = "failed";
-    let bannerModel = "";
+    let bannerEngine = "";
     let bannerGeneratedAt = "";
     let bannerError = "";
 
@@ -207,15 +207,14 @@ export default function Workbench() {
       });
       const payload = await response.json();
       if (!response.ok) {
-        bannerState = payload.code === "LLM_NOT_CONFIGURED" ? "unavailable" : "failed";
-        throw new Error(payload.message || "LLM 배너 생성 실패");
+        throw new Error(payload.message || "안전 카피 생성 실패");
       }
       banner = payload.banner;
-      bannerState = "live";
-      bannerModel = payload.model;
+      bannerState = "generated";
+      bannerEngine = payload.engine;
       bannerGeneratedAt = payload.generatedAt;
     } catch (error) {
-      bannerError = error instanceof Error ? error.message : "LLM 배너 생성 실패";
+      bannerError = error instanceof Error ? error.message : "안전 카피 생성 실패";
     }
 
     const finalDraft = createDraft({
@@ -229,7 +228,7 @@ export default function Workbench() {
       research: {
         ...baseResearch,
         bannerStatus: bannerState,
-        bannerModel,
+        bannerEngine,
         bannerGeneratedAt,
         fallbackReason: [baseResearch.fallbackReason, bannerError].filter(Boolean).join(" · ")
       }
@@ -238,7 +237,7 @@ export default function Workbench() {
     setStage("review");
     if (bannerError) {
       setNotice(
-        `${bannerError} 화면 검토용 기본 문구를 표시하지만, 실제 LLM 문구가 아니므로 발행은 차단됩니다.`
+        `${bannerError} 화면 검토용 기본 문구를 표시하지만, 안전 카피 생성이 완료되지 않아 발행은 차단됩니다.`
       );
     }
   }
@@ -351,7 +350,7 @@ export default function Workbench() {
           <div>
             <span className="live-dot" />
             <b>OLIVE BETTER LIVE</b>
-            <span>공개 소스 + LLM 연결</span>
+            <span>공개 소스 + 안전 카피 엔진</span>
           </div>
           <div className="header-actions">
             <span className={`stage-pill stage-${stage}`}>{statusLabel(stage)}</span>
@@ -420,7 +419,7 @@ export default function Workbench() {
             >
               <span>✦</span>
               {progressIndex > 0 && progressIndex < 4 ? statusLabel(stage) : "트렌드 조사 & 초안 만들기"}
-              <small>공개 데이터 조사 → 정제 → 상품 검증 → LLM 카피</small>
+              <small>공개 데이터 조사 → 정제 → 상품 검증 → 안전 카피 생성</small>
             </button>
             {(progressIndex > 0 && progressIndex < 4) && (
               <div className="generation-progress" role="status">
@@ -505,11 +504,11 @@ export default function Workbench() {
 
                   {activePanel === "safety" && (
                     <div className="audit-content">
-                      <div className={draft.research.bannerStatus === "live" ? "source-status status-live" : "source-status status-failed"}>
-                        <span>{draft.research.bannerStatus === "live" ? "✓" : "!"}</span>
+                      <div className={draft.research.bannerStatus === "generated" ? "source-status status-live" : "source-status status-failed"}>
+                        <span>{draft.research.bannerStatus === "generated" ? "✓" : "!"}</span>
                         <div>
-                          <b>{draft.research.bannerStatus === "live" ? "실제 LLM 배너 생성" : "LLM 연결 확인 필요"}</b>
-                          <small>{draft.research.bannerModel || draft.research.fallbackReason}</small>
+                          <b>{draft.research.bannerStatus === "generated" ? "안전 카피 엔진 생성" : "카피 생성 확인 필요"}</b>
+                          <small>{draft.research.bannerEngine || draft.research.fallbackReason}</small>
                         </div>
                       </div>
                       <h3>발행 검사</h3>
