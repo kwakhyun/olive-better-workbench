@@ -124,7 +124,13 @@ export default function Workbench() {
         body: JSON.stringify({ request, well })
       });
       const payload = await response.json();
-      if (!response.ok) throw new Error(payload.message || "공개 소스 조사 실패");
+      if (!response.ok) {
+        throw new Error(
+          [payload.message || "공개 소스 조사 실패", payload.nextAction]
+            .filter(Boolean)
+            .join(" ")
+        );
+      }
       researchPayload = payload;
       window.localStorage.setItem(STORAGE.research, JSON.stringify(payload));
     } catch (error) {
@@ -144,7 +150,8 @@ export default function Workbench() {
     }
 
     setStage("curating");
-    const cleaned = cleanSignals(researchPayload.signals, request, rules) as {
+    const signalContext = `${(WELL_META[well]?.keywords ?? []).join(" ")} ${request}`;
+    const cleaned = cleanSignals(researchPayload.signals, signalContext, rules) as {
       accepted: TrendSignal[];
       excluded: Array<TrendSignal & { reason: string }>;
     };

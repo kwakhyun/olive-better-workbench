@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
 import {
+  WELL_META,
   canPublish,
   cleanSignals,
   createDraft,
@@ -141,6 +142,59 @@ test("띄어쓰기와 기호로 우회한 금지 문구도 차단한다", () => 
   assert.ok(result.violations.some((item) => item.phrase === "100% 효과"));
   assert.ok(result.violations.some((item) => item.phrase === "약 대신"));
   assert.equal(inspectCopy("일상 속 균형 잡힌 웰니스 루틴", rules).safe, true);
+});
+
+test("선택한 Well의 영문 공개 연구도 관련 신호로 채택하고 미래 자료는 제외한다", () => {
+  const context = `장마철 직장인 웰니스 루틴 ${WELL_META["Fit Well"].keywords.join(" ")}`;
+  const result = cleanSignals(
+    [
+      {
+        id: "europe-pmc-current",
+        title: "Protein intake and exercise recovery habits among office workers",
+        url: "https://europepmc.org/article/MED/1",
+        publishedAt: "2026-07-20",
+        source: "Europe PMC"
+      },
+      {
+        id: "openalex-future",
+        title: "Future exercise recovery study",
+        url: "https://openalex.org/W2",
+        publishedAt: "2026-08-15",
+        source: "OpenAlex"
+      }
+    ],
+    context,
+    rules,
+    new Date("2026-07-30T00:00:00.000Z")
+  );
+
+  assert.deepEqual(result.accepted.map((item) => item.id), ["europe-pmc-current"]);
+  assert.equal(result.excluded[0].reason, "기준 시점 이후 자료");
+});
+
+test("영문 질병·임상·동물 연구 신호도 고객 기획전 근거에서 제외한다", () => {
+  const result = cleanSignals(
+    [
+      {
+        id: "medical-en",
+        title: "Clinical treatment for cancer patients after surgery",
+        publishedAt: "2026-07-20",
+        source: "Europe PMC"
+      },
+      {
+        id: "animal-en",
+        title: "Exercise recovery effects in rodent studies",
+        publishedAt: "2026-07-20",
+        source: "Europe PMC"
+      }
+    ],
+    `웰니스 운동 ${WELL_META["Fit Well"].keywords.join(" ")}`,
+    rules,
+    new Date("2026-07-30T00:00:00.000Z")
+  );
+
+  assert.equal(result.accepted.length, 0);
+  assert.ok(result.excluded.every((item) => item.reason === "의약품·질병 질의 가능성"));
 });
 
 test("서로 다른 MD 요청과 Well은 테마·상품·영역 순서를 바꾼다", () => {

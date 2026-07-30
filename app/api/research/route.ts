@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { fetchWithRetry } from "@/lib/public-source.mjs";
 
 export const dynamic = "force-dynamic";
 
@@ -40,35 +41,28 @@ function parseRss(xml: string, source: string) {
   });
 }
 
-async function fetchWithTimeout(url: string, timeoutMs = 8000) {
-  const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), timeoutMs);
-  try {
-    const response = await fetch(url, {
-      signal: controller.signal,
-      headers: {
-        "user-agent": "OliveBetter-Cofathon-MVP/1.0",
-        accept: "application/json, application/rss+xml, application/xml, text/xml"
-      },
-      cache: "no-store"
-    });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    return response;
-  } finally {
-    clearTimeout(timer);
-  }
-}
+const SOURCE_HEADERS = {
+  "user-agent": "OliveBetter-Cofathon-MVP/1.0",
+  accept: "application/json, application/rss+xml, application/xml, text/xml"
+};
 
 async function googleNewsSignals(query: string) {
   const baseUrl =
     process.env.TREND_RSS_URL || "https://news.google.com/rss/search";
   const separator = baseUrl.includes("?") ? "&" : "?";
   const url = `${baseUrl}${separator}q=${encodeURIComponent(`${query} wellness when:30d`)}&hl=ko&gl=KR&ceid=KR:ko`;
-  const response = await fetchWithTimeout(url);
+  const response = await fetchWithRetry(url, {
+    source: "Google News RSS",
+    timeoutMs: 10000,
+    retries: 1,
+    headers: SOURCE_HEADERS
+  });
+  const items = parseRss(await response.text(), "Google News RSS");
+  if (!items.length) throw new Error("Google News RSS: 검색 결과가 없습니다.");
   return {
     source: "Google News RSS",
     sourceUrl: url,
-    items: parseRss(await response.text(), "Google News RSS")
+    items
   };
 }
 
@@ -76,11 +70,17 @@ async function openAlexSignals(query: string) {
   const fromDate = new Date(Date.now() - 1000 * 60 * 60 * 24 * 120)
     .toISOString()
     .slice(0, 10);
+  const toDate = new Date().toISOString().slice(0, 10);
   const baseUrl =
     process.env.TREND_OPENALEX_URL || "https://api.openalex.org/works";
   const separator = baseUrl.includes("?") ? "&" : "?";
-  const url = `${baseUrl}${separator}search=${encodeURIComponent(query)}&filter=from_publication_date:${fromDate}&sort=publication_date:desc&per-page=14`;
-  const response = await fetchWithTimeout(url);
+  const url = `${baseUrl}${separator}search=${encodeURIComponent(query)}&filter=from_publication_date:${fromDate},to_publication_date:${toDate}&sort=publication_date:desc&per-page=14&select=id,title,publication_date,doi,primary_location`;
+  const response = await fetchWithRetry(url, {
+    source: "OpenAlex",
+    timeoutMs: 10000,
+    retries: 1,
+    headers: SOURCE_HEADERS
+  });
   const payload = (await response.json()) as {
     results?: Array<{
       id: string;
@@ -90,16 +90,68 @@ async function openAlexSignals(query: string) {
       primary_location?: { landing_page_url?: string };
     }>;
   };
+  const items = (payload.results ?? []).map((work) => ({
+    id: work.id,
+    title: work.title,
+    url: work.primary_location?.landing_page_url || work.doi || work.id,
+    publishedAt: work.publication_date,
+    source: "OpenAlex"
+  }));
+  if (!items.length) throw new Error("OpenAlex: 검색 결과가 없습니다.");
   return {
     source: "OpenAlex",
     sourceUrl: url,
-    items: (payload.results ?? []).map((work) => ({
-      id: work.id,
-      title: work.title,
-      url: work.primary_location?.landing_page_url || work.doi || work.id,
-      publishedAt: work.publication_date,
-      source: "OpenAlex"
-    }))
+    items
+  };
+}
+
+async function europePmcSignals(query: string) {
+  const fromDate = new Date(Date.now() - 1000 * 60 * 60 * 24 * 120)
+    .toISOString()
+    .slice(0, 10);
+  const toDate = new Date().toISOString().slice(0, 10);
+  const baseUrl =
+    process.env.TREND_EUROPEPMC_URL ||
+    "https://www.ebi.ac.uk/europepmc/webservices/rest/search";
+  const separator = baseUrl.includes("?") ? "&" : "?";
+  const search = `(${query}) AND FIRST_PDATE:[${fromDate} TO ${toDate}]`;
+  const url = `${baseUrl}${separator}query=${encodeURIComponent(search)}&resultType=lite&format=json&pageSize=14&sort_date=y`;
+  const response = await fetchWithRetry(url, {
+    source: "Europe PMC",
+    timeoutMs: 10000,
+    retries: 1,
+    headers: SOURCE_HEADERS
+  });
+  const payload = (await response.json()) as {
+    resultList?: {
+      result?: Array<{
+        id?: string;
+        source?: string;
+        title?: string;
+        firstPublicationDate?: string;
+        pubYear?: string;
+        doi?: string;
+      }>;
+    };
+  };
+  const items = (payload.resultList?.result ?? [])
+    .filter((work) => work.id && work.title)
+    .map((work) => ({
+      id: `Europe PMC-${work.source ?? "article"}-${work.id}`,
+      title: work.title ?? "",
+      url: work.doi
+        ? `https://doi.org/${work.doi.replace(/^https?:\/\/doi\.org\//, "")}`
+        : `https://europepmc.org/article/${work.source ?? "MED"}/${work.id}`,
+      publishedAt:
+        work.firstPublicationDate ||
+        (work.pubYear ? `${work.pubYear}-01-01` : new Date().toISOString()),
+      source: "Europe PMC"
+    }));
+  if (!items.length) throw new Error("Europe PMC: 검색 결과가 없습니다.");
+  return {
+    source: "Europe PMC",
+    sourceUrl: url,
+    items
   };
 }
 
@@ -188,9 +240,11 @@ export async function POST(request: Request) {
       });
     }
 
+    const scientificQuery = WELL_QUERY[body.well ?? ""] ?? "wellness lifestyle";
     const settled = await Promise.allSettled([
       googleNewsSignals(mdRequest),
-      openAlexSignals(topic)
+      europePmcSignals(scientificQuery),
+      openAlexSignals(scientificQuery)
     ]);
     const successful = settled
       .filter((result) => result.status === "fulfilled")
@@ -200,7 +254,18 @@ export async function POST(request: Request) {
       .map((result) => (result.reason instanceof Error ? result.reason.message : "연결 실패"));
 
     const signals = successful.flatMap((entry) => entry.items);
-    if (!signals.length) throw new Error(failed.join(", ") || "공개 소스 응답에 자료가 없습니다.");
+    if (!signals.length) {
+      return NextResponse.json(
+        {
+          status: "failed",
+          fetchedAt: new Date().toISOString(),
+          message: "현재 공개 트렌드 소스에서 자료를 가져오지 못했습니다.",
+          failedSources: failed,
+          nextAction: "잠시 후 다시 시도해 주세요. 연결이 회복되면 실제 최신 자료로 초안을 만듭니다."
+        },
+        { status: 503 }
+      );
+    }
 
     return NextResponse.json({
       status: "live",
@@ -215,16 +280,13 @@ export async function POST(request: Request) {
       failedSources: failed,
       signals
     });
-  } catch (error) {
+  } catch {
     return NextResponse.json(
       {
         status: "failed",
         fetchedAt: new Date().toISOString(),
-        message:
-          error instanceof Error
-            ? error.message
-            : "공개 트렌드 소스에 연결하지 못했습니다.",
-        nextAction: "이전 성공 조사 결과가 있으면 캐시로 전환하고, 없으면 잠시 후 다시 시도하세요."
+        message: "공개 트렌드 조사 요청을 처리하지 못했습니다.",
+        nextAction: "입력 내용을 확인하고 잠시 후 다시 시도해 주세요."
       },
       { status: 503 }
     );

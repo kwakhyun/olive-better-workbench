@@ -22,6 +22,7 @@ const localBindingConfig = {
     LLM_AUTH_SCHEME: process.env.LLM_AUTH_SCHEME ?? "Bearer",
     TREND_RSS_URL: process.env.TREND_RSS_URL ?? "",
     TREND_OPENALEX_URL: process.env.TREND_OPENALEX_URL ?? "",
+    TREND_EUROPEPMC_URL: process.env.TREND_EUROPEPMC_URL ?? "",
     TEST_CONNECTORS: process.env.TEST_CONNECTORS ?? "false"
   },
   d1_databases: d1

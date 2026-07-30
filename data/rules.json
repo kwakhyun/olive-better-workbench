@@ -99,7 +99,19 @@
       "처방",
       "복용량",
       "약물",
-      "진단"
+      "진단",
+      "cancer",
+      "leukemia",
+      "tumor",
+      "surgery",
+      "treatment",
+      "disease",
+      "disorder",
+      "clinical",
+      "patient",
+      "rodent",
+      "mouse",
+      "mice"
     ]
   }
 }
