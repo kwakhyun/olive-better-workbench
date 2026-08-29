@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useState, type CSSProperties } from "react";
 import type { CustomerEvent, Draft, PageBlock, Product } from "@/lib/types";
 
 type RendererProps = {
@@ -25,7 +25,7 @@ function ProductPackshot({ product, hero = false }: { product: Product; hero?: b
   return (
     <div
       className={`product-packshot ${hero ? "is-hero" : ""}`}
-      style={{ "--pack-color": product.color } as React.CSSProperties}
+      style={{ "--pack-color": product.color } as CSSProperties}
       aria-hidden="true"
     >
       <span className="pack-shadow" />
@@ -64,11 +64,13 @@ function ProductCard({
       <button
         className="product-visual-button"
         type="button"
-        onClick={() => mode === "customer" && track("click")}
+        onClick={() => {
+          if (mode === "customer") track("click");
+        }}
         aria-label={`${product.name} 자세히 보기`}
       >
         <div className="product-visual" style={{ background: product.color }}>
-          {product.flags.coupon && <span className="coupon-chip">쿠폰</span>}
+          {product.flags.coupon ? <span className="coupon-chip">쿠폰</span> : null}
           <ProductPackshot product={product} />
         </div>
       </button>
@@ -78,9 +80,9 @@ function ProductCard({
           <span className="rating">★ {product.rating}</span>
         </div>
         <h3>{product.name}</h3>
-        {product.recommendationReason && (
+        {product.recommendationReason ? (
           <p className="recommendation-reason">{product.recommendationReason}</p>
-        )}
+        ) : null}
         <div className="price-row">
           <strong>{money.format(product.price)}원</strong>
           {mode === "customer" ? (
@@ -125,7 +127,7 @@ function Hero({
   const heroProducts = (block.productIds ?? [])
     .map((id) => config.products[id])
     .filter(Boolean);
-  const editable = mode === "preview" && onEditHero;
+  const editable = mode === "preview" ? onEditHero : undefined;
   return (
     <section
       className={`campaign-hero hero-${block.variant ?? "editorial"}`}
@@ -133,7 +135,7 @@ function Hero({
         {
           "--hero-soft": block.presentation?.tone ?? config.palette.soft,
           "--hero-accent": block.presentation?.accent ?? config.palette.accent
-        } as React.CSSProperties
+        } as CSSProperties
       }
       data-block-id={block.id}
     >
@@ -145,7 +147,7 @@ function Hero({
           <input
             className="hero-title-input"
             value={block.title ?? ""}
-            onChange={(event) => onEditHero("title", event.target.value)}
+            onChange={(event) => onEditHero?.("title", event.target.value)}
             aria-label="대표 배너 제목"
           />
         ) : (
@@ -155,7 +157,7 @@ function Hero({
           <textarea
             className="hero-subtitle-input"
             value={block.subtitle ?? ""}
-            onChange={(event) => onEditHero("subtitle", event.target.value)}
+            onChange={(event) => onEditHero?.("subtitle", event.target.value)}
             aria-label="대표 배너 설명"
           />
         ) : (
@@ -165,7 +167,7 @@ function Hero({
           <input
             className="hero-cta-input"
             value={block.cta ?? ""}
-            onChange={(event) => onEditHero("cta", event.target.value)}
+            onChange={(event) => onEditHero?.("cta", event.target.value)}
             aria-label="대표 배너 버튼 문구"
           />
         ) : (
@@ -202,6 +204,51 @@ function SignalStrip({ block }: { block: PageBlock }) {
   );
 }
 
+type ProductCollectionProps = {
+  block: PageBlock;
+  ids: string[];
+  kind: "rail" | "grid";
+  products: Draft["products"];
+  mode: "preview" | "customer";
+  liked: Set<string>;
+  onToggleLike: (productId: string) => void;
+  onEvent?: RendererProps["onEvent"];
+  onRemoveProduct?: RendererProps["onRemoveProduct"];
+};
+
+function ProductCollection({
+  block,
+  ids,
+  kind,
+  products,
+  mode,
+  liked,
+  onToggleLike,
+  onEvent,
+  onRemoveProduct
+}: ProductCollectionProps) {
+  return (
+    <div className={kind === "rail" ? "product-rail" : "product-grid"}>
+      {ids.flatMap((id) => {
+        const product = products[id];
+        if (!product) return [];
+        return [
+          <ProductCard
+            key={product.id}
+            product={product}
+            block={block}
+            mode={mode}
+            liked={liked.has(product.id)}
+            onLike={() => onToggleLike(product.id)}
+            onEvent={onEvent}
+            onRemove={() => onRemoveProduct?.(product.id)}
+          />
+        ];
+      })}
+    </div>
+  );
+}
+
 export default function PageRenderer({
   config,
   mode = "customer",
@@ -210,34 +257,16 @@ export default function PageRenderer({
   onRemoveProduct
 }: RendererProps) {
   const [liked, setLiked] = useState<Set<string>>(new Set());
-  const products = useMemo(() => config.products ?? {}, [config.products]);
+  const products = config.products ?? {};
 
-  const cards = (block: PageBlock, ids: string[], kind: "rail" | "grid") => (
-    <div className={kind === "rail" ? "product-rail" : "product-grid"}>
-      {ids
-        .map((id) => products[id])
-        .filter(Boolean)
-        .map((product) => (
-          <ProductCard
-            key={product.id}
-            product={product}
-            block={block}
-            mode={mode}
-            liked={liked.has(product.id)}
-            onLike={() =>
-              setLiked((current) => {
-                const next = new Set(current);
-                if (next.has(product.id)) next.delete(product.id);
-                else next.add(product.id);
-                return next;
-              })
-            }
-            onEvent={onEvent}
-            onRemove={() => onRemoveProduct?.(product.id)}
-          />
-        ))}
-    </div>
-  );
+  function toggleLike(productId: string) {
+    setLiked((current) => {
+      const next = new Set(current);
+      if (next.has(productId)) next.delete(productId);
+      else next.add(productId);
+      return next;
+    });
+  }
 
   return (
     <div
@@ -246,7 +275,7 @@ export default function PageRenderer({
         {
           "--campaign-accent": config.palette.accent,
           "--campaign-soft": config.palette.soft
-        } as React.CSSProperties
+        } as CSSProperties
       }
     >
       {config.blocks.map((block) => {
@@ -284,7 +313,17 @@ export default function PageRenderer({
                 </div>
                 <span className="section-arrow">↗</span>
               </div>
-              {cards(block, block.productIds ?? [], "rail")}
+              <ProductCollection
+                block={block}
+                ids={block.productIds ?? []}
+                kind="rail"
+                products={products}
+                mode={mode}
+                liked={liked}
+                onToggleLike={toggleLike}
+                onEvent={onEvent}
+                onRemoveProduct={onRemoveProduct}
+              />
             </section>
           );
         }
@@ -307,7 +346,7 @@ export default function PageRenderer({
                         <h3>{step.label}</h3>
                         <span>{product?.name ?? "내게 맞는 루틴 찾기"}</span>
                       </div>
-                      {product && <ProductPackshot product={product} />}
+                      {product ? <ProductPackshot product={product} /> : null}
                     </article>
                   );
                 })}
@@ -324,7 +363,17 @@ export default function PageRenderer({
                   <h2>{block.title}</h2>
                 </div>
               </div>
-              {cards(block, block.productIds ?? [], "grid")}
+              <ProductCollection
+                block={block}
+                ids={block.productIds ?? []}
+                kind="grid"
+                products={products}
+                mode={mode}
+                liked={liked}
+                onToggleLike={toggleLike}
+                onEvent={onEvent}
+                onRemoveProduct={onRemoveProduct}
+              />
             </section>
           );
         }

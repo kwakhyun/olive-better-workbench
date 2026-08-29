@@ -1,6 +1,6 @@
 # Better Workbench
 
-OLIVE BETTER의 웰니스 MD가 `기획 요청 → 공개 트렌드 조사 → 신호 정제 → 상품 안전 검증 → AI-Driven UI 초안 → 검토·발행 → 고객 반응 재적용`을 한 흐름에서 수행하는 프론트엔드 중심 MVP입니다.
+OLIVE BETTER의 웰니스 MD가 `기획 요청 → 공개 트렌드 조사 → 신호 정제 → 상품 안전 검증 → AI-Driven UI 초안 → 검토·발행 → 고객 반응 재적용`을 한 흐름에서 수행하는 MVP입니다. 운영 화면은 상호작용을 담당하고, 전체 상품 데이터가 필요한 초안 조립은 서버 API에서 수행합니다.
 
 운영자 화면과 고객 화면은 분리되어 있습니다. 고객 화면에는 안전 검사를 통과해 발행된 JSON 화면 데이터만 표시됩니다.
 
@@ -62,6 +62,7 @@ npm run dev
 
 - **단일 실행 명령**: `npm run dev`
 - **실제 공개 트렌드 연결**: Google News RSS, OpenAlex API를 서버 경계에서 병렬 조회
+- **서버 전용 상품 조립**: 300개 상품 원본과 추천 규칙을 클라이언트 번들에 포함하지 않고 서버에서 검증·선별
 - **내장 안전 카피 엔진**: 외부 모델·키 없이 Well과 요청 맥락에 맞는 대표 배너 문구 생성
 - **정제 감사 로그**: 중복, 광고, 의약품·질병 질의, 오래된 자료, 낮은 관련성의 제외 사유 보관
 - **상품 안전 검증**: 품절, 건강 기능 누락, Well-기능 불일치, 동일 상품 중복 제외
@@ -164,6 +165,7 @@ npm run dev
 - 회원: 브라우저 한 개를 한 고객 세션으로 취급
 - 구매: 결제 없이 구매 이벤트만 기록
 - 영속 저장: `localStorage`; 실제 서비스에서는 발행본·반응·조사 캐시를 DB/이벤트 스트림으로 교체
+- 저장 스키마: `v2` 접두어가 있는 키를 사용하며, 기존 키는 처음 읽을 때 자동 이전
 - `TEST_CONNECTORS=true`: 자동화와 스크린샷 전용 공개 소스 mock. 기본 실행에서는 꺼져 있으며 실제 공개 데이터 연결을 대체하지 않습니다.
 
 실서비스 전환 지점:
@@ -217,10 +219,12 @@ npm test
 ```text
 app/
   api/
+    assemble-draft/route.ts    서버 상품 검증·초안 조립
     research/route.ts          공개 트렌드 연결
     generate-banner/route.ts   로컬 안전 카피 생성
   components/
     Workbench.tsx              운영자 조사·검토·발행
+    workbench/                 입력·검토 화면 컴포넌트
     Shop.tsx                   고객 발행 화면·반응 수집
     PageRenderer.tsx           JSON 기반 공통 화면 렌더러
   shop/page.tsx
@@ -228,6 +232,8 @@ data/
   products.json
   rules.json
 lib/
+  client-api.ts                클라이언트 API 계약
+  client-storage.ts            버전형 브라우저 저장소
   engine.mjs                   정제·안전·추천·피드백 엔진
   safe-copy.mjs                키 없는 대표 배너 카피 엔진
   types.ts

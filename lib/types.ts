@@ -1,10 +1,18 @@
+export type Well =
+  | "Eat Well"
+  | "Nourish Well"
+  | "Fit Well"
+  | "Relax Well"
+  | "Glow Well"
+  | "Care Well";
+
 export type Product = {
   id: string;
   sku: string;
   canonicalSku: string;
   name: string;
   brand: string;
-  well: string;
+  well: Well;
   category: string;
   functional: string[];
   price: number;
@@ -24,18 +32,52 @@ export type CustomerEvent = {
   type: "click" | "like" | "purchase";
   productId?: string;
   blockId?: string;
-  well?: string;
+  well?: Well;
   at: string;
 };
 
-export type TrendSignal = {
+export type RawTrendSignal = {
   id: string;
   title: string;
   url: string;
   publishedAt: string;
   source: string;
+};
+
+export type TrendSignal = RawTrendSignal & {
   relevance: number;
   ageDays: number | null;
+};
+
+export type ResearchSource = {
+  name: string;
+  url: string;
+  itemCount: number;
+};
+
+export type ResearchPayload = {
+  status: "live" | "cached";
+  topic: string;
+  fetchedAt: string;
+  startedAt?: string;
+  sources: ResearchSource[];
+  failedSources?: string[];
+  signals: RawTrendSignal[];
+  fallbackReason?: string;
+};
+
+export type BannerCopy = {
+  eyebrow: string;
+  title: string;
+  subtitle: string;
+  cta: string;
+};
+
+export type BannerResponse = {
+  status: "generated";
+  generatedAt: string;
+  engine: string;
+  banner: BannerCopy;
 };
 
 export type PageBlock = {
@@ -61,7 +103,7 @@ export type Draft = {
   createdAt: string;
   publishedAt?: string;
   request: string;
-  well: string;
+  well: Well;
   theme: string;
   palette: { accent: string; soft: string; ink: string; canvas: string };
   research: {
@@ -90,4 +132,26 @@ export type Draft = {
     eventCount: number;
     assumptions: string[];
   };
+};
+
+export type DraftAssemblyRequest = {
+  request: string;
+  well: Well;
+  research: ResearchPayload;
+  events: CustomerEvent[];
+  banner?: BannerCopy;
+  bannerStatus: "generated" | "failed";
+  bannerEngine?: string;
+  bannerGeneratedAt?: string;
+  bannerError?: string;
+};
+
+export type PublishCheck = {
+  allowed: boolean;
+  reasons: string[];
+  safety?: {
+    safe: boolean;
+    violations: Array<{ phrase?: string; reason: string; type?: string }>;
+  };
+  config?: { valid?: boolean; issues: string[] };
 };

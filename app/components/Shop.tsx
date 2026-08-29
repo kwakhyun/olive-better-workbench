@@ -1,30 +1,41 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import {
+  appendEvent,
+  readEvents,
+  readPublished,
+  subscribeToAppStorage
+} from "@/lib/client-storage";
 import type { CustomerEvent, Draft } from "@/lib/types";
 import PageRenderer from "./PageRenderer";
 
-const PUBLISHED_KEY = "olive-better:published";
-const EVENTS_KEY = "olive-better:events";
+const EVENT_LABELS = {
+  click: "관심 상품을 확인했어요.",
+  like: "좋아요에 담았어요.",
+  purchase: "모의 구매가 기록됐어요."
+};
 
 export default function Shop() {
   const [published, setPublished] = useState<Draft | null>(null);
   const [toast, setToast] = useState("");
   const [eventCount, setEventCount] = useState(0);
+  const toastTimer = useRef<number | null>(null);
 
   useEffect(() => {
-    const frame = window.requestAnimationFrame(() => {
-      try {
-        const campaign = JSON.parse(window.localStorage.getItem(PUBLISHED_KEY) ?? "null") as Draft | null;
-        setPublished(campaign?.status === "published" ? campaign : null);
-        const events = JSON.parse(window.localStorage.getItem(EVENTS_KEY) ?? "[]") as CustomerEvent[];
-        setEventCount(events.length);
-      } catch {
-        setPublished(null);
-      }
-    });
-    return () => window.cancelAnimationFrame(frame);
+    const syncFromStorage = () => {
+      const campaign = readPublished();
+      setPublished(campaign?.status === "published" ? campaign : null);
+      setEventCount(readEvents().length);
+    };
+    const frame = window.requestAnimationFrame(syncFromStorage);
+    const unsubscribe = subscribeToAppStorage(syncFromStorage);
+    return () => {
+      window.cancelAnimationFrame(frame);
+      unsubscribe();
+      if (toastTimer.current !== null) window.clearTimeout(toastTimer.current);
+    };
   }, []);
 
   function recordEvent(event: Omit<CustomerEvent, "id" | "at">) {
@@ -33,24 +44,21 @@ export default function Shop() {
       id: crypto.randomUUID(),
       at: new Date().toISOString()
     };
-    let events: CustomerEvent[] = [];
-    try {
-      events = JSON.parse(window.localStorage.getItem(EVENTS_KEY) ?? "[]") as CustomerEvent[];
-    } catch {
-      events = [];
-    }
-    events.push(nextEvent);
-    window.localStorage.setItem(EVENTS_KEY, JSON.stringify(events));
+    const { events, saved } = appendEvent(nextEvent);
     setEventCount(events.length);
-    const labels = { click: "관심 상품을 확인했어요.", like: "좋아요에 담았어요.", purchase: "모의 구매가 기록됐어요." };
-    setToast(`${labels[nextEvent.type]} 다음 추천에 반영됩니다.`);
-    window.setTimeout(() => setToast(""), 2400);
+    setToast(
+      saved
+        ? `${EVENT_LABELS[nextEvent.type]} 다음 추천에 반영됩니다.`
+        : "브라우저 저장소에 반응을 기록하지 못했습니다."
+    );
+    if (toastTimer.current !== null) window.clearTimeout(toastTimer.current);
+    toastTimer.current = window.setTimeout(() => setToast(""), 2400);
   }
 
   return (
     <div className="shop">
       <header className="shop-header">
-        <a className="shop-logo" href="/shop"><b>OLIVE</b><span>BETTER</span></a>
+        <Link className="shop-logo" href="/shop"><b>OLIVE</b><span>BETTER</span></Link>
         <nav aria-label="고객 메뉴">
           <a href="#well">6 WELLS</a>
           <a href="#new">NEW & BEST</a>
@@ -86,7 +94,7 @@ export default function Shop() {
           <Link href="/">운영자 화면에서 기획전 만들기 →</Link>
         </main>
       )}
-      {toast && <div className="shop-toast" role="status"><span>✓</span>{toast}</div>}
+      {toast ? <div className="shop-toast" role="status"><span>✓</span>{toast}</div> : null}
     </div>
   );
 }

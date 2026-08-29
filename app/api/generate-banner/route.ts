@@ -1,7 +1,17 @@
 import { NextResponse } from "next/server";
 import { generateSafeBanner, SAFE_COPY_ENGINE } from "@/lib/safe-copy.mjs";
+import type { Well } from "@/lib/types";
 
 export const dynamic = "force-dynamic";
+
+const WELL_NAMES = new Set([
+  "Eat Well",
+  "Nourish Well",
+  "Fit Well",
+  "Relax Well",
+  "Glow Well",
+  "Care Well"
+]);
 
 export async function POST(request: Request) {
   try {
@@ -9,13 +19,20 @@ export async function POST(request: Request) {
       request?: string;
       well?: string;
     };
+    const well = String(body.well ?? "");
+    if (!WELL_NAMES.has(well)) {
+      return NextResponse.json(
+        { status: "failed", message: "6대 Well 가운데 하나를 선택해 주세요." },
+        { status: 422 }
+      );
+    }
     return NextResponse.json({
       status: "generated",
       generatedAt: new Date().toISOString(),
       engine: SAFE_COPY_ENGINE,
       banner: generateSafeBanner({
         request: String(body.request ?? "").slice(0, 500),
-        well: String(body.well ?? "")
+        well: well as Well
       })
     });
   } catch {

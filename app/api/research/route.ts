@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { fetchWithRetry } from "@/lib/public-source.mjs";
+import type { Well } from "@/lib/types";
 
 export const dynamic = "force-dynamic";
 
@@ -11,6 +12,8 @@ const WELL_QUERY: Record<string, string> = {
   "Glow Well": "skin health inner beauty wellness",
   "Care Well": "daily preventive wellness care"
 };
+
+const WELL_NAMES = new Set(Object.keys(WELL_QUERY));
 
 function textContent(value: string) {
   return value
@@ -159,7 +162,7 @@ export async function POST(request: Request) {
   const startedAt = new Date().toISOString();
   try {
     const body = (await request.json()) as { request?: string; well?: string };
-    const mdRequest = String(body.request ?? "").trim();
+    const mdRequest = String(body.request ?? "").trim().slice(0, 500);
     if (mdRequest.length < 4) {
       return NextResponse.json(
         {
@@ -170,7 +173,16 @@ export async function POST(request: Request) {
       );
     }
 
-    const topic = `${mdRequest} ${WELL_QUERY[body.well ?? ""] ?? "wellness lifestyle"}`;
+    if (!body.well || !WELL_NAMES.has(body.well)) {
+      return NextResponse.json(
+        { status: "needs_context", message: "6대 Well 가운데 하나를 선택해 주세요." },
+        { status: 422 }
+      );
+    }
+
+    const well = body.well as Well;
+
+    const topic = `${mdRequest} ${WELL_QUERY[well]}`;
     if (process.env.TEST_CONNECTORS === "true") {
       const now = new Date();
       const day = (offset: number) =>
@@ -240,7 +252,7 @@ export async function POST(request: Request) {
       });
     }
 
-    const scientificQuery = WELL_QUERY[body.well ?? ""] ?? "wellness lifestyle";
+    const scientificQuery = WELL_QUERY[well];
     const settled = await Promise.allSettled([
       googleNewsSignals(mdRequest),
       europePmcSignals(scientificQuery),
