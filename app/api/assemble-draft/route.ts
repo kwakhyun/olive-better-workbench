@@ -126,7 +126,7 @@ export async function POST(request: Request) {
   const research = parseResearch(body.research);
   if (mdRequest.length < 4 || !well || !research) {
     return NextResponse.json(
-      { message: "기획 요청, Well, 트렌드 근거를 확인해 주세요." },
+      { message: "기획 요청, Well, 트렌드 근거가 올바른지 확인해 주세요." },
       { status: 422 }
     );
   }
@@ -136,8 +136,8 @@ export async function POST(request: Request) {
   if (!cleaned.accepted.length) {
     return NextResponse.json(
       {
-        message: "요청과 관련된 최신 안전 신호가 부족해 초안을 만들지 않았습니다.",
-        nextAction: "대상이나 상황을 더 구체적으로 입력해 주세요."
+        message: "요청과 관련된 최신 트렌드 근거가 부족해 초안을 만들지 않았습니다.",
+        nextAction: "대상 고객이나 상황을 더 구체적으로 입력해 주세요."
       },
       { status: 422 }
     );

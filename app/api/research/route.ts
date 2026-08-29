@@ -175,7 +175,7 @@ export async function POST(request: Request) {
 
     if (!body.well || !WELL_NAMES.has(body.well)) {
       return NextResponse.json(
-        { status: "needs_context", message: "6대 Well 가운데 하나를 선택해 주세요." },
+        { status: "needs_context", message: "6대 Well 중 하나를 선택해 주세요." },
         { status: 422 }
       );
     }
@@ -208,7 +208,7 @@ export async function POST(request: Request) {
         signals: [
           {
             id: "test-news-1",
-            title: "장마철 직장인 사이에서 짧은 출근 전 운동 루틴 관심 증가",
+            title: "장마철 직장인 사이에서 출근 전 짧은 운동 루틴에 대한 관심 증가",
             url: "https://example.com/trend/1",
             publishedAt: day(1),
             source: "Google News RSS · TEST MOCK"
@@ -222,7 +222,7 @@ export async function POST(request: Request) {
           },
           {
             id: "test-news-3",
-            title: "출근 전 10분, 지속 가능한 컨디션 관리가 새로운 습관으로",
+            title: "출근 전 10분 컨디션 관리가 새로운 일상 습관으로",
             url: "https://example.com/trend/3",
             publishedAt: day(3),
             source: "Google News RSS · TEST MOCK"
@@ -271,9 +271,9 @@ export async function POST(request: Request) {
         {
           status: "failed",
           fetchedAt: new Date().toISOString(),
-          message: "현재 공개 트렌드 소스에서 자료를 가져오지 못했습니다.",
+          message: "공개 트렌드 자료를 불러오지 못했습니다.",
           failedSources: failed,
-          nextAction: "잠시 후 다시 시도해 주세요. 연결이 회복되면 실제 최신 자료로 초안을 만듭니다."
+          nextAction: "잠시 후 다시 시도해 주세요. 연결이 복구되면 최신 자료로 초안을 만들 수 있습니다."
         },
         { status: 503 }
       );
@@ -297,7 +297,7 @@ export async function POST(request: Request) {
       {
         status: "failed",
         fetchedAt: new Date().toISOString(),
-        message: "공개 트렌드 조사 요청을 처리하지 못했습니다.",
+        message: "공개 트렌드 조사를 처리하지 못했습니다.",
         nextAction: "입력 내용을 확인하고 잠시 후 다시 시도해 주세요."
       },
       { status: 503 }

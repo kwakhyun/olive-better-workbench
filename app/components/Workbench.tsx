@@ -28,7 +28,7 @@ import ReviewWorkspace from "./workbench/ReviewWorkspace";
 import { STAGE_LABELS, type Panel, type Stage } from "./workbench/types";
 
 const defaultPrompt =
-  "장마철에도 가볍게 컨디션을 챙기고 싶은 20–30대 직장인을 위한 출근 전 웰니스 루틴";
+  "장마철에도 가볍게 컨디션을 챙기고 싶은 20~30대 직장인을 위한 출근 전 웰니스 루틴";
 
 function messageFrom(error: unknown, fallback: string) {
   return error instanceof Error ? error.message : fallback;
@@ -90,7 +90,7 @@ export default function Workbench() {
       .then((payload) => ({ payload, error: "" }))
       .catch((error: unknown) => ({
         payload: null,
-        error: messageFrom(error, "안전 카피 생성 실패")
+        error: messageFrom(error, "안전한 대표 문구를 만들지 못했습니다.")
       }));
 
     let researchPayload: ResearchPayload;
@@ -102,12 +102,12 @@ export default function Workbench() {
       const cached = readResearch();
       const fallback = resolveResearchFallback(
         cached,
-        messageFrom(error, "공개 소스 연결에 실패했습니다.")
+        messageFrom(error, "공개 트렌드 자료에 연결하지 못했습니다.")
       ) as ResearchPayload | null;
       if (!fallback) {
         setStage("idle");
         setGenerationError(
-          `${messageFrom(error, "공개 소스 조사 실패")} 이전 성공 자료가 없어 초안을 만들지 않았습니다.`
+          `${messageFrom(error, "공개 트렌드 조사에 실패했습니다.")} 이전에 수집한 자료도 없어 초안을 만들지 않았습니다.`
         );
         return;
       }
@@ -123,7 +123,7 @@ export default function Workbench() {
     if (!cleaned.accepted.length) {
       setStage("idle");
       setGenerationError(
-        "요청과 관련된 최신 안전 신호가 부족해 초안을 만들지 않았습니다. 대상이나 상황을 더 구체적으로 입력해 주세요."
+        "요청과 관련된 최신 트렌드 근거가 부족해 초안을 만들지 않았습니다. 대상 고객이나 상황을 더 구체적으로 입력해 주세요."
       );
       return;
     }
@@ -154,7 +154,7 @@ export default function Workbench() {
 
     if (bannerResult.error) {
       setNotice(
-        `${bannerResult.error} 화면 검토용 기본 문구를 표시하지만, 안전 카피 생성이 완료되지 않아 발행은 차단됩니다.`
+        `${bannerResult.error} 검토를 위한 기본 문구를 표시하지만, 안전한 대표 문구가 준비되지 않아 발행할 수 없습니다.`
       );
     }
   }
@@ -193,12 +193,12 @@ export default function Workbench() {
           includedCount: Object.keys(products).length,
           excluded: [
             ...current.audit.excluded,
-            { id: productId, name: "운영자 제외 상품", reason: "MD 수동 제외" }
+            { id: productId, name: "직접 제외한 상품", reason: "MD가 직접 제외" }
           ]
         }
       };
     });
-    setNotice("상품을 초안에서 제외했습니다. 고객 화면에는 발행 후 반영됩니다.");
+    setNotice("상품을 초안에서 제외했습니다. 변경 내용은 다시 발행한 뒤 고객 화면에 반영됩니다.");
   }
 
   function publish() {
@@ -215,13 +215,13 @@ export default function Workbench() {
       publishedAt: new Date().toISOString()
     };
     if (!savePublished(published)) {
-      setNotice("브라우저 저장소에 발행본을 저장하지 못했습니다. 저장 공간과 브라우저 설정을 확인해 주세요.");
+      setNotice("이 브라우저에 발행 내용을 저장하지 못했습니다. 저장 공간과 브라우저 설정을 확인해 주세요.");
       return;
     }
     removeDraft();
     setDraft(published);
     setStage("published");
-    setNotice("안전 검사를 다시 통과해 고객 화면에 발행했습니다.");
+    setNotice("안전 검사를 통과한 내용을 고객 화면에 발행했습니다.");
   }
 
   function resetDemo() {
@@ -231,7 +231,7 @@ export default function Workbench() {
     setWell("Fit Well");
     setStage("idle");
     setStoredEventCount(0);
-    setNotice("초안·발행본·고객 반응·조사 캐시를 초기화했습니다.");
+    setNotice("초안, 발행 내용, 고객 반응, 이전 조사 자료를 모두 초기화했습니다.");
   }
 
   const progressIndex =
@@ -249,8 +249,8 @@ export default function Workbench() {
         </Link>
         <nav aria-label="운영자 메뉴">
           <a className="is-active" href="#create"><span>✦</span>기획전 만들기</a>
-          <a href="#review"><span>◎</span>검토 & 발행</a>
-          <a href="#learning"><span>↗</span>반응 학습</a>
+          <a href="#review"><span>◎</span>검토·발행</a>
+          <a href="#learning"><span>↗</span>고객 반응 반영</a>
         </nav>
         <div className="sidebar-bottom">
           <a href="/shop" target="_blank" rel="noreferrer"><span>↗</span>고객 화면 열기</a>
@@ -268,7 +268,7 @@ export default function Workbench() {
           <div>
             <span className="live-dot" />
             <b>OLIVE BETTER LIVE</b>
-            <span>공개 소스 + 안전 카피 엔진</span>
+            <span>공개 데이터 조사와 안전 문구 생성</span>
           </div>
           <div className="header-actions">
             <span className={`stage-pill stage-${stage}`}>{STAGE_LABELS[stage]}</span>
@@ -282,12 +282,12 @@ export default function Workbench() {
               <p className="operator-kicker"><span>01</span> AI MERCHANDISING COPILOT</p>
               <h1>웰니스 기획전,<br /><em>근거부터 발행까지.</em></h1>
               <p className="operator-lead">
-                최신 신호를 읽고, 안전한 상품만 골라, 고객 반응으로 더 나은 화면을 만듭니다.
+                최신 트렌드를 살펴보고, 기준에 맞는 상품만 골라, 고객 반응을 다음 기획에 반영합니다.
               </p>
             </div>
             <div className="operator-metrics">
-              <div><span>채택 신호</span><strong>{metrics.signals}</strong><small>LIVE SOURCES</small></div>
-              <div><span>안전 상품</span><strong>{metrics.safeProducts}</strong><small>VALIDATED SKU</small></div>
+              <div><span>채택 근거</span><strong>{metrics.signals}</strong><small>PUBLIC SOURCES</small></div>
+              <div><span>검증 상품</span><strong>{metrics.safeProducts}</strong><small>VALIDATED SKU</small></div>
               <div><span>고객 반응</span><strong>{metrics.events}</strong><small>THIS SESSION</small></div>
             </div>
           </section>
@@ -321,10 +321,10 @@ export default function Workbench() {
             <div>
               <span>03</span>
               <p>FEEDBACK LOOP</p>
-              <h2>클릭 1 · 좋아요 3 · 구매 7</h2>
+              <h2>클릭 1점, 좋아요 3점, 구매 7점</h2>
             </div>
-            <p>고객 화면에서 새로 쌓인 반응은 다음 초안의 상품 점수와 화면 영역 순서에 반영됩니다.</p>
-            <a href="/shop" target="_blank" rel="noreferrer">고객 반응 만들기 ↗</a>
+            <p>고객 화면에서 기록된 반응은 다음 초안의 상품 점수와 화면 영역 순서에 반영됩니다.</p>
+            <a href="/shop" target="_blank" rel="noreferrer">고객 화면에서 반응 남기기 ↗</a>
           </section>
         </div>
       </main>

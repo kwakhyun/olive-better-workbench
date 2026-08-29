@@ -89,9 +89,9 @@ test("300개 데모 카탈로그와 의도된 결함을 일관되게 정제한�
   assert.ok(result.accepted.length > 10);
   const reasons = new Set(result.excluded.map((item) => item.reason));
   assert.ok(reasons.has("품절"));
-  assert.ok(reasons.has("등록 건강 기능 정보 누락"));
-  assert.ok(reasons.has("Well 카테고리와 건강 기능 정보 불일치"));
-  assert.ok(reasons.has("동일 상품 중복 레코드"));
+  assert.ok(reasons.has("건강 기능 정보가 등록되지 않음"));
+  assert.ok(reasons.has("선택한 웰니스 영역과 등록된 건강 기능이 일치하지 않음"));
+  assert.ok(reasons.has("같은 상품이 중복 등록됨"));
   assert.ok(
     result.accepted.every(
       (product) =>
@@ -129,10 +129,10 @@ test("신호의 광고·의약품·오래됨·중복을 사유와 함께 제외�
   ];
   const result = cleanSignals(input, "직장인 출근 전 운동 루틴", rules, now);
   const reasons = new Set(result.excluded.map((item) => item.reason));
-  assert.ok(reasons.has("중복 신호"));
-  assert.ok(reasons.has("광고성 표현"));
-  assert.ok(reasons.has("의약품·질병 질의 가능성"));
-  assert.ok(reasons.has("기준 시점 초과"));
+  assert.ok(reasons.has("중복된 자료"));
+  assert.ok(reasons.has("광고성 내용 포함"));
+  assert.ok(reasons.has("질병 치료 또는 의약품 관련 내용"));
+  assert.ok(reasons.has("허용 기간보다 오래된 자료"));
 });
 
 test("띄어쓰기와 기호로 우회한 금지 문구도 차단한다", () => {
@@ -169,7 +169,7 @@ test("선택한 Well의 영문 공개 연구도 관련 신호로 채택하고 �
   );
 
   assert.deepEqual(result.accepted.map((item) => item.id), ["europe-pmc-current"]);
-  assert.equal(result.excluded[0].reason, "기준 시점 이후 자료");
+  assert.equal(result.excluded[0].reason, "기준 시점보다 미래의 자료");
 });
 
 test("영문 질병·임상·동물 연구 신호도 고객 기획전 근거에서 제외한다", () => {
@@ -194,7 +194,7 @@ test("영문 질병·임상·동물 연구 신호도 고객 기획전 근거에�
   );
 
   assert.equal(result.accepted.length, 0);
-  assert.ok(result.excluded.every((item) => item.reason === "의약품·질병 질의 가능성"));
+  assert.ok(result.excluded.every((item) => item.reason === "질병 치료 또는 의약품 관련 내용"));
 });
 
 test("서로 다른 MD 요청과 Well은 테마·상품·영역 순서를 바꾼다", () => {
@@ -233,13 +233,13 @@ test("클릭·좋아요·구매가 다음 상품 수·점수·영역 순서에 �
   assert.equal(Object.keys(learned.products).length, 14);
   assert.equal(learned.blocks[1].id, "editors-pick");
   assert.match(learned.products[productId].recommendationReason, /고객 반응 11점/);
-  assert.match(learned.audit.feedback, /구매 신호 상품 1개 우선/);
+  assert.match(learned.audit.feedback, /구매 반응이 있던 상품 1개를 우선 반영/);
 });
 
-test("안전 카피 엔진 문구가 없거나 운영자 수정 문구가 위험하면 발행을 막는다", () => {
+test("안전한 대표 문구가 없거나 운영자 수정 문구가 위험하면 발행을 막는다", () => {
   const noCopy = makeDraft({ research: research({ bannerStatus: "failed" }) });
   assert.equal(canPublish(noCopy, rules).allowed, false);
-  assert.match(canPublish(noCopy, rules).reasons.join(" "), /안전 카피 엔진/);
+  assert.match(canPublish(noCopy, rules).reasons.join(" "), /안전한 대표 문구/);
 
   const unsafe = makeDraft({
     banner: {
@@ -275,6 +275,6 @@ test("알 수 없는 영역만 격리하고 나머지 화면 데이터는 유지
   };
   const result = validatePageConfig(malformed);
   assert.equal(result.valid, false);
-  assert.match(result.issues.join(" "), /알 수 없는 화면 영역/);
+  assert.match(result.issues.join(" "), /지원하지 않는 화면 영역/);
   assert.equal(canPublish(malformed, rules).allowed, true);
 });

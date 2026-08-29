@@ -22,7 +22,7 @@ export async function POST(request: Request) {
     const well = String(body.well ?? "");
     if (!WELL_NAMES.has(well)) {
       return NextResponse.json(
-        { status: "failed", message: "6대 Well 가운데 하나를 선택해 주세요." },
+        { status: "failed", message: "6대 Well 중 하나를 선택해 주세요." },
         { status: 422 }
       );
     }
@@ -39,7 +39,7 @@ export async function POST(request: Request) {
     return NextResponse.json(
       {
         status: "failed",
-        message: "안전 카피 생성 요청을 처리하지 못했습니다.",
+        message: "안전한 대표 문구를 만들지 못했습니다.",
         nextAction: "입력 내용을 확인한 뒤 다시 시도해 주세요."
       },
       { status: 400 }

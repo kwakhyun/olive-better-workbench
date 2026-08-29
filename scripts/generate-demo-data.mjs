@@ -72,7 +72,7 @@ for (let index = 0; index < 300; index += 1) {
     canonicalSku: duplicate ? previous.canonicalSku : `CAN-${String(index + 1).padStart(4, "0")}`,
     name: duplicate
       ? `${previous.name} `
-      : `${brands[series % brands.length]} ${meta.nouns[series % meta.nouns.length]} ${10 + (series % 20)}일`,
+      : `${brands[series % brands.length]} ${meta.nouns[series % meta.nouns.length]} ${10 + (series % 20)}일분`,
     brand: brands[series % brands.length],
     well: meta.well,
     category: meta.category,

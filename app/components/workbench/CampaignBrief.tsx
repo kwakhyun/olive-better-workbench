@@ -4,15 +4,15 @@ import type { Well } from "@/lib/types";
 import { STAGE_LABELS, type Stage } from "./types";
 
 const SAMPLE_PROMPTS = {
-  evening: "저녁 스마트폰 사용 후 편안한 휴식을 원하는 30대 고객의 나이트 루틴",
-  runner: "운동을 막 시작한 초보 러너의 출근 전 단백질과 회복 루틴"
+  evening: "스마트폰을 사용한 뒤 편안하게 쉬고 싶은 30대 고객을 위한 저녁 루틴",
+  runner: "운동을 막 시작한 초보 러너를 위한 출근 전 단백질 보충과 회복 루틴"
 };
 
 const PROGRESS_LABELS = [
-  "공개 신호 수집",
-  "노이즈 정제",
-  "상품 안전 검증",
-  "대표 문구 생성"
+  "공개 트렌드 수집",
+  "관련 없는 정보 제외",
+  "상품 안전 기준 확인",
+  "안전한 대표 문구 생성"
 ];
 
 type WellMeta = {
@@ -49,7 +49,7 @@ export default function CampaignBrief({
     <section className="brief-card">
       <div className="brief-heading">
         <div><span className="step-chip">STEP 1</span><h2>어떤 기획전을 만들까요?</h2></div>
-        <span className="autosave">● 로컬 자동 저장</span>
+        <span className="autosave">● 이 브라우저에 자동 저장</span>
       </div>
       <label htmlFor="md-request">MD 기획 요청</label>
       <textarea
@@ -67,7 +67,7 @@ export default function CampaignBrief({
         </div>
       </div>
       <div className="well-picker">
-        <p>우선 탐색할 6대 Well</p>
+        <p>먼저 살펴볼 웰니스 영역</p>
         <div>
           {(Object.entries(WELL_META) as Array<[Well, WellMeta]>).map(([key, meta]) => (
             <button
@@ -91,8 +91,8 @@ export default function CampaignBrief({
         disabled={generating}
       >
         <span>✦</span>
-        {generating ? STAGE_LABELS[stage] : "트렌드 조사 & 초안 만들기"}
-        <small>공개 데이터 조사 → 정제 → 상품 검증 → 안전 카피 생성</small>
+        {generating ? STAGE_LABELS[stage] : "트렌드 조사하고 초안 만들기"}
+        <small>공개 자료 조사 → 관련 없는 정보 제외 → 상품 검증 → 안전한 문구 생성</small>
       </button>
       {generating ? (
         <div className="generation-progress" role="status" aria-live="polite">

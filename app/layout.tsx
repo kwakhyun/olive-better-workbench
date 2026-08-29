@@ -14,7 +14,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const origin = `${protocol}://${host}`;
   const title = "Better Workbench";
   const description =
-    "AI가 공개 트렌드를 조사하고 안전한 웰니스 기획전을 조립하는 OLIVE BETTER MD 워크벤치";
+    "공개 트렌드를 조사하고 안전 기준에 맞는 웰니스 기획전을 만드는 OLIVE BETTER MD 워크벤치";
 
   return {
     metadataBase: new URL(origin),

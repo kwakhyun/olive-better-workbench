@@ -99,7 +99,7 @@ function ProductCard({
                 {liked ? "♥" : "♡"}
               </button>
               <button type="button" className="mini-buy" onClick={() => track("purchase")}>
-                구매
+                구매해 보기
               </button>
             </div>
           ) : (
@@ -285,7 +285,7 @@ export default function PageRenderer({
               <span>!</span>
               <div>
                 <strong>지원하지 않는 화면 영역을 건너뛰었습니다.</strong>
-                <p>{block.type} · 나머지 화면은 계속 표시됩니다.</p>
+                <p>{block.type}: 나머지 화면은 계속 표시됩니다.</p>
               </div>
             </div>
           ) : null;
@@ -333,7 +333,7 @@ export default function PageRenderer({
               <div className="routine-intro">
                 <p className="section-number">03 · ROUTINE</p>
                 <h2>{block.title}</h2>
-                <p>완벽한 하루보다, 이어지는 작은 선택을 제안해요.</p>
+                <p>완벽함보다 꾸준히 이어 갈 수 있는 작은 선택을 제안해요.</p>
               </div>
               <div className="routine-list">
                 {(block.steps ?? []).map((step, index) => {

@@ -29,7 +29,7 @@ test("운영자 화면을 서버 렌더링한다", async () => {
   const html = await response.text();
   assert.match(html, /Better Workbench/);
   assert.match(html, /웰니스 기획전/);
-  assert.match(html, /트렌드 조사 &amp; 초안 만들기/);
+  assert.match(html, /트렌드 조사하고 초안 만들기/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton/);
 });
 
