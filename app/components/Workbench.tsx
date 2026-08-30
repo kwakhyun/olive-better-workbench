@@ -10,17 +10,20 @@ import {
   inspectCopy,
   resolveResearchFallback
 } from "@/lib/engine.mjs";
-import { assembleDraft, requestBanner, requestResearch } from "@/lib/client-api";
+import {
+  assembleDraft,
+  publishDraft,
+  requestBanner,
+  requestEventSummary,
+  requestResearch
+} from "@/lib/client-api";
 import {
   clearAppStorage,
   readDraft,
-  readEvents,
   readResearch,
   removeDraft,
   saveDraft,
-  savePublished,
-  saveResearch,
-  subscribeToAppStorage
+  saveResearch
 } from "@/lib/client-storage";
 import type { Draft, PublishCheck, ResearchPayload, TrendSignal, Well } from "@/lib/types";
 import CampaignBrief from "./workbench/CampaignBrief";
@@ -34,7 +37,7 @@ function messageFrom(error: unknown, fallback: string) {
   return error instanceof Error ? error.message : fallback;
 }
 
-export default function Workbench() {
+export default function Workbench({ operatorName }: { operatorName: string }) {
   const [request, setRequest] = useState(defaultPrompt);
   const [well, setWell] = useState<Well>("Fit Well");
   const [stage, setStage] = useState<Stage>("idle");
@@ -46,10 +49,9 @@ export default function Workbench() {
   const [storedEventCount, setStoredEventCount] = useState(0);
 
   useEffect(() => {
+    let active = true;
     const frame = window.requestAnimationFrame(() => {
       const saved = readDraft();
-      const events = readEvents();
-      setStoredEventCount(events.length);
       if (saved?.status === "draft") {
         setDraft(saved);
         setRequest(saved.request);
@@ -57,12 +59,16 @@ export default function Workbench() {
         setStage("review");
       }
     });
-    const unsubscribe = subscribeToAppStorage(() => {
-      setStoredEventCount(readEvents().length);
-    });
+    void requestEventSummary()
+      .then(({ count }) => {
+        if (active) setStoredEventCount(count);
+      })
+      .catch(() => {
+        if (active) setStoredEventCount(0);
+      });
     return () => {
+      active = false;
       window.cancelAnimationFrame(frame);
-      unsubscribe();
     };
   }, []);
 
@@ -130,14 +136,11 @@ export default function Workbench() {
 
     setStage("generating");
     const bannerResult = await bannerTask;
-    const events = readEvents();
-
     try {
       const finalDraft = await assembleDraft({
         request,
         well,
         research: researchPayload,
-        events,
         banner: bannerResult.payload?.banner,
         bannerStatus: bannerResult.payload ? "generated" : "failed",
         bannerEngine: bannerResult.payload?.engine,
@@ -145,6 +148,7 @@ export default function Workbench() {
         bannerError: bannerResult.error
       });
       setDraft(finalDraft);
+      setStoredEventCount(finalDraft.audit.eventCount);
       setStage("review");
     } catch (error) {
       setStage("idle");
@@ -201,7 +205,7 @@ export default function Workbench() {
     setNotice("상품을 초안에서 제외했습니다. 변경 내용은 다시 발행한 뒤 고객 화면에 반영됩니다.");
   }
 
-  function publish() {
+  async function publish() {
     if (!draft) return;
     const check = canPublish(draft, rules) as { allowed: boolean; reasons: string[] };
     if (!check.allowed) {
@@ -209,19 +213,15 @@ export default function Workbench() {
       setNotice(`발행할 수 없습니다. ${check.reasons[0]}`);
       return;
     }
-    const published = {
-      ...draft,
-      status: "published" as const,
-      publishedAt: new Date().toISOString()
-    };
-    if (!savePublished(published)) {
-      setNotice("이 브라우저에 발행 내용을 저장하지 못했습니다. 저장 공간과 브라우저 설정을 확인해 주세요.");
-      return;
+    try {
+      const published = await publishDraft(draft);
+      removeDraft();
+      setDraft(published);
+      setStage("published");
+      setNotice("안전 검사를 통과한 내용을 모든 고객 화면에 발행했습니다.");
+    } catch (error) {
+      setNotice(messageFrom(error, "기획전을 발행하지 못했습니다."));
     }
-    removeDraft();
-    setDraft(published);
-    setStage("published");
-    setNotice("안전 검사를 통과한 내용을 고객 화면에 발행했습니다.");
   }
 
   function resetDemo() {
@@ -230,8 +230,7 @@ export default function Workbench() {
     setRequest(defaultPrompt);
     setWell("Fit Well");
     setStage("idle");
-    setStoredEventCount(0);
-    setNotice("초안, 발행 내용, 고객 반응, 이전 조사 자료를 모두 초기화했습니다.");
+    setNotice("이 브라우저의 초안과 조사 자료를 초기화했습니다. 발행본과 고객 반응은 유지됩니다.");
   }
 
   const progressIndex =
@@ -254,10 +253,10 @@ export default function Workbench() {
         </nav>
         <div className="sidebar-bottom">
           <a href="/shop" target="_blank" rel="noreferrer"><span>↗</span>고객 화면 열기</a>
-          <button type="button" onClick={resetDemo}><span>↺</span>데모 초기화</button>
+          <button type="button" onClick={resetDemo}><span>↺</span>로컬 초안 초기화</button>
           <div className="md-profile">
             <span>MD</span>
-            <div><b>웰니스 상품팀</b><small>olivebetter@demo</small></div>
+            <div><b>{operatorName}</b><small>웰니스 상품팀</small></div>
           </div>
         </div>
       </aside>
@@ -288,7 +287,7 @@ export default function Workbench() {
             <div className="operator-metrics">
               <div><span>채택 근거</span><strong>{metrics.signals}</strong><small>PUBLIC SOURCES</small></div>
               <div><span>검증 상품</span><strong>{metrics.safeProducts}</strong><small>VALIDATED SKU</small></div>
-              <div><span>고객 반응</span><strong>{metrics.events}</strong><small>THIS SESSION</small></div>
+              <div><span>고객 반응</span><strong>{metrics.events}</strong><small>SHARED EVENTS</small></div>
             </div>
           </section>
 

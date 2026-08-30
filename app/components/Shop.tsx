@@ -2,12 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import {
-  appendEvent,
-  readEvents,
-  readPublished,
-  subscribeToAppStorage
-} from "@/lib/client-storage";
+import { recordCustomerEvent, requestPublishedCampaign } from "@/lib/client-api";
 import type { CustomerEvent, Draft } from "@/lib/types";
 import PageRenderer from "./PageRenderer";
 
@@ -19,38 +14,35 @@ const EVENT_LABELS = {
 
 export default function Shop() {
   const [published, setPublished] = useState<Draft | null>(null);
+  const [loading, setLoading] = useState(true);
   const [toast, setToast] = useState("");
-  const [eventCount, setEventCount] = useState(0);
   const toastTimer = useRef<number | null>(null);
 
   useEffect(() => {
-    const syncFromStorage = () => {
-      const campaign = readPublished();
-      setPublished(campaign?.status === "published" ? campaign : null);
-      setEventCount(readEvents().length);
-    };
-    const frame = window.requestAnimationFrame(syncFromStorage);
-    const unsubscribe = subscribeToAppStorage(syncFromStorage);
+    let active = true;
+    void requestPublishedCampaign()
+      .then((campaign) => {
+        if (active) setPublished(campaign?.status === "published" ? campaign : null);
+      })
+      .catch(() => {
+        if (active) setToast("기획전을 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.");
+      })
+      .finally(() => {
+        if (active) setLoading(false);
+      });
     return () => {
-      window.cancelAnimationFrame(frame);
-      unsubscribe();
+      active = false;
       if (toastTimer.current !== null) window.clearTimeout(toastTimer.current);
     };
   }, []);
 
-  function recordEvent(event: Omit<CustomerEvent, "id" | "at">) {
-    const nextEvent: CustomerEvent = {
-      ...event,
-      id: crypto.randomUUID(),
-      at: new Date().toISOString()
-    };
-    const { events, saved } = appendEvent(nextEvent);
-    setEventCount(events.length);
-    setToast(
-      saved
-        ? `${EVENT_LABELS[nextEvent.type]} 다음 추천에 반영됩니다.`
-        : "이 브라우저에 반응을 저장하지 못했습니다. 브라우저 설정을 확인해 주세요."
-    );
+  async function recordEvent(event: Omit<CustomerEvent, "id" | "at">) {
+    try {
+      await recordCustomerEvent(event);
+      setToast(`${EVENT_LABELS[event.type]} 다음 추천에 반영됩니다.`);
+    } catch (error) {
+      setToast(error instanceof Error ? error.message : "반응을 저장하지 못했습니다.");
+    }
     if (toastTimer.current !== null) window.clearTimeout(toastTimer.current);
     toastTimer.current = window.setTimeout(() => setToast(""), 2400);
   }
@@ -67,7 +59,7 @@ export default function Shop() {
         <div className="shop-actions">
           <button type="button" aria-label="검색">⌕</button>
           <button type="button" aria-label="좋아요">♡</button>
-          <button type="button" aria-label="장바구니">BAG <span>{eventCount}</span></button>
+          <button type="button" aria-label="장바구니">BAG</button>
         </div>
       </header>
       <div className="shop-notice">
@@ -76,7 +68,13 @@ export default function Shop() {
           <Link href="/">MD 운영 화면 ↗</Link>
       </div>
 
-      {published ? (
+      {loading ? (
+        <main className="unpublished-state" aria-busy="true">
+          <div className="empty-orbit"><span>b.</span></div>
+          <p>LOADING CAMPAIGN</p>
+          <h1>웰니스 기획전을<br />불러오고 있어요.</h1>
+        </main>
+      ) : published ? (
         <>
           <PageRenderer config={published} mode="customer" onEvent={recordEvent} />
           <footer className="shop-footer">

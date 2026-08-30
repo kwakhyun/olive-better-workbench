@@ -138,7 +138,6 @@ export type DraftAssemblyRequest = {
   request: string;
   well: Well;
   research: ResearchPayload;
-  events: CustomerEvent[];
   banner?: BannerCopy;
   bannerStatus: "generated" | "failed";
   bannerEngine?: string;

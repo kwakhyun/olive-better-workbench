@@ -2,6 +2,9 @@ import { NextResponse } from "next/server";
 import productsJson from "@/data/products.json";
 import rules from "@/data/rules.json";
 import { WELL_META, cleanSignals, createDraft } from "@/lib/engine.mjs";
+import { operatorRequestAllowed } from "@/lib/operator-auth";
+import { hasSameOrigin, readJsonBody, requestBodyErrorResponse } from "@/lib/request-security";
+import { consumeRateLimit, readRecentCustomerEvents } from "@/lib/server-store";
 import type {
   BannerCopy,
   CustomerEvent,
@@ -110,11 +113,25 @@ function parseBanner(value: unknown): BannerCopy | undefined {
 }
 
 export async function POST(request: Request) {
+  if (!hasSameOrigin(request) || !operatorRequestAllowed(request)) {
+    return NextResponse.json({ message: "초안을 만들 권한이 없습니다." }, { status: 403 });
+  }
+
   let body: unknown;
   try {
-    body = await request.json();
-  } catch {
-    return NextResponse.json({ message: "요청 형식이 올바르지 않습니다." }, { status: 400 });
+    const rate = await consumeRateLimit("assemble-draft", request, 20);
+    if (!rate.allowed) {
+      return NextResponse.json(
+        { message: "초안 생성 요청이 너무 많습니다. 잠시 후 다시 시도해 주세요." },
+        { status: 429 }
+      );
+    }
+    body = await readJsonBody(request, 262_144);
+  } catch (error) {
+    return (
+      requestBodyErrorResponse(error) ??
+      NextResponse.json({ message: "초안 생성 요청을 처리하지 못했습니다." }, { status: 503 })
+    );
   }
 
   if (!isRecord(body)) {
@@ -143,8 +160,7 @@ export async function POST(request: Request) {
     );
   }
 
-  const events = (Array.isArray(body.events) ? body.events : [])
-    .slice(-MAX_EVENTS)
+  const events = (await readRecentCustomerEvents(MAX_EVENTS))
     .map(parseEvent)
     .filter(Boolean) as CustomerEvent[];
   const banner = parseBanner(body.banner);

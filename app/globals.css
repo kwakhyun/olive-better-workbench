@@ -64,6 +64,52 @@ a {
   background-size: 32px 32px;
 }
 
+.operator-access {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  justify-items: start;
+  gap: 18px;
+  padding: 40px;
+  background: #f5f6ef;
+  color: #17221b;
+}
+
+.operator-access > p {
+  margin: 8px 0 0;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.operator-access h1,
+.operator-access > span {
+  max-width: 640px;
+  margin: 0;
+}
+
+.operator-access h1 {
+  font-size: clamp(32px, 5vw, 56px);
+}
+
+.operator-access > span {
+  color: #657067;
+  line-height: 1.7;
+}
+
+.operator-access > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.operator-access a {
+  padding: 12px 18px;
+  border: 1px solid #17221b;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
 .workbench-sidebar {
   background: var(--sidebar);
   bottom: 0;

@@ -1,5 +1,8 @@
 import { NextResponse } from "next/server";
 import { generateSafeBanner, SAFE_COPY_ENGINE } from "@/lib/safe-copy.mjs";
+import { operatorRequestAllowed } from "@/lib/operator-auth";
+import { hasSameOrigin, readJsonBody, requestBodyErrorResponse } from "@/lib/request-security";
+import { consumeRateLimit } from "@/lib/server-store";
 import type { Well } from "@/lib/types";
 
 export const dynamic = "force-dynamic";
@@ -14,8 +17,18 @@ const WELL_NAMES = new Set([
 ]);
 
 export async function POST(request: Request) {
+  if (!hasSameOrigin(request) || !operatorRequestAllowed(request)) {
+    return NextResponse.json({ message: "대표 문구를 만들 권한이 없습니다." }, { status: 403 });
+  }
   try {
-    const body = (await request.json()) as {
+    const rate = await consumeRateLimit("banner", request, 30);
+    if (!rate.allowed) {
+      return NextResponse.json(
+        { message: "대표 문구 생성 요청이 너무 많습니다. 잠시 후 다시 시도해 주세요." },
+        { status: 429 }
+      );
+    }
+    const body = (await readJsonBody(request)) as {
       request?: string;
       well?: string;
     };
@@ -35,7 +48,9 @@ export async function POST(request: Request) {
         well: well as Well
       })
     });
-  } catch {
+  } catch (error) {
+    const bodyError = requestBodyErrorResponse(error);
+    if (bodyError) return bodyError;
     return NextResponse.json(
       {
         status: "failed",
