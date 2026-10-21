@@ -88,7 +88,7 @@ export default function CampaignBrief({
         className="generate-button"
         type="button"
         onClick={onCreate}
-        disabled={generating}
+        disabled={generating || stage === "publishing"}
       >
         <span>✦</span>
         {generating ? STAGE_LABELS[stage] : "트렌드 조사하고 초안 만들기"}

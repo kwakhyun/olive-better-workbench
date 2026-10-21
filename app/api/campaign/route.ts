@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import rules from "@/data/rules.json";
-import { canPublish } from "@/lib/engine.mjs";
+import catalog from "@/data/products.json";
+import { canPublish, curateProducts } from "@/lib/engine.mjs";
 import { operatorRequestAllowed } from "@/lib/operator-auth";
 import {
   hasSameOrigin,
@@ -10,9 +11,10 @@ import {
 import {
   consumeRateLimit,
   publishCampaign,
-  readPublishedCampaign
+  readPublishedCampaign,
+  readRecentCustomerEvents
 } from "@/lib/server-store";
-import type { Draft, PublishCheck } from "@/lib/types";
+import type { Draft, Product, PublishCheck } from "@/lib/types";
 import { isDraft } from "@/lib/validation";
 
 export const dynamic = "force-dynamic";
@@ -63,7 +65,26 @@ export async function POST(request: Request) {
       );
     }
 
-    const check = canPublish(draft, rules) as PublishCheck;
+    const events = await readRecentCustomerEvents();
+    const { accepted } = curateProducts(catalog, rules, draft.well, draft.request, events) as { accepted: Product[] };
+    const eligible = new Map(accepted.map((product) => [product.id, product]));
+    const selected: Product[] = [];
+    for (const [id, submitted] of Object.entries(draft.products)) {
+      const original = eligible.get(id);
+      if (!original || !matchesCatalog(submitted, original)) {
+        return NextResponse.json(
+          { message: "상품 정보나 판매 조건이 변경되었습니다. 초안을 다시 생성하고 검토해 주세요." },
+          { status: 422 }
+        );
+      }
+      selected.push(original);
+    }
+    const verified: Draft = {
+      ...draft,
+      products: Object.fromEntries(selected.map((product) => [product.id, product])),
+      audit: { ...draft.audit, includedCount: selected.length }
+    };
+    const check = canPublish(verified, rules) as PublishCheck;
     if (!check.allowed) {
       return NextResponse.json(
         { message: `발행 안전 조건을 통과하지 못했습니다. ${check.reasons[0] ?? "초안을 확인해 주세요."}` },
@@ -72,8 +93,9 @@ export async function POST(request: Request) {
     }
 
     const campaign: Draft = {
-      ...draft,
+      ...verified,
       status: "published",
+      publicationId: crypto.randomUUID(),
       publishedAt: new Date().toISOString()
     };
     await publishCampaign(campaign);
@@ -86,4 +108,14 @@ export async function POST(request: Request) {
       { status: 503 }
     );
   }
+}
+
+function matchesCatalog(submitted: Product, original: Product) {
+  const fields = ["id", "sku", "canonicalSku", "name", "brand", "well", "category",
+    "price", "stock", "rating", "reviewCount", "color", "form"] as const;
+  return fields.every((key) => submitted[key] === original[key]) &&
+    JSON.stringify(submitted.functional) === JSON.stringify(original.functional) &&
+    JSON.stringify(submitted.tags) === JSON.stringify(original.tags) &&
+    submitted.flags.coupon === original.flags.coupon &&
+    submitted.flags.hasOptions === original.flags.hasOptions;
 }

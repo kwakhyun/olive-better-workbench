@@ -137,10 +137,10 @@ export default function ReviewWorkspace({
           <button
             type="button"
             className="publish-button"
-            disabled={!publishCheck.allowed || stage === "published"}
+            disabled={!publishCheck.allowed || draft.status === "published" || stage === "publishing"}
             onClick={onPublish}
           >
-            {stage === "published" ? "발행 완료" : "고객 화면에 발행"}
+            {stage === "publishing" ? "발행 중" : draft.status === "published" ? "발행 완료" : "고객 화면에 발행"}
           </button>
         </div>
       </div>
@@ -155,8 +155,8 @@ export default function ReviewWorkspace({
           <PageRenderer
             config={draft}
             mode="preview"
-            onEditHero={onEditHero}
-            onRemoveProduct={onRemoveProduct}
+            onEditHero={stage === "publishing" ? undefined : onEditHero}
+            onRemoveProduct={stage === "publishing" ? undefined : onRemoveProduct}
           />
         </div>
         <AuditPanel

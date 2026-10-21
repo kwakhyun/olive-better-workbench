@@ -62,14 +62,24 @@ export async function POST(request: Request) {
     const productId = String(body.productId ?? "").slice(0, 120);
     const blockId = String(body.blockId ?? "").slice(0, 120);
     const campaign = await readPublishedCampaign();
-    const blockExists = campaign?.blocks.some((block) => block.id === blockId);
+    if (campaign && (body.campaignId !== campaign.id ||
+        body.publicationId !== (campaign.publicationId ?? campaign.publishedAt))) {
+      return NextResponse.json(
+        { message: "기획전이 변경되었습니다. 새로고침한 뒤 다시 반응을 남겨 주세요." },
+        { status: 409 }
+      );
+    }
+    const block = campaign?.blocks.find((entry) => entry.id === blockId);
+    const productInBlock = block &&
+      (block.type === "product_rail" || block.type === "product_grid") &&
+      block.productIds?.includes(productId);
     if (
       !campaign ||
       (type !== "click" && type !== "like" && type !== "purchase") ||
       !productId ||
-      !campaign.products[productId] ||
+      !Object.hasOwn(campaign.products, productId) ||
       !blockId ||
-      !blockExists ||
+      !productInBlock ||
       !isWell(body.well) ||
       body.well !== campaign.products[productId].well
     ) {
@@ -81,6 +91,8 @@ export async function POST(request: Request) {
 
     const event: CustomerEvent = {
       id: crypto.randomUUID(),
+      campaignId: campaign.id,
+      publicationId: campaign.publicationId ?? campaign.publishedAt,
       type,
       productId,
       blockId,

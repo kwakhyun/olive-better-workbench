@@ -1,5 +1,6 @@
 import type {
   BannerResponse,
+  CustomerEventInput,
   Draft,
   DraftAssemblyRequest,
   ResearchPayload,
@@ -75,7 +76,7 @@ export async function publishDraft(draft: Draft) {
   return payload.campaign;
 }
 
-export function recordCustomerEvent(event: Omit<import("@/lib/types").CustomerEvent, "id" | "at">) {
+export function recordCustomerEvent(event: CustomerEventInput) {
   return postJson<{ event: import("@/lib/types").CustomerEvent; count: number }>(
     "/api/events",
     event

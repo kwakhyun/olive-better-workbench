@@ -278,3 +278,15 @@ test("알 수 없는 영역만 격리하고 나머지 화면 데이터는 유지
   assert.match(result.issues.join(" "), /지원하지 않는 화면 영역/);
   assert.equal(canPublish(malformed, rules).allowed, true);
 });
+
+test("Well 키워드가 많아도 MD 요청의 상황 키워드를 관련도 계산에 반영한다", () => {
+  const request = "직장인 장마철 출근 전 짧은 루틴";
+  const result = cleanSignals([
+    { ...signals[0], id: "specific", title: "장마철 출근 전 짧은 루틴을 찾는 사람들의 일상" },
+    { ...signals[0], id: "category", title: "Protein recovery habits in everyday life" },
+    { ...signals[0], id: "unrelated", title: "새로운 우주 탐사선의 궤도 진입 소식" }
+  ], request, rules, now, WELL_META["Fit Well"].keywords);
+  assert.equal(result.accepted[0].id, "specific");
+  assert.ok(result.accepted.some((signal) => signal.id === "category"));
+  assert.equal(result.excluded[0].id, "unrelated");
+});

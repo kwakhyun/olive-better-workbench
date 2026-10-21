@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { recordCustomerEvent, requestPublishedCampaign } from "@/lib/client-api";
-import type { CustomerEvent, Draft } from "@/lib/types";
+import type { CustomerInteraction, Draft } from "@/lib/types";
 import PageRenderer from "./PageRenderer";
 
 const EVENT_LABELS = {
@@ -36,9 +36,14 @@ export default function Shop() {
     };
   }, []);
 
-  async function recordEvent(event: Omit<CustomerEvent, "id" | "at">) {
+  async function recordEvent(event: CustomerInteraction) {
     try {
-      await recordCustomerEvent(event);
+      if (!published) return;
+      await recordCustomerEvent({
+        ...event,
+        campaignId: published.id,
+        publicationId: published.publicationId ?? published.publishedAt ?? ""
+      });
       setToast(`${EVENT_LABELS[event.type]} 다음 추천에 반영됩니다.`);
     } catch (error) {
       setToast(error instanceof Error ? error.message : "반응을 저장하지 못했습니다.");

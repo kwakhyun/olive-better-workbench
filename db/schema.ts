@@ -11,6 +11,7 @@ export const customerEvents = sqliteTable(
   {
     id: text("id").primaryKey(),
     campaignId: text("campaign_id").notNull(),
+    publicationId: text("publication_id"),
     type: text("type").notNull(),
     productId: text("product_id"),
     blockId: text("block_id"),

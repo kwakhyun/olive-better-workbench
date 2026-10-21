@@ -7,9 +7,9 @@ import {
   WELL_META,
   canPublish,
   cleanSignals,
-  inspectCopy,
   resolveResearchFallback
 } from "@/lib/engine.mjs";
+import { editDraftHero, removeDraftProduct } from "@/lib/draft-editing.mjs";
 import {
   assembleDraft,
   publishDraft,
@@ -121,8 +121,7 @@ export default function Workbench({ operatorName }: { operatorName: string }) {
     }
 
     setStage("curating");
-    const signalContext = `${(WELL_META[well]?.keywords ?? []).join(" ")} ${request}`;
-    const cleaned = cleanSignals(researchPayload.signals, signalContext, rules) as {
+    const cleaned = cleanSignals(researchPayload.signals, request, rules, new Date(), WELL_META[well].keywords) as {
       accepted: TrendSignal[];
       excluded: Array<TrendSignal & { reason: string }>;
     };
@@ -164,44 +163,13 @@ export default function Workbench({ operatorName }: { operatorName: string }) {
   }
 
   function updateHero(field: "title" | "subtitle" | "cta", value: string) {
-    setDraft((current) => {
-      if (!current) return current;
-      const blocks = current.blocks.map((block) =>
-        block.type === "hero" ? { ...block, [field]: value } : block
-      );
-      const hero = blocks.find((block) => block.type === "hero");
-      const heroSafety = inspectCopy(
-        [hero?.eyebrow, hero?.title, hero?.subtitle, hero?.cta].filter(Boolean).join(" "),
-        rules
-      );
-      return { ...current, blocks, audit: { ...current.audit, heroSafety } };
-    });
+    setDraft((current) => current ? editDraftHero(current, field, value, rules) as Draft : null);
+    setStage("review");
   }
 
   function removeProduct(productId: string) {
-    setDraft((current) => {
-      if (!current) return current;
-      const products = { ...current.products };
-      delete products[productId];
-      const blocks = current.blocks.map((block) => ({
-        ...block,
-        productIds: block.productIds?.filter((id) => id !== productId),
-        steps: block.steps?.filter((step) => step.productId !== productId)
-      }));
-      return {
-        ...current,
-        products,
-        blocks,
-        audit: {
-          ...current.audit,
-          includedCount: Object.keys(products).length,
-          excluded: [
-            ...current.audit.excluded,
-            { id: productId, name: "직접 제외한 상품", reason: "MD가 직접 제외" }
-          ]
-        }
-      };
-    });
+    setDraft((current) => current ? removeDraftProduct(current, productId) as Draft : null);
+    setStage("review");
     setNotice("상품을 초안에서 제외했습니다. 변경 내용은 다시 발행한 뒤 고객 화면에 반영됩니다.");
   }
 
@@ -213,6 +181,7 @@ export default function Workbench({ operatorName }: { operatorName: string }) {
       setNotice(`발행할 수 없습니다. ${check.reasons[0]}`);
       return;
     }
+    setStage("publishing");
     try {
       const published = await publishDraft(draft);
       removeDraft();
@@ -220,6 +189,7 @@ export default function Workbench({ operatorName }: { operatorName: string }) {
       setStage("published");
       setNotice("안전 검사를 통과한 내용을 모든 고객 화면에 발행했습니다.");
     } catch (error) {
+      setStage("review");
       setNotice(messageFrom(error, "기획전을 발행하지 못했습니다."));
     }
   }

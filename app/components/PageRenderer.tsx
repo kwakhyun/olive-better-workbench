@@ -1,26 +1,18 @@
 "use client";
 
 import { useState, type CSSProperties } from "react";
-import type { CustomerEvent, Draft, PageBlock, Product } from "@/lib/types";
+import { KNOWN_BLOCKS } from "@/lib/page-schema.mjs";
+import type { CustomerInteraction, Draft, PageBlock, Product } from "@/lib/types";
 
 type RendererProps = {
   config: Draft;
   mode?: "preview" | "customer";
-  onEvent?: (event: Omit<CustomerEvent, "id" | "at">) => void;
+  onEvent?: (event: CustomerInteraction) => void;
   onEditHero?: (field: "title" | "subtitle" | "cta", value: string) => void;
   onRemoveProduct?: (productId: string) => void;
 };
 
 const money = new Intl.NumberFormat("ko-KR");
-const KNOWN_BLOCKS = new Set([
-  "hero",
-  "signal_strip",
-  "product_rail",
-  "routine_steps",
-  "product_grid",
-  "evidence_note"
-]);
-
 function ProductPackshot({ product, hero = false }: { product: Product; hero?: boolean }) {
   return (
     <div
@@ -103,7 +95,7 @@ function ProductCard({
               </button>
             </div>
           ) : (
-            <button type="button" className="remove-product" onClick={onRemove}>
+            <button type="button" className="remove-product" onClick={onRemove} disabled={!onRemove}>
               제외
             </button>
           )}
@@ -241,7 +233,7 @@ function ProductCollection({
             liked={liked.has(product.id)}
             onLike={() => onToggleLike(product.id)}
             onEvent={onEvent}
-            onRemove={() => onRemoveProduct?.(product.id)}
+            onRemove={onRemoveProduct ? () => onRemoveProduct(product.id) : undefined}
           />
         ];
       })}

@@ -71,8 +71,8 @@ export async function appendCustomerEvent(event: CustomerEvent, campaignId: stri
   await db
     .prepare(
       `INSERT INTO customer_events
-       (id, campaign_id, type, product_id, block_id, well, occurred_at)
-       VALUES (?, ?, ?, ?, ?, ?, ?)`
+       (id, campaign_id, type, product_id, block_id, well, occurred_at, publication_id)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?)`
     )
     .bind(
       event.id,
@@ -81,7 +81,8 @@ export async function appendCustomerEvent(event: CustomerEvent, campaignId: stri
       event.productId ?? null,
       event.blockId ?? null,
       event.well ?? null,
-      event.at
+      event.at,
+      event.publicationId ?? null
     )
     .run();
   const count = await db
@@ -96,7 +97,8 @@ export async function readRecentCustomerEvents(limit = MAX_EVENTS) {
   if (!db) return memory.events.slice(-limit);
   const result = await db
     .prepare(
-      `SELECT id, type, product_id AS productId, block_id AS blockId,
+      `SELECT id, campaign_id AS campaignId, publication_id AS publicationId,
+              type, product_id AS productId, block_id AS blockId,
               well, occurred_at AS at
        FROM customer_events
        ORDER BY occurred_at DESC

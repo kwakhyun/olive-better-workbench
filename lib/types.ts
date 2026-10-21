@@ -29,12 +29,17 @@ export type Product = {
 
 export type CustomerEvent = {
   id: string;
+  campaignId?: string;
+  publicationId?: string;
   type: "click" | "like" | "purchase";
   productId?: string;
   blockId?: string;
   well?: Well;
   at: string;
 };
+
+export type CustomerInteraction = Pick<CustomerEvent, "type" | "productId" | "blockId" | "well">;
+export type CustomerEventInput = CustomerInteraction & { campaignId: string; publicationId: string };
 
 export type RawTrendSignal = {
   id: string;
@@ -102,6 +107,7 @@ export type Draft = {
   status: "draft" | "published";
   createdAt: string;
   publishedAt?: string;
+  publicationId?: string;
   request: string;
   well: Well;
   theme: string;

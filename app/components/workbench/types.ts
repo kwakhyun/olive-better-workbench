@@ -4,6 +4,7 @@ export type Stage =
   | "curating"
   | "generating"
   | "review"
+  | "publishing"
   | "published";
 
 export type Panel = "evidence" | "safety" | "json";
@@ -14,5 +15,6 @@ export const STAGE_LABELS: Record<Stage, string> = {
   curating: "트렌드와 상품 정리 중",
   generating: "안전한 대표 문구 생성 중",
   review: "검토 준비 완료",
+  publishing: "발행 중",
   published: "발행 완료"
 };

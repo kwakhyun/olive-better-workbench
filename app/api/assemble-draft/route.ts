@@ -148,8 +148,7 @@ export async function POST(request: Request) {
     );
   }
 
-  const signalContext = `${(WELL_META[well]?.keywords ?? []).join(" ")} ${mdRequest}`;
-  const cleaned = cleanSignals(research.signals, signalContext, rules);
+  const cleaned = cleanSignals(research.signals, mdRequest, rules, new Date(), WELL_META[well].keywords);
   if (!cleaned.accepted.length) {
     return NextResponse.json(
       {
